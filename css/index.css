@@ -46,3 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Для браузеров, поддерживающих Grid */
+@supports(grid-area: auto) {
+	@media screen and (max-width: 768px) {
+
+	}
+	
+	@media screen and (max-width: 1246px) {
+
+	}
+
+}
