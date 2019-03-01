@@ -47,6 +47,51 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Общие правила */
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Italic.eot");
+    src: url("../fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Lato-Italic.woff2") format("woff2"),
+        url("../fonts/Lato-Italic.woff") format("woff"),
+        url("../fonts/Lato-Italic.ttf") format("truetype"),
+        url("../fonts/Lato-Italic.svg#Lato-Italic") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.eot");
+    src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Lato-Bold.woff2") format("woff2"),
+        url("../fonts/Lato-Bold.woff") format("woff"),
+        url("../fonts/Lato-Bold.ttf") format("truetype"),
+        url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.eot");
+    src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Lato-Regular.woff2") format("woff2"),
+        url("../fonts/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato-Regular.ttf") format("truetype"),
+        url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	font-family: Lato; 
+	font-size: 72px;
+	text-transform: uppercase;
+}
+
+
 /* Для браузеров, поддерживающих Grid */
 @supports(grid-area: auto) {
 	@media screen and (max-width: 768px) {
