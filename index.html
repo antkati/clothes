@@ -1,159 +1,169 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
+	<meta charset='utf-8'>
 	<title>Интернет-магазин одежды</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel='stylesheet' type='text/css' href='css/index.css'>
 </head>
+
 <body>
-	<div class="container">
+	<div class='container'>
 
 		<!-- ШАПКА -->
-		<header>
-			<div class="navigation">
-				<!-- Лого -->
-				<a class="logo" href="">
-					<img src="images/logo.png">
-				</a>
-				<!-- Пункты меню -->
-				<nav>
-					<a href="">Woman</a>
-					<a href="">Men</a>
-					<a href="">Kids</a>
-					<a href="">Comming soon</a>
-					<a href="">About</a>
-					<a href="">Log In</a>
-					<a href="">Basket (0)</a>
-				</nav>
-				<!-- Поиск -->
-				<a class="search" href=""><img src="images/search.png"></a>				
-			</div>
+		<header class='header'>
+			<div class='container--center'>
+				<div class='header__menu'>
+					<!-- Лого -->
+					<a href=''>
+						<img src='images/logo.png'>
+					</a>
+					<!-- Пункты меню -->
+					<nav class='header__nav'>
+						<a href=''>Woman</a>
+						<a href=''>Men</a>
+						<a href=''>Kids</a>
+						<a href=''>Comming soon</a>
+						<a href=''>About</a>
+						<a href=''>Log In</a>
+						<a href=''>Basket (0)</a>
+					</nav>
+					<!-- Поиск -->
+					<img src='images/search.png'>
+					<!-- Гамбургер-меню -->		
+					<img class='header__burger-menu' src='images/burger-menu.png'>	
+				</div>
 
-			<!-- Описание главной страницы -->
-			<div class="musthead">
-				<h1 class="uppercase">
-					Hazy shade of Spring	
-				</h1>
-				<p class="georgia-italic subtitle-h1">
-					Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.	
-				</p>
-				<!-- Кнопка -->
-				<a href="" class="uppercase button">Check new arrivals</a>	
+				<!-- Описание главной страницы -->
+				<div class='header__musthead'>
+					<h1 class='text-transform--uppercase'>
+						Hazy shade of Spring	
+					</h1>
+					<p class='font--georgia-i header__p'>
+						Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.	
+					</p>
+					<!-- Кнопка -->
+					<a href='' class='btn text-transform--uppercase'>Check new arrivals</a>	
+				</div>
 			</div>
 		</header>
 
 		<!-- ОСНОВНОЙ БЛОК -->
-		<main>
-			<!-- Промоблок -->
-			<section class="promo">
-				<!-- Удлиненная картинка -->
-				<figure>
-					<img src="images/item-1.png">
-					<figcaption>
-						<h3 class="uppercase">Heather grey basics</h3>
-						<p class="georgia-italic uppercase">New arrival</p>	
-					</figcaption>
-				</figure>
-				<!-- Твит -->
-				<figure>
-					<img src="">
-					<figcaption>
-						<p class="georgia-italic twit">Opening Ceremony @IndonesiaFW tomorrow, PMers! Are you ready for the biggest fashion movement in @PuspitaMarthaID</p>
-					</figcaption>
-				</figure>
-				<!-- Картинка и блок с описанием -->
-				<figure>
-					<img src="images/item-2.png">
-					<figcaption>
-						<h3 class="uppercase">Elegant shoes</h3>
-						<p class="georgia-italic uppercase">Braided leather</p>
-					</figcaption>
-				</figure>
-				<!-- Картинка с наложенным описанием -->	
-				<figure>
-					<img src="images/item-3.png">
-					<figcaption>
-						<h3 class="uppercase">Chuck Taylors</h3>
-						<p class="georgia-italic uppercase">$125.00</p>
-					</figcaption>
-				</figure>
-				<!-- Твит -->
-				<figure>
-					<img src="">
-					<figcaption>
-						<p class="georgia-italic twit">Girls, girls, girls: A Look Back at 50 Years of the Pirelli Calendar @Vogue</p>
-					</figcaption>
-				</figure>
-				<!-- Удлиненная картинка -->
-				<figure>
-					<img src="images/item-4.png">
-					<figcaption>
-						<h3 class="uppercase">Jeans for adventure</h3>
-						<p class="georgia-italic uppercase">New arrival</p>	
-					</figcaption>
-				</figure>
-				<!-- Картинка и блок с описанием -->
-				<figure>
-					<img src="images/item-5.png">
-					<figcaption>
-						<h3 class="uppercase">Jaxon hat</h3>
-						<p class="georgia-italic uppercase">Beanie hat</p>
-					</figcaption>
-				</figure>
-				<!-- Картинка с наложенным описанием -->	
-				<figure>
-					<img src="images/item-6.png">
-					<figcaption>
-						<h3 class="uppercase">Basic blazer</h3>
-						<p class="georgia-italic uppercase">From $199.00</p>
-					</figcaption>
-				</figure>
-			</section>
+		<main class='main'>
+			<div class='container--center'>
+				<!-- Промоблок -->
+				<section class='main__promo'>
+					<!-- Удлиненная картинка -->
+					<figure>
+						<img src='images/item-1.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Heather grey basics</h3>
+							<p class='font--georgia-i text-transform--uppercase'>New arrival</p>	
+						</figcaption>
+					</figure>
+					<!-- Твит -->
+					<figure>
+						<img src=''>
+						<figcaption class='main__figcaption'>
+							<p class='font--georgia-i main__figcaption__twit'>Opening Ceremony @IndonesiaFW tomorrow, PMers! Are you ready for the biggest fashion movement in @PuspitaMarthaID</p>
+						</figcaption>
+					</figure>
+					<!-- Картинка и блок с описанием -->
+					<figure>
+						<img src='images/item-2.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Elegant shoes</h3>
+							<p class='font--georgia-i text-transform--uppercase'>Braided leather</p>
+						</figcaption>
+					</figure>
+					<!-- Картинка с наложенным описанием -->	
+					<figure>
+						<img src='images/item-3.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Chuck Taylors</h3>
+							<p class='font--georgia-i text-transform--uppercase'>$125.00</p>
+						</figcaption>
+					</figure>
+					<!-- Твит -->
+					<figure>
+						<img src=''>
+						<figcaption class='main__figcaption'>
+							<p class='font--georgia-i main__figcaption__twit'>Girls, girls, girls: A Look Back at 50 Years of the Pirelli Calendar @Vogue</p>
+						</figcaption>
+					</figure>
+					<!-- Удлиненная картинка -->
+					<figure>
+						<img src='images/item-4.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Jeans for adventure</h3>
+							<p class='font--georgia-i text-transform--uppercase'>New arrival</p>	
+						</figcaption class='main__figcaption'>
+					</figure>
+					<!-- Картинка и блок с описанием -->
+					<figure>
+						<img src='images/item-5.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Jaxon hat</h3>
+							<p class='font--georgia-i text-transform--uppercase'>Beanie hat</p>
+						</figcaption>
+					</figure>
+					<!-- Картинка с наложенным описанием -->	
+					<figure>
+						<img src='images/item-6.png'>
+						<figcaption class='main__figcaption'>
+							<h3 class='text-transform--uppercase'>Basic blazer</h3>
+							<p class='font--georgia-i text-transform--uppercase'>From $199.00</p>
+						</figcaption>
+					</figure>
+				</section>
 
-			<!-- Подпишитесь -->
-			<section class="subscribe">
-				<h2 class="uppercase">Sign up to receive our updates</h2>
-				<p class="georgia-italic subtitle-h2">Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
-				<!-- Форма для e-mail -->
-				<form>
-					<input type="text" name="email" placeholder="Your e-mail">
-					<button class="button" name="submit">add</button>
-				</form>	
-			</section>	
+				<!-- Подпишитесь -->
+				<section class='main__subscribe'>
+					<h2 class='text-transform--uppercase'>Sign up to receive our updates</h2>
+					<p class='font--georgia-i h2-description'>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
+					<!-- Форма для e-mail -->
+					<form>
+						<input type='text' name='email' placeholder='Your e-mail'>
+						<button class='btn' name='submit'>add</button>
+					</form>	
+				</section>
+			</div>	
 		</main>
 
 		<!-- ФУТЕР -->
-		<footer>
-			<div>
-				<h4 class="uppercase">Collection</h4>
-				<a href="">Woman</a>
-				<a href="">Men</a>
-				<a href="">Kids</a>
-				<a href="">Comming soon</a>	
-			</div>
-			<div>
-				<h4 class="uppercase">Site</h4>
-				<a href="">Terms of Service</a>
-				<a href="">Privacy Policy</a>
-				<a href="">Copyright Policy</a>
-				<a href="">Press Kit</a>
-				<a href="">Support</a>						
-			</div>
-			<div>
-				<h4 class="uppercase">Shop</h4>
-				<a href="">About us</a>
-				<a href="">Shiping Metods</a>
-				<a href="">Career</a>
-				<a href="">Contact</a>				
-			</div>
-			<div>
-				<h4 class="uppercase">Social</h4>
-				<p>
-					Shoper is made with love in Warsaw, 2014 &#169; All rights reseved. El passion	
-				</p>
-				<img src="images/twitter.png">
-				<img src="images/fb.png">
-				<img src="images/instagram.png">
+		<footer class='footer'>
+			<div class='container--center'>
+				<div>
+					<h4 class='text-transform--uppercase'>Collection</h4>
+					<a href=''>Woman</a>
+					<a href=''>Men</a>
+					<a href=''>Kids</a>
+					<a href=''>Comming soon</a>	
+				</div>
+				<div>
+					<h4 class='text-transform--uppercase'>Site</h4>
+					<a href=''>Terms of Service</a>
+					<a href=''>Privacy Policy</a>
+					<a href=''>Copyright Policy</a>
+					<a href=''>Press Kit</a>
+					<a href=''>Support</a>						
+				</div>
+				<div>
+					<h4 class='text-transform--uppercase'>Shop</h4>
+					<a href=''>About us</a>
+					<a href=''>Shiping Metods</a>
+					<a href=''>Career</a>
+					<a href=''>Contact</a>				
+				</div>
+				<div>
+					<h4 class='text-transform--uppercase'>Social</h4>
+					<p>
+						Shoper is made with love in Warsaw, 2014 &#169; All rights reseved. El passion	
+					</p>
+					<img src='images/twitter.png'>
+					<img src='images/fb.png'>
+					<img src='images/instagram.png'>
+				</div>
 			</div>							
 		</footer>
 
