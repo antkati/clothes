@@ -10,40 +10,51 @@
 <body>
 	<div class='container'>
 
-		<!-- ШАПКА -->
+		<!-- HEADER -->
 		<header class='header'>
 			<div class='container--center'>
 				<div class='header__menu'>
-					<!-- Лого -->
-					<a href=''>
-						<img src='images/logo.png'>
-					</a>
-					<!-- Пункты меню -->
-					<nav class='header__nav'>
-						<a href=''>Woman</a>
-						<a href=''>Men</a>
-						<a href=''>Kids</a>
-						<a href=''>Comming soon</a>
-						<a href=''>About</a>
-						<a href=''>Log In</a>
-						<a href=''>Basket (0)</a>
+					<!-- LEFT NAV -->
+					<div class='header__menu--left'>
+						<!-- LOGO -->
+						<a class="header__logo__link" href='#'>
+							<div class='header__logo'>sh</div>	
+						</a><!-- ITEM NAV --><nav class='header__nav header__nav--left'>
+							<a href='#'>Woman</a>
+							<a href='#'>Men</a>
+							<a href='#'>Kids</a>
+							<a href='#'>Comming soon</a>
+							<a href='#'>About</a>
+						</nav>
+					</div><!-- RIGHT NAV --><nav class='header__nav header__menu--right'>
+						<!-- USER INFO -->
+						<div class='header__personal-page'>
+							<img src='images/user.png'>
+							<a href='#'>Log In</a>
+						</div><!-- CART --><div class='header__cart'>
+							<a class='header__cart__i--mobile' href=''>
+								<img  src='images/mobile-cart.png'>
+							</a>
+							<img class='header__cart__i--desktop' src='images/desktop-cart.png'>	
+							<a class='header__cart__link' href='#'>Basket (0)</a>
+						</div><!-- SEARCH --><img class='header__search' src='images/search.png'>
+						<!-- GAMBURGER -->		
+						<img class='header__burger-menu' src='images/burger-menu.png'>	
 					</nav>
-					<!-- Поиск -->
-					<img src='images/search.png'>
-					<!-- Гамбургер-меню -->		
-					<img class='header__burger-menu' src='images/burger-menu.png'>	
 				</div>
 
-				<!-- Описание главной страницы -->
+				<!-- MUSTHEAD -->
 				<div class='header__musthead'>
-					<h1 class='text-transform--uppercase'>
-						Hazy shade of Spring	
-					</h1>
-					<p class='font--georgia-i header__p'>
-						Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.	
-					</p>
-					<!-- Кнопка -->
-					<a href='' class='btn text-transform--uppercase'>Check new arrivals</a>	
+					<div class='header__musthead__text'>
+						<h1 class='text-transform--uppercase'>
+							Hazy shade of Spring	
+						</h1>
+						<p class='font--georgia-i header__p'>
+							Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.	
+						</p>
+						<!-- BUTTON -->
+						<a href='#' class='btn btn--grey text-transform--uppercase'>Check new arrivals</a>
+					</div>	
 				</div>
 			</div>
 		</header>
@@ -120,7 +131,7 @@
 				<!-- Подпишитесь -->
 				<section class='main__subscribe'>
 					<h2 class='text-transform--uppercase'>Sign up to receive our updates</h2>
-					<p class='font--georgia-i h2-description'>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
+					<p class='font--georgia-i main__p'>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
 					<!-- Форма для e-mail -->
 					<form>
 						<input type='text' name='email' placeholder='Your e-mail'>
@@ -135,29 +146,29 @@
 			<div class='container--center'>
 				<div>
 					<h4 class='text-transform--uppercase'>Collection</h4>
-					<a href=''>Woman</a>
-					<a href=''>Men</a>
-					<a href=''>Kids</a>
-					<a href=''>Comming soon</a>	
+					<a href='#'>Woman</a>
+					<a href='#'>Men</a>
+					<a href='#'>Kids</a>
+					<a href='#'>Comming soon</a>	
 				</div>
 				<div>
 					<h4 class='text-transform--uppercase'>Site</h4>
-					<a href=''>Terms of Service</a>
-					<a href=''>Privacy Policy</a>
-					<a href=''>Copyright Policy</a>
-					<a href=''>Press Kit</a>
-					<a href=''>Support</a>						
+					<a href='#'>Terms of Service</a>
+					<a href='#'>Privacy Policy</a>
+					<a href='#'>Copyright Policy</a>
+					<a href='#'>Press Kit</a>
+					<a href='#'>Support</a>						
 				</div>
 				<div>
 					<h4 class='text-transform--uppercase'>Shop</h4>
-					<a href=''>About us</a>
-					<a href=''>Shiping Metods</a>
-					<a href=''>Career</a>
-					<a href=''>Contact</a>				
+					<a href='#'>About us</a>
+					<a href='#'>Shiping Metods</a>
+					<a href='#'>Career</a>
+					<a href='#'>Contact</a>				
 				</div>
 				<div>
 					<h4 class='text-transform--uppercase'>Social</h4>
-					<p>
+					<p class='footer__p'>
 						Shoper is made with love in Warsaw, 2014 &#169; All rights reseved. El passion	
 					</p>
 					<img src='images/twitter.png'>

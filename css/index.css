@@ -170,36 +170,175 @@ a {
 }
 
 .container--center {
-	width: 1200px;
+	max-width: 75rem;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	padding: 0 10px;
+	padding: 0 0.625rem;
 }
 
-.header__burger-menu {
+/* Навигация */
+
+.header__menu {
+	height: 7.1875rem;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 7.125rem;
+}
+
+.header__menu--left, .header__menu--right, 
+.header__logo, .header__nav--left, .header__personal-page, 
+.header__cart, .header__search {
+	display: inline-block;	
+}
+
+.header__cart__i--mobile, .header__burger-menu {
 	display: none;
 }
 
+.header__menu--left, .header__menu--right {
+	width: 50%;
+	line-height: 3.0625rem;
+}
 
-/* До 768px */
+.header__nav--left {
+	width: calc(100% - 42px);
+}
+
+.header__nav--left a:first-child {
+	margin-left: 4.5%;
+}
+
+.header__nav--left a:not(:last-child) {
+	margin-right: 4.5%;
+}
+
+.header__menu--right {
+	text-align: right;
+}
+
+.header__logo {
+	width: 42px;
+	height: 42px;
+	background-color: #272727;
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 42px;
+}
+
+.header__logo__link {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	line-height: 0;
+}
+
+.header__search {
+	vertical-align: middle;
+}
+
+.header__personal-page, .header__cart {
+	margin-right: 4.5%;
+}
+
+/* Заголовок */
+.header__musthead {
+	height: 33.625rem;
+	position: relative;
+	text-align: center;
+}
+
+.header__musthead__text {
+	width: fit-content; /* Прочитай подробнее */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Прочитай подробнее */
+}
+
+
+.header__musthead__text h1 {
+	margin-bottom: 2.375rem; 
+}
+
+.header__musthead__text p {
+	margin-bottom: 4.6875rem; 
+}
+
+.btn--grey {
+	padding: 1.5625rem  2.0625rem;
+	border: 1px solid #949494;
+}
+
+
+/* !!! До 768px */
 @media screen and (max-width: 48rem) {
 	.container--center {
 		width: 100%;
-		padding: 0 20px;
+		min-width: 30rem;
+		padding: 0 1.25rem;
 	}
 
 	.header__menu {
-		height: 100px;
+		height: 6.25rem;
+		padding: 1.25rem 0;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	
+	.header__logo {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 26px;
 	}
 
-	.header__burger-menu {
-		display: block;
+	.header__nav--left {
+		display: none;
 	}
+
+	.header__personal-page {
+		display: none;
+	}
+
+	.header__cart__i--desktop {
+		display: none;	
+	} 
+
+	.header__cart__i--mobile {
+		display: inline;
+	}
+
+	.header__cart__link {
+		display: none;
+	}
+
+
+
+
+
+
+
+	.header__burger-menu {
+		display: inline;
+	}
+
+	.header__search {
+		display: none;
+	}	
+
 
 
 }
 
-/* До 1200px */	
+
+
+
+
+
+
+
+/* от 768px до 1200px */	
 @media screen and (max-width: 73.75rem) {
 
 }
