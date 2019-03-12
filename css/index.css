@@ -120,6 +120,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+a:hover {
+	text-decoration: underline;
+}
  
 .text-transform--uppercase {
 	text-transform: uppercase;
@@ -138,12 +142,14 @@ a {
 	font-size: 0.875rem;
 }
 
-.main__figcaption {
- 	color: #000000 /* #ffffff */;
- }
+.twit__text {
+	font-size: 0.875rem;
+	line-height: 1.4;	
+}
 
-.main__figcaption__twit {
-	font-size: 0.875rem;	
+.font--lato-bold {
+	font-family:  Lato, Arial, sans-serif;
+	font-weight: bold; 
 }
 
 .main__p {
@@ -177,7 +183,7 @@ a {
 	padding: 0 0.625rem;
 }
 
-/* Навигация */
+/* HEADER NAV */
 
 .header__menu {
 	height: 7.1875rem;
@@ -229,8 +235,6 @@ a {
 
 .header__logo__link {
 	display: inline-block;
-	width: 42px;
-	height: 42px;
 	line-height: 0;
 }
 
@@ -242,19 +246,20 @@ a {
 	margin-right: 4.5%;
 }
 
-/* Заголовок */
+/* HEADER MUSTHEAD */
 .header__musthead {
-	height: 33.625rem;
+	height: 33.625rem; /* Как задавать высоту */
 	position: relative;
-	text-align: center;
+	
 }
 
 .header__musthead__text {
-	width: fit-content; /* Прочитай подробнее */
+	width: 100%; /* Полоса прокрутки в IE, мб псевдоэлемент? */
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%); /* Прочитай подробнее */
+	text-align: center;
 }
 
 
@@ -271,6 +276,139 @@ a {
 	border: 1px solid #949494;
 }
 
+/* MAIN PROMO */
+
+.main__promo {
+	text-align: center;
+}
+
+.promo__part1, .promo__part2 {
+	display: inline-block;
+	width: 590px;
+	vertical-align: top;
+}
+
+.part1__col--left, .part1__col--right, 
+.part2__col--left, .part2__col--right {
+	display: inline-block;
+	width: 295px;
+	vertical-align: top;
+}
+
+.promo__block {
+	display: inline-block;
+	text-align: center;
+	width: 295px;
+}
+
+.promo__block:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.promo__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    color: #ffffff;
+}
+
+.promo__text h3 {
+	margin-bottom: 0.875rem; 
+	line-height: 1.125;
+}
+
+.promo__block--rectangle {
+	height: 590px;
+}
+
+.rectangle--1 {
+	background: url('../images/item-1.png') no-repeat;
+}
+
+.rectangle--2 {
+	background: url('../images/item-4.png') no-repeat;
+}
+
+.promo__block--square {
+	height: 295px;	
+}
+
+.square--twit {
+	background: #bababa;
+}
+
+.twit__account {
+	margin-top: 1.25rem;
+}
+
+.twit__bird {
+	margin-bottom: 1.75rem;
+}
+
+.promo__block--double {
+	white-space: nowrap;
+	display: inline-block;
+	width: 100%;
+}
+
+.square--description {
+	background: #606060;	
+}
+
+.description__poiner {
+	margin-bottom: 1rem;
+}
+
+.square--img-1 {
+	background: url('../images/item-2.png') no-repeat;
+}
+
+.square--img-2 {
+	background: url('../images/item-5.png') no-repeat;
+}
+
+.square--1 {
+	background: url('../images/item-3.png') no-repeat;	
+} 
+
+.square--2 {
+	background: url('../images/item-6.png') no-repeat;
+}
+
+
+/* MAIN SUBSCRIBE */
+.main__subscribe {
+	text-align: center;
+}
+
+.main__subscribe__text {
+	padding-top: 9.125rem;
+	padding-bottom: 9.25rem; 
+}
+
+.main__subscribe__text h2 {
+	margin-bottom: 1.375rem;
+}
+
+.main__subscribe__form {
+	margin-top: 3.375rem;
+}
+
+.btn--orange {
+	background-color: #dc813e; 
+	color: #ffffff;
+	border: 1px solid #cd7333;
+	outline: 0;
+	padding: 1.375rem 2rem;
+}
+
+.form__input {
+	border: 1px solid #949494;
+		
+}
 
 /* !!! До 768px */
 @media screen and (max-width: 48rem) {
@@ -314,11 +452,6 @@ a {
 	}
 
 
-
-
-
-
-
 	.header__burger-menu {
 		display: inline;
 	}
@@ -327,14 +460,7 @@ a {
 		display: none;
 	}	
 
-
-
 }
-
-
-
-
-
 
 
 
