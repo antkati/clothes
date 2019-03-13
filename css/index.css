@@ -160,7 +160,7 @@ a:hover {
 	font-size: 1.125rem; 
 }
 
-.footer a {
+.footer li {
 	font-size: 0.75rem;	
 }
 
@@ -313,7 +313,7 @@ a:hover {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    content: "";
+    content: '';
 }
 
 .promo__text {
@@ -439,9 +439,51 @@ a:hover {
 	min-width: 330px;
 }
 
+
+/* FOOTER */
 .footer {
  	background: #f4f4f4;
 }
+
+.footer__container {
+	display: table;
+	padding: 4.125rem 0;
+	width: 100%;
+}
+
+
+.footer__cell {
+	display: table-cell;
+	width: 25%;
+	vertical-align: top;
+	padding: 0.875rem 1.25rem ; 
+}
+
+.footer__cell:not(:last-child) {
+	border-right: 1px solid #e1e1e1;
+}
+
+.footer h4 {
+	margin-bottom: 0.625rem;
+}
+
+.footer li, .footer__p {
+	line-height: 1.9;	
+}
+
+.footer__p {
+	margin-bottom: 0.875rem;
+}
+
+.footer__social-link {
+	display: inline-block;
+	line-height: 0;
+}
+
+.footer__social-link:not(:last-child) {
+	margin-right: 16px;
+}
+
 
 
 /* !!! До 768px */
