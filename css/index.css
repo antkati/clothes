@@ -112,6 +112,7 @@ h3 {
 
 h4 {
 	font-size: 0.875rem;
+	line-height: 1.2;
 }
 
 p {
@@ -129,6 +130,14 @@ a:hover {
  
 .text-transform--uppercase {
 	text-transform: uppercase;
+}
+
+.text-transform--lowercase {
+	text-transform: lowercase;
+}
+
+.text-decoration--underline {
+	text-decoration: underline;
 }
 
 .font--georgia-i {
@@ -150,13 +159,8 @@ a:hover {
 	line-height: 1.46;
 }
 
-.header__p, .main__p {
+.header__p, .main__p, .breadcrumps__link {
 	color: #606060;
-}
-
-.twit__text {
-	font-size: 0.875rem;
-	line-height: 1.4;	
 }
 
 .main__p {
@@ -164,15 +168,23 @@ a:hover {
 	line-height: 1.23;
 }
 
-.footer li, .footer__p  {
-	font-size: 0.75rem;
-	line-height: 1.9;	
+.twit__text {
+	font-size: 0.875rem;
+	line-height: 1.4;	
 }
 
 .btn {
 	font-size: 0.875rem;	
 }
 
+.footer li, .footer__p  {
+	font-size: 0.75rem;
+	line-height: 1.9;	
+}
+
+.breadcrumps__link {
+	font-size: 0.75rem;
+}
 
 /* Для браузеров без поддержки Grid */
 /* От 1200px */
@@ -279,7 +291,7 @@ a:hover {
 /* clearfix */
 .main__promo::before,
 .main__promo::after {
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -489,7 +501,92 @@ a:hover {
 }
 
 
-/* PAGE: ALL CATEGORY */
+
+
+
+/* (!) PAGE: ALL CATEGORY */
+.breadcrumps {
+	margin-top: 1.25rem;
+}
+
+.breadcrumps li {
+	display: inline;
+}
+
+.breadcrumps li:not(:last-child):after {
+	content: ' / ';
+}
+
+.catalog__section {
+	padding: 2rem 0;
+}
+
+.catalog__section__header {
+	text-align: center;	
+}
+
+.catalog__section__header h2 {
+	margin-bottom: 0.5rem;
+}
+
+.show-more:after {
+	content: ' \25B6';
+	font-size: 0.625rem;
+}
+
+/* clearfix */
+.product-list::before,
+.product-list::after {
+  content: '';
+  display: table;
+}
+
+.product-list::after {
+  clear: both;
+}
+
+.product-list {
+  clear: both;
+  *zoom: 1;
+  margin-top: 2rem;
+
+}
+
+.product-item {
+	float: left;	
+	text-align: center;
+	vertical-align: top;
+	width: 208px;
+	height: 340px;	
+	margin: 0 calc((100% - 208px * 4) / 8);
+	margin-bottom: 1.875rem;
+
+}
+
+.product-item__img__link {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.product-item__img {
+	width: 208px; 
+	height: 256px;
+	object-fit: cover;
+}
+
+.product-item__header h4 {
+	height: 2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0.625rem;
+}
+
+.product-item__price {
+	font-size: 0.875rem;
+}
+
+
+
 
 
 
@@ -691,248 +788,3 @@ a:hover {
 
 
 
-/* GRID AND FLEX */
-@supports(grid-area: auto) {
-
-	.container--center {
-		max-width: none;
-		margin: 0;
-		padding: 0;
-		display: grid;
-		grid-template-columns: 1fr minmax(480px, 1200px) 1fr;
-		grid-template-rows: auto;		
-	}
-
-	.header__menu, .header__musthead, 
-	.main__promo, .main__subscribe,
-	.footer__container {
-		grid-column: 2 / 3;
-	}
-
-	.header__musthead__text, .main__subscribe__text {
-		grid-column: 1 / 5;
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: auto;
-		align-items: center;
-		margin: 0 10px;
-	}
-
-	/* HEADER NAV */
-	.header__menu, .header__menu--left, 
-	.header__menu--right {
-		line-height: 1;
-	}
-
-	.header__menu--left, .header__menu--right, 
-	.header__nav--left {
-		display: inline-flex;
-		align-items: center;
-	}
-
-	.header__menu--left {
-		grid-column: 1 / 3;	
-		width: 100%;
-		justify-content: space-between;
-	} 
-
-	.header__nav--left {
-		justify-content: space-around;
-		width: calc(95% - 42px);
-		min-width: max-content;
-	}
-
-	.header__nav--left a {
-		margin: 0;
-	}
-
-	.header__menu--right {
-		grid-column: 3 / 5;	
-		justify-self: end;
-		width: 55%;
-		justify-content: space-between;	
-
-	}
-
-	.header__personal-page, .header__cart {
-		margin-right: 0;
-	}
-
-	/* MAIN PROMO */
-	/* disable clearfix */
-	.main__promo::before,
-	.main__promo::after {
-	  display: none;
-	}
-
-	/* disable vertical-align */
-	.promo__block:before {
-	    display: none;
-	}
-
-	.grid--promo {
-		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: auto;
-		margin: 0 10px;
-		align-items: start;
-		grid-template-areas: 
-			'rectangle--1 twit--1 double-square--1 double-square--1'
-			'rectangle--1 square--1 twit--2 rectangle--2'
-			'double-square--2 double-square--2 square--2 rectangle--2';
-	}
-
-	.promo__block {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
-
-	.promo__block--double {
-		display: inline-flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-		width: 100%;
-	}
-
-	.rectangle--1, .rectangle--2 {
-		float: none;
-	} 
-
-	.rectangle--1 {
-		grid-area: rectangle--1;
-	}
-
-	.rectangle--2 {
-		grid-area: rectangle--2;	
-	}
-
-	.twit--1 {
-		grid-area: twit--1;	
-	}
-
-	.twit--2 {
-		grid-area: twit--2;	
-	}	
-
-	.double-square--1 {
-		grid-area: double-square--1;
-	}
-
-	.double-square--2 {
-		grid-area: double-square--2;		
-	}	
-
-	.square--1 {
-		grid-area: square--1;	
-	} 
-
-	.square--2 {
-		grid-area: square--2;
-	}
-
-	/* FOOTER */
-	.footer__container {
-		align-items: stretch;
-		width: auto;
-	}
-
-	.footer__cell {
-		display: inline-block;
-		width: 100%; 
-	}
-
-	.footer__cell--1 {
-		grid-column: 1 / 2;
-	}
-
-	.footer__cell--2 {
-		grid-column: 2 / 3;
-	}
-
-	.footer__cell--3 {
-		grid-column: 3 / 4;
-	}
-
-	.footer__cell--4 {
-		grid-column: 4 / 5;
-	}				
-
-	.footer__cell:not(:last-child) {
-		border-right: 1px solid #e1e1e1;
-	}
-
-	/* до 769px */	
-	@media screen and (max-width: 768px) {
-
-		.grid {
-			margin: 0 20px;
-		}
-
-		/* HEADER NUV */
-		.header__nav--left {
-			display: none;
-		}		
-
-		.header__menu--right {
-			width: 100%;
-			justify-content: flex-end;
-		}
-
-		.header__cart {
-			margin-right: 42px;
-		}
-
-
-		/* MAIN PROMO */
-		.promo__block--rectangle, .square--twit {
-			display: none;
-		}
-
-		.promo__block--double {
-			flex-direction: column;
-		}
-
-		.grid--promo {
-			margin: 0 20px;
-			grid-template-columns: 100%;
-			grid-template-rows: auto;
-			grid-template-areas: 
-			'double-square--1'
-			'square--1'
-			'double-square--2'
-			'square--2';
-		}
-
-		/* FOOTER */
-		.footer__cell--social {
-			grid-column: 1 / 5;
-		}	
-	}
-
-	/* от 769px до 992px */	
-	@media screen and (min-width: 769px) and (max-width: 992px) {
-
-		/* MAIN PROMO */
-		.grid--promo {
-			grid-template-columns: repeat(3, calc(100%/3));
-			grid-template-rows: auto;
-			grid-template-areas: 
-				'rectangle--1 twit--1 square--1'
-				'rectangle--1 double-square--1 double-square--1'
-				'twit--2 square--2 rectangle--2'
-				'double-square--2 double-square--2 rectangle--2';
-		}
-
-	}
-
-
-
-	
-
-
-}
