@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -48,7 +44,7 @@ table {
 }
 
 
-/* Подключение шрифтов */
+/* FONTS */
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Italic.eot');
@@ -85,7 +81,19 @@ table {
     font-style: normal;
 }
 
-/* Типографика */
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?89016819');
+  src: url('../fonts/fontello.eot?89016819#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?89016819') format('woff2'),
+       url('../fonts/fontello.woff?89016819') format('woff'),
+       url('../fonts/fontello.ttf?89016819') format('truetype'),
+       url('../fonts/fontello.svg?89016819#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* TYPOGRAPHY */
 html {
 	font-size: 16px;
 	font-family: Lato, Arial, sans-serif;
@@ -159,7 +167,9 @@ a:hover {
 	line-height: 1.46;
 }
 
-.header__p, .main__p, .breadcrumps__link {
+.header__p, 
+.main__p, 
+.breadcrumps__link {
 	color: #606060;
 }
 
@@ -177,7 +187,8 @@ a:hover {
 	font-size: 0.875rem;	
 }
 
-.footer li, .footer__p  {
+.footer li, 
+.footer__p  {
 	font-size: 0.75rem;
 	line-height: 1.9;	
 }
@@ -186,14 +197,25 @@ a:hover {
 	font-size: 0.75rem;
 }
 
-/* Для браузеров без поддержки Grid */
-/* От 1200px */
+.product-item__price {
+	font-size: 0.875rem;
+}
+
+/* FALLBACK for browsers without grid's support */
+/* from 1200px */
 * {
 	box-sizing: border-box;
 }
 
+.header,
+.main,
+.footer {
+	min-width: 480px;
+}
+
 .container--center {
 	max-width: 1200px;
+	min-width: 480px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 0.625rem;
@@ -206,9 +228,13 @@ a:hover {
 	line-height: 7.125rem;
 }
 
-.header__menu--left, .header__menu--right, 
-.header__logo, .header__nav--left, .header__personal-page, 
-.header__cart, .header__search {
+.header__menu--left, 
+.header__menu--right, 
+.header__logo, 
+.header__nav--left, 
+.header__personal-page, 
+.header__cart, 
+.header__search {
 	display: inline-block;	
 }
 
@@ -216,11 +242,13 @@ a:hover {
 	vertical-align: middle;
 }
 
-.header__cart__link--mobile, .header__burger-menu {
+.header__cart__link--mobile, 
+.header__burger-menu {
 	display: none;
 }
 
-.header__menu--left, .header__menu--right {
+.header__menu--left, 
+.header__menu--right {
 	width: 50%;
 	line-height: 3.0625rem;
 }
@@ -257,7 +285,8 @@ a:hover {
 	line-height: 0;
 }
 
-.header__personal-page, .header__cart {
+.header__personal-page, 
+.header__cart {
 	margin-right: 4.5%;
 }
 
@@ -346,7 +375,9 @@ a:hover {
 	width: 50%;
 }
 
-.square--img-1, .square--img-2, .square--description {
+.square--img-1, 
+.square--img-2, 
+.square--description {
 	width: 50%;
 }  
 
@@ -388,9 +419,12 @@ a:hover {
 	background: #7a7a7a;
 }
 
-.rectangle--1, .rectangle--2,
-.square--img-1, .square--img-2,
-.square--1, .square--2 {
+.rectangle--1, 
+.rectangle--2,
+.square--img-1, 
+.square--img-2,
+.square--1, 
+.square--2 {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -505,7 +539,8 @@ a:hover {
 
 
 /* (!) PAGE: ALL CATEGORY */
-.breadcrumps {
+/* breadcrumps */
+.breadcrumps ul {
 	margin-top: 1.25rem;
 }
 
@@ -517,6 +552,7 @@ a:hover {
 	content: ' / ';
 }
 
+/* catalog section */
 .catalog__section {
 	padding: 2rem 0;
 }
@@ -529,9 +565,18 @@ a:hover {
 	margin-bottom: 0.5rem;
 }
 
+.show-more {
+	vertical-align: middle;
+}
+
 .show-more:after {
-	content: ' \25B6';
-	font-size: 0.625rem;
+	font-family: "fontello";
+  	font-style: normal;
+  	font-weight: normal;
+	content: ' \e800';
+	font-size: 0.5rem;
+	margin-left: 0.25rem; 
+	vertical-align: middle;
 }
 
 /* clearfix */
@@ -545,34 +590,48 @@ a:hover {
   clear: both;
 }
 
+/* product list */
 .product-list {
   clear: both;
   *zoom: 1;
   margin-top: 2rem;
-
 }
 
 .product-item {
-	float: left;	
-	text-align: center;
-	vertical-align: top;
-	width: 208px;
-	height: 340px;	
-	margin: 0 calc((100% - 208px * 4) / 8);
+	float: left;
+	width: 25%;
+	min-width: 220px;
+	height: 362px;	
 	margin-bottom: 1.875rem;
+	padding: 9px;
+	border: 1px solid transparent;
+	text-align: center;
+}
 
+.product-item:hover {
+	border: 1px solid #e1e1e1;
+}
+
+.product-item__img__link,
+.product-item__header {
+	display: inline-block;
+}
+
+.product-item__img, 
+.product-item__header {
+	width: 208px;
 }
 
 .product-item__img__link {
-	display: block;
 	margin-bottom: 1rem;
+	line-height: 0;
 }
 
 .product-item__img {
-	width: 208px; 
 	height: 256px;
 	object-fit: cover;
 }
+
 
 .product-item__header h4 {
 	height: 2rem;
@@ -581,23 +640,14 @@ a:hover {
 	margin-bottom: 0.625rem;
 }
 
-.product-item__price {
-	font-size: 0.875rem;
-}
 
 
 
 
-
-
-
-
-
-
-/* до 768px */
+/* to 768px */
 @media screen and (max-width: 768px) {
 
-	/* typography */
+	/* TIPOGRAPHY */
 	h1 {
 		font-size: 4.375rem;
 	}
@@ -610,7 +660,7 @@ a:hover {
 		font-size: 1.5rem;	
 	}
 
-	h4 {
+	.footer__cell--social h4 {
 		font-size: 1.875rem;
 	}
 
@@ -631,19 +681,20 @@ a:hover {
 	}
 
 	.container--center {
-		width: 100%;
-		min-width: 480px;
 		padding: 0 1.25rem;
 	}
 
 	/* HEADER NAV*/
-	.header__nav--left, .header__personal-page,
-	.header__cart__i--desktop, .header__cart__link,
+	.header__nav--left, 
+	.header__personal-page,
+	.header__cart__i--desktop, 
+	.header__cart__link,
 	.header__search  {
 		display: none;
 	}
 
-	.header__burger-menu, .header__cart__link--mobile {
+	.header__burger-menu, 
+	.header__cart__link--mobile {
 		display: inline-block;
 		line-height: 0;
 	}
@@ -653,7 +704,8 @@ a:hover {
 		line-height: 6.1875rem;
 	}
 
-	.header__menu--left, .header__menu--right {
+	.header__menu--left, 
+	.header__menu--right {
 		line-height: 5rem;
 	}
 	
@@ -686,7 +738,8 @@ a:hover {
 		width: 100%;
 	}
 
-	.promo__block--rectangle, .square--twit {
+	.promo__block--rectangle, 
+	.square--twit {
 		display: none;
 	}
 
@@ -699,7 +752,9 @@ a:hover {
 		width: 100%;
 	}
 
-	.square--img-1, .square--img-2, .square--description {
+	.square--img-1, 
+	.square--img-2, 
+	.square--description {
 		width: 100%;
 	}  
 
@@ -754,18 +809,32 @@ a:hover {
 		margin-bottom: 3.375rem;
 		line-height: 1.67;
 	}
+
+	/* (!) PAGE: ALL CATEGORY */
+	.product-item {
+		width: 50%;
+	}
+
+	.product-item__img, 
+	.product-item__header {
+		width: 200px;
+	}
+
+	.product-item__img {
+		height: 246px;
+	}	
 }
 
-/* от 769px до 992px */	
+/* from 769px to 992px */	
 @media screen and (min-width: 769px) and (max-width: 992px) {
-
 
 	/* MAIN PROMO */
 	.promo__block {
 		width: calc(100%/3);
 	}
 
-	.promo__block--rectangle, .square--twit {
+	.promo__block--rectangle, 
+	.square--twit {
 		display: none;
 	}
 
@@ -773,13 +842,20 @@ a:hover {
 		width: calc((100%/3)*2);
 	}
 
-	.square--img-1, .square--img-2, .square--description {
+	.square--img-1, 
+	.square--img-2, 
+	.square--description {
 		width: 50%;
 	}  
 
+	/* (!) PAGE: ALL CATEGORY */
+	.product-item {
+		width: calc(100% / 3 );
+	}
+
 }
 
-/* от 993px до 1200px */	
+/* from 993px to 1200px */	
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 
 }

@@ -4,7 +4,7 @@
 		<meta charset='utf-8'>
 		<title>Category All</title>
 		<link rel='stylesheet' type='text/css' href='css/index.css'>
-
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -45,15 +45,17 @@
 		</header>
 
 		<!-- MAIN -->
-		<main class='catalog'>
+		<main class='main catalog'>
 			<div class='container--center'>
 				<!-- BREADCRUPS -->
-				<ul class="breadcrumps">
-					<li><a class='breadcrumps__link text-transform--uppercase' href="">Home</a></li>
-					<li><a class='breadcrumps__link text-transform--uppercase' href="">Men</a></li>
-				</ul>				
+				<div class="breadcrumps grid">
+					<ul>
+						<li><a class='breadcrumps__link text-transform--uppercase' href="">Home</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href="">Men</a></li>
+					</ul>
+				</div>				
 				<!-- SECTION 1 -->
-				<section class='catalog__section'>	
+				<section class='catalog__section grid'>	
 					<!-- HEADER -->
 					<div class='catalog__section__header'>
 						<h2 class='text-transform--uppercase'>hoody</h2>
@@ -114,11 +116,13 @@
 								<p class='product-item__price'>€ 89,95</p>				
 							</div>
 						</div>	
-					</div>					
+						
+					</div>	
+
 				</section>
 
 				<!-- SECTION 2 -->
-				<section class='catalog__section'>	
+				<section class='catalog__section grid'>	
 					<!-- HEADER -->
 					<div class='catalog__section__header'>
 						<h2 class='text-transform--uppercase'>outerwear</h2>
@@ -183,7 +187,7 @@
 				</section>
 
 				<!-- SECTION 3 -->
-				<section class='catalog__section'>	
+				<section class='catalog__section grid'>	
 					<!-- HEADER -->
 					<div class='catalog__section__header'>
 						<h2 class='text-transform--uppercase'>t-shirts</h2>
