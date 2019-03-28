@@ -180,7 +180,7 @@
 		border-right: 1px solid #e1e1e1;
 	}
 
-	/* (!) PAGE: ALL CATEGORY */
+	/* PAGE: ALL CATEGORY */
 	.breadcrumps,
 	.catalog__section {
 		grid-column: 2 / 3;
@@ -207,9 +207,23 @@
 		float: none;	
 	}
 
+	/* (!) PAGE: CATEGORY */	
+	.catalog__section__filters,
+	.catalog__section__pagination {
+		grid-column: 1 / 5;
+	}
+
+	.catalog__section__filters,
+	.pagination__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	.filters__wrap {
+		display: inline-flex;
+	}
 
 
-/* (!) END ALL CATALOG */
 
 
 	/* до 769px */	
@@ -259,6 +273,82 @@
 		.footer__cell--social {
 			grid-column: 1 / 5;
 		}	
+
+		/* (!) PAGE: CATEGORY */
+		.filters__wrap,
+		.pagination__list {
+			display: none;
+		}
+
+		.catalog__section__filters {
+			flex-direction: column;
+		}
+
+
+		/*
+		faded filters: в гридах оставить только space-between
+		в .filters__button--hide		
+
+		body {
+			overflow-y: hidden;
+		}
+
+		.bg {
+			display: block;		
+			position: fixed;
+			left: 0;
+			top: 0;		
+			z-index: 1;		
+			width: 100%;
+			height: 100vh;		
+			background: rgba(0,0,0,0.7);
+		}
+
+		.filters__wrap {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;			
+			height: 100vh;
+			width: 100%;
+			min-width: 480px;	
+			padding: 10px 20px;			
+			background: #ffffff;
+			overflow-y: auto;
+			text-align: left;
+		}
+		
+		.filters__block {
+			display: block;
+			width: 100%;
+			margin: 0;
+			margin-top: 10px;
+		}
+
+		.filters__button--hide {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.filters__button--hide span {
+			border-bottom: 1px dotted #606060;
+			cursor: pointer;
+			margin-right: 0;
+		}
+
+		.filters__button--hide span:hover {
+			border-bottom: none;
+		}
+		
+		.img__cancel {
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		
+		*/
+
+
 	}
 
 	/* от 769px до 992px */	
@@ -275,9 +365,73 @@
 				'double-square--2 double-square--2 rectangle--2';
 		}
 
+
+		/* (!) PAGE: CATEGORY */
+		.filters__wrap {
+			display: none;
+		}
+
+		/*
+		faded filters: в гридах оставить только space-between
+		в .filters__button--hide
+
+		body {
+			overflow-y: hidden;
+		}
+
+		.bg {
+			display: block;		
+			position: fixed;
+			left: 0;
+			top: 0;		
+			z-index: 1;		
+			width: 100%;
+			height: 100vh;		
+			background: rgba(0,0,0,0.7);
+		}
+
+		.filters__wrap {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 2;			
+			height: 100vh;
+			width: 350px;	
+			padding: 10px 20px;			
+			background: #ffffff;
+			overflow-y: auto;
+			text-align: left;
+		}
+		
+		.filters__block {
+			display: block;
+			width: 100%;
+			margin: 0;
+			margin-top: 10px;
+		}
+
+		.filters__button--hide {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.filters__button--hide span {
+			border-bottom: 1px dotted #606060;
+			cursor: pointer;
+			margin-right: 0;
+		}
+
+		.filters__button--hide span:hover {
+			border-bottom: none;
+		}
+		
+		.img__cancel {
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		*/		
+
 	}
-
-
-
 
 }

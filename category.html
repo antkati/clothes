@@ -4,7 +4,7 @@
 		<meta charset='utf-8'>
 		<title>Category</title>
 		<link rel='stylesheet' type='text/css' href='css/index.css'>
-		
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>			
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -17,7 +17,7 @@
 							<div class='header__logo'>sh</div>	
 						</a><!-- 
 					 --><nav class='header__nav header__nav--left'>
-							<a href='#'>Woman</a>
+							<a href='category_all.html'>Woman</a>
 							<a href='#'>Men</a>
 							<a href='#'>Kids</a>
 							<a href='#'>Comming soon</a>
@@ -48,12 +48,15 @@
 		<main class='main catalog'>
 			<div class='container--center'>
 				<!-- BREADCRUPS -->
-				<div class="breadcrumps grid">
+				<div class='breadcrumps grid'>
 					<ul>
-						<li><a class='breadcrumps__link text-transform--uppercase' href="">Home</a></li>
-						<li><a class='breadcrumps__link text-transform--uppercase' href="">Men</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Home</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Men</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Hoody</a></li>
 					</ul>
-				</div>				
+				</div>	
+
+
 				<!-- SECTION 1 -->
 				<section class='catalog__section grid'>	
 					<!-- HEADER -->
@@ -61,6 +64,113 @@
 						<h2 class='text-transform--uppercase'>Hoody</h2>
 						<p class='main__p font--georgia-i'>All products</p>						
 					</div>
+
+					<!-- FILTERS -->
+					<div class='catalog__section__filters'>
+						<select class='sort__block font--georgia-i'>
+							<option>Popularity</option>
+							<option>Price &#8595;</option>
+							<option>Price &#8593;</option>
+							<option>Newest Arrivals</option>
+						</select><!-- 
+					 --><div class='filters__button--show font--georgia-i'>Filters</div><!-- 
+					 --><div class='filters__wrap'>
+					 		<div class='filters__button--hide font--georgia-i'>
+					 			<span>Hide Filters</span> 
+					 			<img class='img__cancel' src='images/cancel.png'>
+					 		</div>
+							<!-- filter size -->
+							<div class='filters__block font--georgia-i'>
+								<div class='filters__button--dropdown'>Size</div>
+								<div class='filters__list'>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-24'>
+										<label for='s-24'>24</label>
+									</div>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-25'>
+										<label for='s-25'>25</label>
+									</div>								
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-26'>
+										<label for='s-26'>26</label>
+									</div>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-27'>
+										<label for='s-27'>27</label>
+									</div>	
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-28'>
+										<label for='s-28'>28</label>
+									</div>															
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-29'>
+										<label for='s-29'>29</label>
+									</div>	
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='s-30'>
+										<label for='s-30'>30</label>
+									</div>															
+								</div>
+							</div><!-- filter color
+						 --><div class='filters__block  font--georgia-i'>
+								<div class='filters__button--dropdown'>Color</div>
+								<div class='filters__list'>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-white'>
+										<label for='c-white'>White</label>
+									</div>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-grey'>
+										<label for='c-grey'>Grey</label>
+									</div>								
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-pink'>
+										<label for='c-pink'>Pink</label>
+									</div>
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-blue'>
+										<label for='c-blue'>Blue</label>
+									</div>	
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-black'>
+										<label for='c-black'>Black</label>
+									</div>															
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-orange'>
+										<label for='c-orange'>Orange</label>
+									</div>	
+									<div class='filters__item'>
+										<input type='checkbox' name='' id='c-yellow'>
+										<label for='c-yellow'>Yellow</label>
+									</div>															
+								</div>
+							</div><!-- filter price
+						 --><div class='filters__block font--georgia-i'>
+								<div class='filters__button--dropdown'>Price</div>
+								<div class='filters__list'>
+									<div class='filters__item'>
+										<input type='radio' name='price' id='p-20-30'>
+										<label for='p-20-30'>€20-30</label>
+									</div>
+									<div class='filters__item'>
+										<input type='radio' name='price' id='p-30-50'>
+										<label for='p-30-50'>€30-50</label>
+									</div>								
+									<div class='filters__item'>
+										<input type='radio' name='price' id='p-50-100'>
+										<label for='p-50-100'>€50-100</label>
+									</div>
+									<div class='filters__item'>
+										<input type='radio' name='price' id='p-100-more'>
+										<label for='p-100-more'>€100 and more</label>
+									</div>														
+								</div>
+							</div>
+
+						</div>
+					</div>
+
 					<!-- PRODUCT LIST -->
 					<div class='product-list'>
 						<div class='product-item'>
@@ -156,8 +266,83 @@
 								<p class='product-item__price'>€ 89,95</p>				
 							</div>
 						</div>	
-							
+						<div class='product-item'>
+							<!-- PRODUCT IMG -->
+							<a class='product-item__img__link' href='#'>
+								<img class='product-item__img' src='images/product/product-item-1-1.jpg'>
+							</a>
+							<!-- PRODUCT HEADER -->
+							<div class='product-item__header'>
+								<a href='#'>
+									<h4 class='font--lato-bold'>Double-Layered Top</h4>
+								</a>
+								<p class='product-item__price'>€ 89,95</p>				
+							</div>
+						</div>
+						<div class='product-item'>
+							<!-- PRODUCT IMG -->
+							<a class='product-item__img__link' href='#'>
+								<img class='product-item__img' src='images/product/product-item-1-1.jpg'>
+							</a>
+							<!-- PRODUCT HEADER -->
+							<div class='product-item__header'>
+								<a href='#'>
+									<h4 class='font--lato-bold'>Double-Layered Top</h4>
+								</a>
+								<p class='product-item__price'>€ 89,95</p>				
+							</div>
+						</div>
+						<div class='product-item'>
+							<!-- PRODUCT IMG -->
+							<a class='product-item__img__link' href='#'>
+								<img class='product-item__img' src='images/product/product-item-1-1.jpg'>
+							</a>
+							<!-- PRODUCT HEADER -->
+							<div class='product-item__header'>
+								<a href='#'>
+									<h4 class='font--lato-bold'>Double-Layered Top</h4>
+								</a>
+								<p class='product-item__price'>€ 89,95</p>				
+							</div>
+						</div>
+						<div class='product-item'>
+							<!-- PRODUCT IMG -->
+							<a class='product-item__img__link' href='#'>
+								<img class='product-item__img' src='images/product/product-item-1-1.jpg'>
+							</a>
+							<!-- PRODUCT HEADER -->
+							<div class='product-item__header'>
+								<a href='#'>
+									<h4 class='font--lato-bold'>Double-Layered Top</h4>
+								</a>
+								<p class='product-item__price'>€ 89,95</p>				
+							</div>
+						</div>
+						<div class='product-item'>
+							<!-- PRODUCT IMG -->
+							<a class='product-item__img__link' href='#'>
+								<img class='product-item__img' src='images/product/product-item-1-1.jpg'>
+							</a>
+							<!-- PRODUCT HEADER -->
+							<div class='product-item__header'>
+								<a href='#'>
+									<h4 class='font--lato-bold'>Double-Layered Top</h4>
+								</a>
+								<p class='product-item__price'>€ 89,95</p>				
+							</div>
+						</div>								
 					</div>	
+
+					<!-- PAGINATION -->
+					<div class='catalog__section__pagination'>
+						<div class='pagination__list'>
+							<a class='pagination__item pagination__item--active' href='#'>1</a><!--
+						 --><a class='pagination__item' href='#'>2</a><!--
+						 --><a class='pagination__item' href='#'>3</a><!--
+						 --><a class='pagination__item' href='#'>4</a>						
+						</div>
+						<div class='pagination__load-more text-transform--uppercase font--lato-bold'>Load more products</div>						
+					</div>
 
 				</section>
 												
@@ -241,6 +426,7 @@
 				</div>
 			</div>							
 		</footer>
+		<div class='bg'></div>
 	</body>
 </html>
 
