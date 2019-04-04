@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Shopping Bag</title>
+		<link rel='stylesheet' type='text/css' href='css/index.css'>
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>		
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class='header'>
+			<div class='container--center'>
+				<div class='header__menu grid'>
+					<!-- LEFT NAV -->
+					<div class='header__menu--left'>
+						<a class='header__logo__link' href='./index.html'>
+							<div class='header__logo'>sh</div>	
+						</a><!-- 
+					 --><nav class='header__nav header__nav--left'>
+							<a href='category_all.html'>Woman</a>
+							<a href='#'>Men</a>
+							<a href='#'>Kids</a>
+							<a href='#'>Comming soon</a>
+							<a href='#'>About</a>
+						</nav>
+					</div><!-- RIGHT NAV
+				 --><nav class='header__nav header__menu--right'>
+						<div class='header__personal-page'>
+							<img src='images/user.png'>
+							<a href='#'>Log In</a>
+						</div><!-- 
+					 --><div class='header__cart'>
+							<a class='header__cart__link--mobile' href=''>
+								<img class='header__cart__i--mobile' src='images/mobile-cart.png'>
+							</a>
+							<img class='header__cart__i--desktop' src='images/desktop-cart.png'>	
+							<a class='header__cart__link' href='#'>Basket (0)</a>
+						</div><!-- 
+					 --><img class='header__search' src='images/search.png'><!-- 
+					 --><img class='header__burger-menu' src='images/burger-menu.png'>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<main class='main'>
+			<div class='container--center'>
+
+				<!-- BASKET -->
+				<section class='shopping-bag grid'>	
+					<!-- HEADER -->
+					<div class='shopping-bag__header'>
+						<h2 class='text-transform--uppercase'>Your shopping bag</h2>
+						<p class='main__p font--georgia-i'>Items reserved for limited time only</p>	
+					</div>
+					<table class='shopping-bag__list'>
+						<thead class='shopping-bag__list__header text-transform--uppercase'>
+							<tr>
+								<th class='shopping-bag__item__header shopping-bag__item__img'>Product</th>
+								<th class='shopping-bag__item__header shopping-bag__item__description'>Description</th>
+								<th class='shopping-bag__item__header shopping-bag__item__color'>Color</th>
+								<th class='shopping-bag__item__header shopping-bag__item__size'>Size</th>
+								<th class='shopping-bag__item__header shopping-bag__item__qty'>QTY</th>
+								<th class='shopping-bag__item__header shopping-bag__item__amount'>Amount</th>
+								<th class='shopping-bag__item__header shopping-bag__item__delete'>Delete</th>
+							</tr>
+						</thead>						
+						<tbody class='shopping-bag__list__body'>
+							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
+								<td class='shopping-bag__item__body shopping-bag__item__img'>
+									<a class='shopping-bag__img__link' href="">
+										<div class='shopping-bag__img'></div>
+									</a>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__description'>
+									<a href="">
+										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									</a>
+									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
+								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
+								<td class='shopping-bag__item__body shopping-bag__item__qty'>
+									<span class='qty__value'>1</span>
+									<div class='container__qty__counter'>
+										<div class='qty__counter'>+</div>
+										<div class='qty__counter'>-</div>
+									</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
+								<td class='shopping-bag__item__body shopping-bag__item__delete'>
+									<img class='delete__img' src='images/delete-basket.png'>
+								</td>								
+							</tr>
+							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
+								<td class='shopping-bag__item__body shopping-bag__item__img'>
+									<a class='shopping-bag__img__link' href="">
+										<div class='shopping-bag__img'></div>
+									</a>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__description'>
+									<a href="">
+										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									</a>
+									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
+								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
+								<td class='shopping-bag__item__body shopping-bag__item__qty'>
+									<span class='qty__value'>1</span>
+									<div class='container__qty__counter'>
+										<div class='qty__counter'>+</div>
+										<div class='qty__counter'>-</div>
+									</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
+								<td class='shopping-bag__item__body shopping-bag__item__delete'>
+									<img class='delete__img' src='images/delete-basket.png'>
+								</td>								
+							</tr>
+
+							<!-- footer -->
+							<tr class='shopping-bag__list__footer__row'>
+								<td class='footer__empty' colspan="7"></td>
+							</tr>
+							<tr class='shopping-bag__list__footer__row grid--shopping-bag'>
+								<td class='shopping-bag__item__footer shopping-bag__item__total-name font--lato-bold' colspan="5">Subtotal:</td> 
+							 	<td colspan="2" class='shopping-bag__item__footer shopping-bag__item__total font--lato-bold'>€567,95</td>
+							</tr>							
+						</tbody>
+					</table>
+
+					<div class='shopping-bag__act'>
+						<span class="shopping-bag__act__continue-shopping">
+							<a class='text-decoration--underline' href="">Continue Shopping</a>
+						</span>	
+						<button class='btn btn--orange shopping-bag__act__order text-transform--uppercase'>Order now</button>
+					</div>
+			
+
+				</section>
+												
+			</div>	
+		</main>
+
+		<!-- FOOTER -->
+		<footer class='footer'>
+			<div class='container--center'>
+				<div class='footer__container grid'>
+					<div class='footer__cell footer__cell--1'>
+						<h4 class='text-transform--uppercase'>Collection</h4>
+						<ul>
+							<a href='#'>
+								<li>Woman (1725)</li>
+							</a>
+							<a href='#'>
+								<li>Men (635)</li>
+							</a>
+							<a href='#'>
+								<li>Kids (2514)</li>
+							</a>
+							<a href='#'>
+								<li>Comming soon (76)</li>
+							</a>
+						</ul>
+		
+					</div><!--
+				 --><div class='footer__cell footer__cell--2'>
+						<h4 class='text-transform--uppercase'>Site</h4>
+						<ul>
+							<a href='#'>
+								<li>Terms of Service</li>
+							</a>
+							<a href='#'>
+								<li>Privacy Policy</li>
+							</a>
+							<a href='#'>
+								<li>Copyright Policy</li>
+							</a>
+							<a href='#'>
+								<li>Press Kit</li>
+							</a>
+							<a href='#'>
+								<li>Support</li>
+							</a>
+						</ul>						
+					</div><!--
+				 --><div class='footer__cell footer__cell--3'>
+						<h4 class='text-transform--uppercase'>Shop</h4>
+						<ul>
+							<a href='#'>
+								<li>About us</li>
+							</a>
+							<a href='#'>
+								<li>Shiping Metods</li>
+							</a>
+							<a href='#'>
+								<li>Career</li>
+							</a>
+							<a href='#'>
+								<li>Contact</li>
+							</a>
+						</ul>			
+					</div><!--
+				 --><div class='footer__cell footer__cell--4 footer__cell--social'>
+						<h4 class='text-transform--uppercase'>Social</h4>
+						<p class='footer__p'>
+							Shoper is made with love in Warsaw,<br>2014 &#169; All rights reseved. El passion	
+						</p>
+						<a class='footer__social-link' href='#'>
+							<img src='images/twitter.png'>
+						</a><!--
+					 --><a class='footer__social-link' href='#'>
+					 		<img src='images/fb.png'>
+					 	</a><!--
+					 --><a class='footer__social-link' href='#'>
+					 		<img src='images/instagram.png'>
+					 	</a>
+					</div>
+				</div>
+			</div>							
+		</footer>
+		<div class='bg'></div>
+	</body>
+</html>
+
