@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Order</title>
+		<link rel='stylesheet' type='text/css' href='css/index.css'>
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>		
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class='header'>
+			<div class='container--center'>
+				<div class='header__menu grid'>
+					<!-- LEFT NAV -->
+					<div class='header__menu--left'>
+						<a class='header__logo__link' href='./index.html'>
+							<div class='header__logo'>sh</div>	
+						</a><!-- 
+					 --><nav class='header__nav header__nav--left'>
+							<a href='category_all.html'>Woman</a>
+							<a href='#'>Men</a>
+							<a href='#'>Kids</a>
+							<a href='#'>Comming soon</a>
+							<a href='#'>About</a>
+						</nav>
+					</div><!-- RIGHT NAV
+				 --><nav class='header__nav header__menu--right'>
+						<div class='header__personal-page'>
+							<img src='images/user.png'>
+							<a href='#'>Log In</a>
+						</div><!-- 
+					 --><div class='header__cart'>
+							<a class='header__cart__link--mobile' href=''>
+								<img class='header__cart__i--mobile' src='images/mobile-cart.png'>
+							</a>
+							<img class='header__cart__i--desktop' src='images/desktop-cart.png'>	
+							<a class='header__cart__link' href='#'>Basket (0)</a>
+						</div><!-- 
+					 --><img class='header__search' src='images/search.png'><!-- 
+					 --><img class='header__burger-menu' src='images/burger-menu.png'>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<main class='main'>
+			<div class='container--center'>
+				<!-- BASKET -->
+				<section class='shopping-bag grid'>	
+					<!-- HEADER -->
+					<div class='shopping-bag__header'>
+						<h2 class='text-transform--uppercase'>Your shopping bag</h2>
+						<p class='main__p font--georgia-i'>Items reserved for limited time only</p>	
+					</div>
+					<table class='shopping-bag__list'>
+						<thead class='shopping-bag__list__header text-transform--uppercase'>
+							<tr>
+								<th class='shopping-bag__item__header shopping-bag__item__img'>Product</th>
+								<th class='shopping-bag__item__header shopping-bag__item__description'>Description</th>
+								<th class='shopping-bag__item__header shopping-bag__item__color'>Color</th>
+								<th class='shopping-bag__item__header shopping-bag__item__size'>Size</th>
+								<th class='shopping-bag__item__header shopping-bag__item__qty'>QTY</th>
+								<th class='shopping-bag__item__header shopping-bag__item__amount'>Amount</th>
+								<th class='shopping-bag__item__header shopping-bag__item__delete'>Delete</th>
+							</tr>
+						</thead>						
+						<tbody class='shopping-bag__list__body'>
+							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
+								<td class='shopping-bag__item__body shopping-bag__item__img'>
+									<a class='shopping-bag__img__link' href="">
+										<div class='shopping-bag__img'></div>
+									</a>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__description'>
+									<a href="">
+										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									</a>
+									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
+								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
+								<td class='shopping-bag__item__body shopping-bag__item__qty'>
+									<span class='qty__value'>1</span>
+									<div class='container__qty__counter'>
+										<div class='qty__counter'>+</div>
+										<div class='qty__counter'>-</div>
+									</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
+								<td class='shopping-bag__item__body shopping-bag__item__delete'>
+									<img class='delete__img' src='images/delete-basket.png'>
+								</td>								
+							</tr>
+							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
+								<td class='shopping-bag__item__body shopping-bag__item__img'>
+									<a class='shopping-bag__img__link' href="">
+										<div class='shopping-bag__img'></div>
+									</a>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__description'>
+									<a href="">
+										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									</a>
+									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
+								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
+								<td class='shopping-bag__item__body shopping-bag__item__qty'>
+									<span class='qty__value'>1</span>
+									<div class='container__qty__counter'>
+										<div class='qty__counter'>+</div>
+										<div class='qty__counter'>-</div>
+									</div>
+								</td>
+								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
+								<td class='shopping-bag__item__body shopping-bag__item__delete'>
+									<img class='delete__img' src='images/delete-basket.png'>
+								</td>								
+							</tr>
+
+							<!-- footer -->
+							<tr class='shopping-bag__list__footer__row'>
+								<td class='footer__empty' colspan="7"></td>
+							</tr>
+							<tr class='shopping-bag__list__footer__row grid--shopping-bag'>
+								<td class='shopping-bag__item__footer shopping-bag__item__total-name font--lato-bold' colspan="5">Subtotal:</td> 
+							 	<td colspan="2" class='shopping-bag__item__footer shopping-bag__item__total font--lato-bold'>€567,95</td>
+							</tr>							
+						</tbody>
+					</table>
+				</section>
+
+
+
+				<form class='order-form'>
+					<img class='order-separator' src="images/order-separator.png">				
+					<!-- SHIPPING ADDRESS -->
+					<section class='delivery grid'>
+						<div class='delivery__header'>
+							<h2 class='text-transform--uppercase'>Shipping Address</h2>
+							<p class='main__p font--georgia-i'>All fields are required</p>	
+						</div>
+
+						<div class='delivery__form'>
+							<div class='delivery__block block--delivery__type'>
+								<label class='text-transform--uppercase delivery__form__label' for='delivery-type'>Select delivery method</label>
+								<select class='delivery__form__input' id='delivery-type'>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+								</select>
+							</div>
+
+							<div class='delivery__block block--first-name'>
+								<label class='text-transform--uppercase delivery__form__label' for='first-name'>First name</label>
+								<input type='text' name='' class='delivery__form__input' id='first-name'>
+							</div>				
+
+							<div class='delivery__block block--last-name'>
+								<label class='text-transform--uppercase delivery__form__label' for='last-name'>Last name</label>
+								<input type='text' name='' class='delivery__form__input' id='last-name'>					
+							</div>
+
+							<div class='delivery__block block--address-1'>
+								<label class='text-transform--uppercase delivery__form__label' for='address-1'>Address <span class='text-transform--lowercase'>(line 1)</span></label>
+								<input type='text' name='' class='delivery__form__input' id='address-1'>
+							</div>
+
+							<div class='delivery__block block--address-2'>						
+								<label class='text-transform--uppercase delivery__form__label' for='address-2'>Address <span class='text-transform--lowercase'>(line 2)</span></label>
+								<input type='text' name='' class='delivery__form__input' id='address-2'>
+							</div>											
+
+							<div class='delivery__block block--city'>
+								<label class='text-transform--uppercase delivery__form__label' for='city'>City</label>
+								<input type='text' name='' class='delivery__form__input' id='city'>		
+							</div>	
+
+							<div class='delivery__block block--postal-code'>					
+								<label class='text-transform--uppercase delivery__form__label' for='postal-code'>Postal code</label>
+								<input type='text' name='' class='delivery__form__input' id='postal-code'>				
+							</div>
+
+							<div class='delivery__block block--phone'>				
+								<label class='text-transform--uppercase delivery__form__label' for='phone-number'>Phone number</label>
+								<input type='text' name='' class='delivery__form__input' id='phone-number'>		
+							</div>
+
+							<div class='delivery__block block--mail'>
+								<label class='text-transform--uppercase delivery__form__label' for='e-mail'>E-mail</label>
+								<input type='text' name='' class='delivery__form__input' id='e-mail'>
+							</div>	
+							<div class='delivery__block block--use-adress'>
+								<input type='checkbox' name='' value='' id='use-adress'>
+								<label class='delivery__form__label--checkbox' for='use-adress'>Use this address for Billing</label>
+
+							</div>
+						</div>
+					</section>	
+
+					<img class='order-separator' src="images/order-separator.png">
+
+					<!-- PAYMENT OPTIONS -->
+					<section class='payment grid'>
+						<div class='payment__header'>
+							<h2 class='text-transform--uppercase'>Payment Options</h2>
+							<p class='main__p font--georgia-i'>All fields are required</p>	
+						</div>	
+
+						<div class='payment__form'>
+							<table class='payment__table'>
+								<tr>
+									<td class='font--georgia payment__table__name'>Subtotal:</td>
+									<td class='font--georgia-i payment__table__value'>€567,95</td>
+								</tr>
+								<tr>
+									<td class='font--georgia payment__table__name'>Shipping:</td>
+									<td class='font--georgia-i payment__table__value'>€15,00</td>									
+								</tr>
+								<tr>
+									<td class='font--georgia payment__table__name payment__table__name--orange'>Total:</td>
+									<td class='font--georgia-i payment__table__value payment__table__value--orange'>€582,95</td>									
+								</tr>
+							</table>
+
+							<div class='payment__block block--payment__type'>
+								<label class='text-transform--uppercase payment__form__label' for='payment-type'>Select payment method</label>
+								<select class='payment__form__input' id='payment-type'>
+									<option>Credit Card</option>
+									<option>Cash</option>
+								</select>
+							</div>	
+
+							<button class='btn btn--orange text-transform--uppercase order-btn'>Order now</button>
+						</div>				
+					</section>	
+				</form>														
+			</div>	
+		</main>
+
+		<!-- FOOTER -->
+		<footer class='footer'>
+			<div class='container--center'>
+				<div class='footer__container grid'>
+					<div class='footer__cell footer__cell--1'>
+						<h4 class='text-transform--uppercase'>Collection</h4>
+						<ul>
+							<a href='#'>
+								<li>Woman (1725)</li>
+							</a>
+							<a href='#'>
+								<li>Men (635)</li>
+							</a>
+							<a href='#'>
+								<li>Kids (2514)</li>
+							</a>
+							<a href='#'>
+								<li>Comming soon (76)</li>
+							</a>
+						</ul>
+		
+					</div><!--
+				 --><div class='footer__cell footer__cell--2'>
+						<h4 class='text-transform--uppercase'>Site</h4>
+						<ul>
+							<a href='#'>
+								<li>Terms of Service</li>
+							</a>
+							<a href='#'>
+								<li>Privacy Policy</li>
+							</a>
+							<a href='#'>
+								<li>Copyright Policy</li>
+							</a>
+							<a href='#'>
+								<li>Press Kit</li>
+							</a>
+							<a href='#'>
+								<li>Support</li>
+							</a>
+						</ul>						
+					</div><!--
+				 --><div class='footer__cell footer__cell--3'>
+						<h4 class='text-transform--uppercase'>Shop</h4>
+						<ul>
+							<a href='#'>
+								<li>About us</li>
+							</a>
+							<a href='#'>
+								<li>Shiping Metods</li>
+							</a>
+							<a href='#'>
+								<li>Career</li>
+							</a>
+							<a href='#'>
+								<li>Contact</li>
+							</a>
+						</ul>			
+					</div><!--
+				 --><div class='footer__cell footer__cell--4 footer__cell--social'>
+						<h4 class='text-transform--uppercase'>Social</h4>
+						<p class='footer__p'>
+							Shoper is made with love in Warsaw,<br>2014 &#169; All rights reseved. El passion	
+						</p>
+						<a class='footer__social-link' href='#'>
+							<img src='images/twitter.png'>
+						</a><!--
+					 --><a class='footer__social-link' href='#'>
+					 		<img src='images/fb.png'>
+					 	</a><!--
+					 --><a class='footer__social-link' href='#'>
+					 		<img src='images/instagram.png'>
+					 	</a>
+					</div>
+				</div>
+			</div>							
+		</footer>
+		<div class='bg'></div>
+	</body>
+</html>
+
