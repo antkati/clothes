@@ -332,8 +332,7 @@ input {
 }
 
 
-
-/* FALLBACK for browsers without grid's support */
+/* browsers without grid's support */
 /* from 1200px */
 * {
 	box-sizing: border-box;
@@ -363,51 +362,30 @@ body {
 }
 
 /* HEADER NAV */
+.header__menu,
+.header__menu--left,
+.header__menu--right,
+.header__nav--left,
+.header__personal-page,
+.header__cart {
+	display: flex;
+	align-items: center;
+}
+
 .header__menu {
+	justify-content: space-between;
 	height: 7.1875rem;
 	border-bottom: 1px solid #e5e5e5;
-	line-height: 7.125rem;
 }
 
-.header__menu--left, 
-.header__menu--right, 
-.header__logo, 
-.header__nav--left, 
-.header__personal-page, 
-.header__cart, 
-.header__search {
-	display: inline-block;	
-}
-
-.header__menu * {
-	vertical-align: middle;
-}
-
-.header__cart__link--mobile, 
-.header__burger-menu {
-	display: none;
-}
-
-.header__menu--left, 
-.header__menu--right {
+.header__menu--left {
+	justify-content: space-between;
 	width: 50%;
-	line-height: 3.0625rem;
 }
 
 .header__nav--left {
-	width: calc(100% - 42px);
-}
-
-.header__nav--left a:first-child {
-	margin-left: 4.5%;
-}
-
-.header__nav--left a:not(:last-child) {
-	margin-right: 4.5%;
-}
-
-.header__menu--right {
-	text-align: right;
+	width: calc(95% - 42px);
+	justify-content: space-around;
 }
 
 .header__logo {
@@ -421,14 +399,41 @@ body {
 	line-height: 42px;
 }
 
-.header__logo__link {
-	display: inline-block;
-	line-height: 0;
+.header__menu--right {
+	width: 50%;
+	justify-content: flex-end;
+	position: relative;
 }
 
-.header__personal-page, 
+.profile__wrap {
+	display: flex;
+	transform: translateX(-42px);
+}
+
+.header__personal-page,
 .header__cart {
-	margin-right: 4.5%;
+	margin-right: 30px;
+}
+
+.header__personal-page a,
+.header__cart a {
+	white-space: nowrap;
+}
+
+.header__cart__i--desktop, 
+.header__personal__i--desktop {
+	margin-right: 4px;
+}
+
+.header__cart__link--mobile, 
+.header__burger-menu {
+	display: none;
+}
+
+.search-bar__wrap {
+	position: absolute;
+	top: calc(50% - 21px);
+	right: 0px;
 }
 
 /* HEADER MUSTHEAD */
@@ -1421,24 +1426,17 @@ body {
 	.header__personal-page,
 	.header__cart__i--desktop, 
 	.header__cart__link,
-	.header__search  {
+	.search-bar__wrap  {
 		display: none;
 	}
 
 	.header__burger-menu, 
 	.header__cart__link--mobile {
-		display: inline-block;
-		line-height: 0;
+		display: block;
 	}
 
 	.header__menu {
 		height: 6.25rem;
-		line-height: 6.1875rem;
-	}
-
-	.header__menu--left, 
-	.header__menu--right {
-		line-height: 5rem;
 	}
 	
 	.header__logo {
@@ -1446,6 +1444,10 @@ body {
 		height: 60px;
 		line-height: 60px;
 		font-size: 26px;
+	}
+
+	.profile__wrap {
+		transform: none;
 	}
 
 	.header__cart {

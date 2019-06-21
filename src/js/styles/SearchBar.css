@@ -1,0 +1,94 @@
+.header__search-bar {
+	display: flex;
+}
+
+.search-bar__input-button {
+	width: 42px;
+	height: 42px;
+	outline: none;
+	background: url('../images/search.png');
+	border: none;
+	padding: 0px;
+	cursor: pointer;
+	transition: background-image 0.4s ease;	
+}
+
+.search-bar__input-button:hover {
+	background: url('../images/search-dark.png');
+	transition: background-image 0.4s ease;
+}
+
+.search-bar__input-text {
+	display: none;
+	border: 1px solid #959595;
+	border-right: none;
+	padding: 5px 15px;
+	width: 165px;
+	transform: scaleX(0);
+	transform-origin: right center;
+	height: 42px;
+	outline: none;
+	font-size: 0.75rem;
+	color: #303030;
+}
+
+@keyframes openSearchBar {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes closeSearchBar {
+	from {
+		transform: scaleX(1);	
+	}
+	to {
+		transform: scaleX(0);
+	}
+}
+
+@keyframes moveLeftProfileWrap {
+	from {
+		transform: translateX(-42px);
+	}
+	to {
+		transform: translateX(-207px);
+	}
+}
+
+@keyframes moveRightProfileWrap {
+	from {
+		transform: translateX(-207px);	
+	}
+	to {
+		transform: translateX(-42px);
+	}
+}
+
+.header__search-bar.open .search-bar__input-text {
+	animation: openSearchBar 0.35s forwards;
+}
+
+.header__search-bar.close .search-bar__input-text {
+	animation: closeSearchBar 0.35s forwards;
+}
+
+.profile__wrap[data-move="left"] {
+	animation: moveLeftProfileWrap 0.35s forwards;
+}
+
+.profile__wrap[data-move="right"] {
+	animation: moveRightProfileWrap 0.35s forwards;
+}
+
+@media screen and (max-width: 768px) {
+	.profile__wrap[data-move="right"] {
+		animation: none;
+	}	
+}
+
+
+
