@@ -86,6 +86,23 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/Cart.css":
+/*!**********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/js/styles/Cart.css ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/product-item-3-1.jpg */ "./src/js/images/product-item-3-1.jpg"));
+// Module
+exports.push([module.i, "/* cart */\r\n.cart-wrap {\r\n\tposition: relative;\r\n}\r\n\r\n.header__cart__link {\r\n\tdisplay: block;\r\n\twidth: 123px;\r\n\tposition: relative;\r\n\tz-index: 200;\t\r\n\tpadding: 15px;\r\n\tborder: 1px solid transparent;\r\n\tborder-bottom: none;\r\n\tbackground: #ffffff;\r\n}\r\n\r\n.cart-wrap.open:hover .header__cart__link {\r\n\tborder: 1px solid #e5e5e5;\r\n\tborder-bottom: none;\r\n}\r\n\r\n.cart-wrap:hover .header__cart__link {\r\n\tcolor: #000000;\r\n}\r\n\r\n.cart__pop-up {\r\n\tposition: absolute;\r\n\tz-index: 100;\r\n\tright: 0px;\r\n\ttop: 49px;\r\n\twidth: 400px;\r\n\tpadding: 5px 15px;\r\n\tbackground-color: #ffffff;\r\n\tborder: 1px solid #e5e5e5;\r\n}\r\n\r\n.cart__pop-up__list {\r\n\ttext-align: left;\r\n\twidth: 100%;\r\n\tborder-collapse: collapse;\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__h4 {\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__list__body__row {\r\n\tborder-bottom: 1px solid #e5e5e5;\r\n\r\n}\r\n\r\n.cart__pop-up__item__body {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\r\n}\r\n\r\n.cart__pop-up__img {\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tbackground-image: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tbackground-size: contain;\r\n\tbackground-position: center top;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.cart__pop-up__img__link {\r\n\tdisplay: inline-block;\r\n\tline-height: 0;\r\n}\r\n\r\n.cart__pop-up__item__img {\r\n\twidth: 50px;\r\n}\r\n\r\n.cart__pop-up__item__description {\r\n\twidth: calc(100% - 22% - 80px);\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\n.cart__pop-up__item__amount {\r\n\twidth: 22%;\t\t\r\n}\r\n\r\n.cart__pop-up__item__delete {\r\n\ttext-align: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.delete__img {\r\n\tcursor: pointer;\r\n}\r\n\r\n.cart__pop-up__item__footer {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\t\r\n}\r\n\r\n.cart__pop-up__total {\r\n\tcolor: #f68236;\r\n}\r\n\r\n.cart__pop-up__btn {\r\n\twidth: 100%;\r\n\theight: 32px;\r\n\tfont-size: 0.75rem;\r\n}\r\n", ""]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/SearchBar.css":
 /*!***************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/js/styles/SearchBar.css ***!
@@ -99,7 +116,7 @@ var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runti
 var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/search.png */ "./src/js/images/search.png"));
 var ___CSS_LOADER_URL___1___ = getUrl(__webpack_require__(/*! ../images/search-dark.png */ "./src/js/images/search-dark.png"));
 // Module
-exports.push([module.i, ".header__search-bar {\r\n\tdisplay: flex;\r\n}\r\n\r\n.search-bar__input-button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tbackground: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tborder: none;\r\n\tpadding: 0px;\r\n\tcursor: pointer;\r\n\ttransition: background-image 0.4s ease;\t\r\n}\r\n\r\n.search-bar__input-button:hover {\r\n\tbackground: url(" + ___CSS_LOADER_URL___1___ + ");\r\n\ttransition: background-image 0.4s ease;\r\n}\r\n\r\n.search-bar__input-text {\r\n\tdisplay: none;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\twidth: 165px;\r\n\ttransform: scaleX(0);\r\n\ttransform-origin: right center;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tfont-size: 0.75rem;\r\n\tcolor: #303030;\r\n}\r\n\r\n@keyframes openSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(1);\r\n\t}\r\n}\r\n\r\n@keyframes closeSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(1);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n}\r\n\r\n@keyframes moveLeftProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-207px);\r\n\t}\r\n}\r\n\r\n@keyframes moveRightProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-207px);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n}\r\n\r\n.header__search-bar.open .search-bar__input-text {\r\n\tanimation: openSearchBar 0.35s forwards;\r\n}\r\n\r\n.header__search-bar.close .search-bar__input-text {\r\n\tanimation: closeSearchBar 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"left\"] {\r\n\tanimation: moveLeftProfileWrap 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"right\"] {\r\n\tanimation: moveRightProfileWrap 0.35s forwards;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n\t.profile__wrap[data-move=\"right\"] {\r\n\t\tanimation: none;\r\n\t}\t\r\n}\r\n\r\n\r\n\r\n", ""]);
+exports.push([module.i, ".header__search-bar {\r\n\tdisplay: flex;\r\n}\r\n\r\n.search-bar__input-button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tbackground: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tborder: none;\r\n\tpadding: 0px;\r\n\tcursor: pointer;\r\n\ttransition: background-image 0.4s ease;\t\r\n}\r\n\r\n.search-bar__input-button:hover {\r\n\tbackground: url(" + ___CSS_LOADER_URL___1___ + ");\r\n\ttransition: background-image 0.4s ease;\r\n}\r\n\r\n.search-bar__input-text {\r\n\tdisplay: none;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\twidth: 165px;\r\n\ttransform: scaleX(0);\r\n\ttransform-origin: right center;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tfont-size: 0.75rem;\r\n\tcolor: #303030;\r\n}\r\n\r\n@keyframes openSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(1);\r\n\t}\r\n}\r\n\r\n@keyframes closeSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(1);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n}\r\n\r\n@keyframes moveLeftProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-207px);\r\n\t}\r\n}\r\n\r\n@keyframes moveRightProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-207px);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n}\r\n\r\n.header__search-bar.open .search-bar__input-text {\r\n\tanimation: openSearchBar 0.35s forwards;\r\n}\r\n\r\n.header__search-bar.close .search-bar__input-text {\r\n\tanimation: closeSearchBar 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"left\"] {\r\n\tanimation: moveLeftProfileWrap 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"right\"] {\r\n\tanimation: moveRightProfileWrap 0.35s forwards;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n\t/* после анимации на десктопе .profile__wrap \r\n\tсодержит атрибут [data-move=\"right\"],\r\n\tчтобы не было отступа -42px на мобильном при ресайзе, \r\n\tотключаем анимацию */\r\n\t.profile__wrap[data-move=\"right\"] {\r\n\t\tanimation: none;\r\n\t}\t\r\n}\r\n\r\n\r\n\r\n", ""]);
 
 
 /***/ }),
@@ -25463,6 +25480,266 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/js/components/Cart.js":
+/*!***********************************!*\
+  !*** ./src/js/components/Cart.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_Cart_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Cart.css */ "./src/js/styles/Cart.css");
+/* harmony import */ var _styles_Cart_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_Cart_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_product_item_3_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/product-item-3-1.jpg */ "./src/js/images/product-item-3-1.jpg");
+/* harmony import */ var _images_product_item_3_1_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_product_item_3_1_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_delete_basket_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/delete-basket.png */ "./src/js/images/delete-basket.png");
+/* harmony import */ var _images_delete_basket_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_delete_basket_png__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+/* Компонент товаров */
+
+var ProductRow =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(ProductRow, _React$Component);
+
+  function ProductRow(props) {
+    _classCallCheck(this, ProductRow);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ProductRow).call(this, props));
+  }
+
+  _createClass(ProductRow, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        className: "cart__pop-up__list__body__row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "cart__pop-up__item__body cart__pop-up__item__img"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "cart__pop-up__img__link",
+        href: ""
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cart__pop-up__img"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "cart__pop-up__item__body cart__pop-up__item__description"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: ""
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "cart__pop-up__h4 text-transform--uppercase"
+      }, this.props.product.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "cart__pop-up__item__body cart__pop-up__item__amount"
+      }, "€" + this.props.product.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        className: "cart__pop-up__item__body cart__pop-up__item__delete"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "delete__img",
+        src: _images_delete_basket_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+        "data-index": this.props.index,
+        onClick: this.props.deleteProduct
+      })));
+    }
+  }]);
+
+  return ProductRow;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+/* Компонент итого */
+
+
+var Total =
+/*#__PURE__*/
+function (_React$Component2) {
+  _inherits(Total, _React$Component2);
+
+  function Total(props) {
+    _classCallCheck(this, Total);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Total).call(this, props));
+  }
+
+  _createClass(Total, [{
+    key: "render",
+    value: function render() {
+      var total = this.props.products.reduce(function (sum, current) {
+        var price = +current.price;
+        return sum + price;
+      }, 0);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+        className: "cart__pop-up__list__footer-row grid--shopping-bag"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        colSpan: "2",
+        className: "cart__pop-up__item__footer font--lato-bold"
+      }, "Subtotal:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "cart__pop-up__total"
+      }, " €" + total)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        colSpan: "2",
+        className: "cart__pop-up__item__footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn--orange text-transform--uppercase cart__pop-up__btn"
+      }, "checkout")));
+    }
+  }]);
+
+  return Total;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+/* Компонент всплывашки */
+
+
+var CartPopUp =
+/*#__PURE__*/
+function (_React$Component3) {
+  _inherits(CartPopUp, _React$Component3);
+
+  function CartPopUp(props) {
+    _classCallCheck(this, CartPopUp);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CartPopUp).call(this, props));
+  }
+
+  _createClass(CartPopUp, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      var rows = this.props.products.map(function (product, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductRow, {
+          key: product.name,
+          product: product,
+          index: index,
+          deleteProduct: _this.props.deleteProduct
+        });
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cart__pop-up"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+        className: "cart__pop-up__list"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+        className: "cart__pop-up__list__body"
+      }, rows, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Total, {
+        products: this.props.products
+      }))));
+    }
+  }]);
+
+  return CartPopUp;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+/* Компонент всплывашки + ссылка */
+
+
+var Cart =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(Cart, _React$Component4);
+
+  function Cart(props) {
+    var _this2;
+
+    _classCallCheck(this, Cart);
+
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Cart).call(this, props));
+    _this2.state = {
+      productsQuantity: _this2.props.products.length,
+      cartPopUpVisible: false
+    };
+    _this2.cart = null;
+    _this2.products = _this2.props.products.slice();
+    _this2.showCartPopUp = _this2.showCartPopUp.bind(_assertThisInitialized(_this2));
+    _this2.hideCartPopUp = _this2.hideCartPopUp.bind(_assertThisInitialized(_this2));
+    _this2.isChildNodeTransition = _this2.isChildNodeTransition.bind(_assertThisInitialized(_this2));
+    _this2.deleteProduct = _this2.deleteProduct.bind(_assertThisInitialized(_this2));
+    return _this2;
+  }
+
+  _createClass(Cart, [{
+    key: "showCartPopUp",
+    value: function showCartPopUp() {
+      if (this.cart) return;
+      var container = this.props.container;
+      this.cart = container.querySelector(".cart-wrap");
+      this.setState({
+        cartPopUpVisible: true
+      });
+    }
+  }, {
+    key: "hideCartPopUp",
+    value: function hideCartPopUp(e) {
+      if (this.isChildNodeTransition(e)) return;
+      this.setState({
+        cartPopUpVisible: false
+      });
+      this.cart = null;
+    }
+  }, {
+    key: "isChildNodeTransition",
+    value: function isChildNodeTransition(e) {
+      var relatedTarget = e.relatedTarget;
+
+      if (relatedTarget) {
+        while (relatedTarget) {
+          if (relatedTarget == this.cart) return true;
+          relatedTarget = relatedTarget.parentNode;
+        }
+      }
+
+      return false;
+    }
+  }, {
+    key: "deleteProduct",
+    value: function deleteProduct(e) {
+      var deleteIndex = e.target.dataset.index;
+      this.products.splice(deleteIndex, 1);
+      this.setState(function (state) {
+        return {
+          productsQuantity: state.productsQuantity - 1
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: !!this.state.productsQuantity ? "cart-wrap open" : "cart-wrap",
+        onMouseOver: this.showCartPopUp,
+        onMouseOut: this.hideCartPopUp
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "header__cart__link",
+        href: "/src/shopping_cart.html"
+      }, "Basket (", this.state.productsQuantity, ")"), this.state.cartPopUpVisible && !!this.state.productsQuantity && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CartPopUp, {
+        products: this.products,
+        deleteProduct: this.deleteProduct
+      }));
+    }
+  }]);
+
+  return Cart;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Cart);
+
+/***/ }),
+
 /***/ "./src/js/components/SearchBar.js":
 /*!****************************************!*\
   !*** ./src/js/components/SearchBar.js ***!
@@ -25539,7 +25816,7 @@ function (_React$Component) {
       }
 
       ;
-      this.searchBar = this;
+      this.searchBar = document.querySelector(".header__search-bar");
       this.props.profileWrap.setAttribute('data-move', 'left');
       var inputText = document.querySelector('.search-bar__input-text');
       inputText.style.display = "block";
@@ -25634,6 +25911,28 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/js/images/delete-basket.png":
+/*!*****************************************!*\
+  !*** ./src/js/images/delete-basket.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "26fa524de541c563ca518dc94a1e2654.png";
+
+/***/ }),
+
+/***/ "./src/js/images/product-item-3-1.jpg":
+/*!********************************************!*\
+  !*** ./src/js/images/product-item-3-1.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1fcd21b3800b190efeceee783c594350.jpg";
+
+/***/ }),
+
 /***/ "./src/js/images/search-dark.png":
 /*!***************************************!*\
   !*** ./src/js/images/search-dark.png ***!
@@ -25670,12 +25969,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_SearchBar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SearchBar.js */ "./src/js/components/SearchBar.js");
+/* harmony import */ var _components_Cart_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Cart.js */ "./src/js/components/Cart.js");
+
 
 
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SearchBar_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
   profileWrap: document.getElementById('profile__wrap')
 }), document.getElementById('search-bar__wrap'));
+var PRODUCTS = [{
+  image: '',
+  price: '99.95',
+  name: 'Jacket DC T-Shirt'
+}, {
+  image: '',
+  price: '79.99',
+  name: 'Jacket QT T-Shirt'
+}, {
+  image: '',
+  price: '49.50',
+  name: 'Jacket WT T-Shirt'
+}];
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Cart_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  products: PRODUCTS,
+  container: document.getElementById('header__cart__link--desktop')
+}), document.getElementById('header__cart__link--desktop'));
+
+/***/ }),
+
+/***/ "./src/js/styles/Cart.css":
+/*!********************************!*\
+  !*** ./src/js/styles/Cart.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./Cart.css */ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/Cart.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

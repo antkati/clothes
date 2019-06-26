@@ -85,6 +85,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	/* после анимации на десктопе .profile__wrap 
+	содержит атрибут [data-move="right"],
+	чтобы не было отступа -42px на мобильном при ресайзе, 
+	отключаем анимацию */
 	.profile__wrap[data-move="right"] {
 		animation: none;
 	}	

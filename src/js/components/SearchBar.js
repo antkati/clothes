@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
             clearTimeout(this.timerID);
             return;
         };
-        this.searchBar = this;
+        this.searchBar = document.querySelector(".header__search-bar");
 
         this.props.profileWrap.setAttribute('data-move', 'left');
 

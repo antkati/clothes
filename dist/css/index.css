@@ -289,6 +289,8 @@ input {
 	font-size: 0.875rem;
 }
 
+
+/* SHOPPING-BAG */
 .shopping-bag__list {
 	font-size: 0.875rem;
 }
@@ -378,6 +380,7 @@ body {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+/* left */
 .header__menu--left {
 	justify-content: space-between;
 	width: 50%;
@@ -399,6 +402,7 @@ body {
 	line-height: 42px;
 }
 
+/* right */
 .header__menu--right {
 	width: 50%;
 	justify-content: flex-end;
@@ -412,16 +416,26 @@ body {
 
 .header__personal-page,
 .header__cart {
-	margin-right: 30px;
+	margin-right: 50px;
 }
 
-.header__personal-page a,
-.header__cart a {
+.header__personal-page__link,
+.header__cart__link {
 	white-space: nowrap;
 }
 
-.header__cart__i--desktop, 
-.header__personal__i--desktop {
+.header__personal-page__link:hover,
+.header__cart__link:hover {
+	text-decoration: none;
+}
+
+.header__personal-page__link::before {
+	content: url(../images/user.png);
+	margin-right: 4px;	
+}
+
+.header__cart__link::before {
+	content: url(../images/desktop-cart.png);
 	margin-right: 4px;
 }
 
@@ -430,11 +444,14 @@ body {
 	display: none;
 }
 
+/* убираем .search-bar__wrap из общего потока, 
+чтобы плавно отодвигать .profile__wrap */
 .search-bar__wrap {
-	position: absolute;
+	position: absolute; 
 	top: calc(50% - 21px);
 	right: 0px;
 }
+
 
 /* HEADER MUSTHEAD */
 .header__musthead {
@@ -1424,8 +1441,7 @@ body {
 	/* HEADER NAV*/
 	.header__nav--left, 
 	.header__personal-page,
-	.header__cart__i--desktop, 
-	.header__cart__link,
+	.header__cart__link--desktop,
 	.search-bar__wrap  {
 		display: none;
 	}
