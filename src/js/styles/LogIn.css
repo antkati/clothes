@@ -1,0 +1,123 @@
+
+.ReactModal__Body--open {
+    overflow-y: hidden;
+    padding-right: 16px;
+}
+
+.header__personal-page__link {
+	white-space: nowrap;
+}
+
+.header__personal-page__link:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__personal-page__link::before {
+	content: url(../images/user.png);
+	margin-right: 4px;	
+}
+
+.pop-up__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34,34,34,.6);
+
+}
+
+.pop-up__modal {
+    position: relative;
+    width: 400px;
+    height: 355px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: 0 1px 16px rgba(0,0,0,.25);
+    white-space: normal;
+}
+
+.pop-up__close {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.pop-up__title {
+    margin-bottom: 25px;
+    padding-bottom: 15px; 
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pop-up__section {
+    margin-bottom: 20px;
+}
+
+.pop-up__input {
+    height: 42px;
+	width: 100%;	
+	border: 1px solid #c2c2c2;
+	padding: 0 10px;
+    outline: 0;
+    transition: border 0.5s ease;
+}
+
+.pop-up__input:focus {
+    border: 1px solid #333333;;
+}
+
+.pop-up__label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 0.75rem;
+    color: #606060;
+    transition: border 0.5s ease;
+}
+
+.pop-up__btn {
+    height: 50px;
+    width: 95px;
+}
+
+.btn--log-in {
+    margin-right: 15px;
+}
+
+.btn--sign-in {
+    border: 1px solid #949494;
+    background-color: transparent;
+    cursor: pointer;
+    color: #333333;
+    transition: border 0.5s ease;
+}
+
+.btn--sign-in:hover {
+    border: 1px solid #333333;
+    transition: border 0.5s ease;
+}
+
+.pop-up__forgot-password {
+    color: #dc813e;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: color 0.5s ease;
+
+}
+
+
+
+
+
+@media screen and (max-height: 355px) {
+    .pop-up__modal {
+        overflow-y: scroll;
+    }  
+}

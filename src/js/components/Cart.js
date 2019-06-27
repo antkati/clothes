@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Cart.css";
 import "../images/product-item-3-1.jpg";
+import "../images/desktop-cart.png";
 import deleteBasket from "../images/delete-basket.png";
 
 /* Компонент товаров */
@@ -155,13 +156,17 @@ class Cart extends React.Component {
 
     render() {
         return (
-            <div className={!!this.state.productsQuantity ? "cart-wrap open" : "cart-wrap"}
-                onMouseOver={this.showCartPopUp}
+            <div className={this.state.cartPopUpVisible && 
+                !!this.state.productsQuantity ? "cart-wrap open" : "cart-wrap"}
                 onMouseOut={this.hideCartPopUp}>
-                <a className="header__cart__link"
-                    href="/src/shopping_cart.html">
-                    Basket ({this.state.productsQuantity})
-                </a>
+                <div className="header__cart__button">
+                    <a className="header__cart__link"
+                        href="/src/shopping_cart.html"
+                        onMouseOver={this.showCartPopUp}>
+                            Basket ({this.state.productsQuantity})
+                    </a>
+                </div>
+
                 {this.state.cartPopUpVisible &&
                     !!this.state.productsQuantity &&
                     <CartPopUp products={this.products} 

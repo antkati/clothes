@@ -419,25 +419,7 @@ body {
 	margin-right: 50px;
 }
 
-.header__personal-page__link,
-.header__cart__link {
-	white-space: nowrap;
-}
 
-.header__personal-page__link:hover,
-.header__cart__link:hover {
-	text-decoration: none;
-}
-
-.header__personal-page__link::before {
-	content: url(../images/user.png);
-	margin-right: 4px;	
-}
-
-.header__cart__link::before {
-	content: url(../images/desktop-cart.png);
-	margin-right: 4px;
-}
 
 .header__cart__link--mobile, 
 .header__burger-menu {
@@ -473,10 +455,13 @@ body {
 .btn--grey {
 	padding: 1.5625rem  2.0625rem;
 	border: 1px solid #949494;
+	transition: border 0.5s ease;
 }
 
 .btn--grey:hover {
 	text-decoration: none;
+	border: 1px solid #333333;
+	transition: border 0.5s ease;
 }
 
 /* MAIN PROMO */
@@ -630,6 +615,12 @@ body {
 	outline: 0;
 	padding: 0;
 	cursor: pointer;
+	transition: background 0.5s ease;
+}
+
+.btn--orange:hover {
+	background-color: #cd7333; 
+    transition: background 0.5s ease;
 }
 
 .form__input {
@@ -1657,7 +1648,7 @@ body {
 		vertical-align: middle;
 		cursor: pointer;
 	}
-	*/	
+	
 
 	.pagination__load-more {
 		display: block;
