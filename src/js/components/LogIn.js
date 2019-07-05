@@ -1,8 +1,8 @@
 import React from "react";
 import ReactModal from "react-modal";
-import iconCancel from "../images/cancel.png"
-import "../images/user.png"
-import "../styles/LogIn.css"
+import iconCancel from "../images/cancel.png";
+import "../images/user.png";
+import "../styles/LogIn.css";
 
 class LogIn extends React.Component {
     constructor() {
@@ -30,7 +30,7 @@ class LogIn extends React.Component {
 
                 <ReactModal
                     isOpen={this.state.showModal}
-                    contentLabel="Minimal Modal Example"
+                    contentLabel="LogIn Modal"
                     onRequestClose={this.handleCloseModal}
                     className="pop-up__modal"
                     overlayClassName="pop-up__overlay"

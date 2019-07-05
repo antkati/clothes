@@ -86,6 +86,30 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/BurgerMenu.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/js/styles/BurgerMenu.css ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../fonts/fontello.eot?59721244 */ "./src/js/fonts/fontello.eot?59721244"));
+var ___CSS_LOADER_URL___1___ = getUrl(__webpack_require__(/*! ../fonts/fontello.eot?59721244 */ "./src/js/fonts/fontello.eot?59721244") + "#iefix");
+var ___CSS_LOADER_URL___2___ = getUrl(__webpack_require__(/*! ../fonts/fontello.woff2?59721244 */ "./src/js/fonts/fontello.woff2?59721244"));
+var ___CSS_LOADER_URL___3___ = getUrl(__webpack_require__(/*! ../fonts/fontello.woff?59721244 */ "./src/js/fonts/fontello.woff?59721244"));
+var ___CSS_LOADER_URL___4___ = getUrl(__webpack_require__(/*! ../fonts/fontello.ttf?59721244 */ "./src/js/fonts/fontello.ttf?59721244"));
+var ___CSS_LOADER_URL___5___ = getUrl(__webpack_require__(/*! ../fonts/fontello.svg?59721244 */ "./src/js/fonts/fontello.svg?59721244") + "#fontello");
+var ___CSS_LOADER_URL___6___ = getUrl(__webpack_require__(/*! ../images/search.png */ "./src/js/images/search.png"));
+var ___CSS_LOADER_URL___7___ = getUrl(__webpack_require__(/*! ../images/search-dark.png */ "./src/js/images/search-dark.png"));
+// Module
+exports.push([module.i, "@font-face {\r\n    font-family: 'fontello';\r\n    src: url(" + ___CSS_LOADER_URL___0___ + ");\r\n    src: url(" + ___CSS_LOADER_URL___1___ + ") format('embedded-opentype'),\r\n         url(" + ___CSS_LOADER_URL___2___ + ") format('woff2'),\r\n         url(" + ___CSS_LOADER_URL___3___ + ") format('woff'),\r\n         url(" + ___CSS_LOADER_URL___4___ + ") format('truetype'),\r\n         url(" + ___CSS_LOADER_URL___5___ + ") format('svg');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n  }\r\n\r\n\r\n.header__burger__link {\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__overlay {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n    opacity: 0;\r\n    transition: opacity 500ms ease-in-out;\r\n}\r\n\r\n.ReactModal__Overlay--after-open{\r\n    opacity: 1;\r\n}\r\n\r\n.ReactModal__Overlay--before-close{\r\n    opacity: 0;\r\n}\r\n\r\n.burger__modal {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 100%;\r\n    padding: 20px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    overflow: auto;\r\n    transform: translateX(200%);\r\n    transition: transform 700ms ease-out;\r\n}\r\n\r\n.ReactModal__Content--after-open{\r\n    transform: translateX(0);\r\n}\r\n\r\n.ReactModal__Content--before-close{\r\n    transform: translateX(200%);\r\n}\r\n\r\n.burger__close {\r\n    position: absolute;\r\n    top: 20px;\r\n    right: 20px;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__search {\r\n    display: flex;\r\n    margin-top: 40px;\r\n}\r\n\r\n.burger__search__input {\r\n    width: calc(100% - 42px);\r\n    height: 42px;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\tfont-size: 0.75rem;\r\n    color: #303030;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\tborder: none;\r\n    padding: 0px;\r\n    background: url(" + ___CSS_LOADER_URL___6___ + ");\r\n    cursor: pointer;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button:active {\r\n\tbackground: url(" + ___CSS_LOADER_URL___7___ + ");\r\n}\r\n\r\n.burger__cats {\r\n    margin-top: 20px;\r\n}\r\n\r\n.burger__cats li,\r\n.burger__log-in {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 20px 5px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__cats li:hover,\r\n.burger__log-in:hover {\r\n    color: #000000;\r\n}\r\n\r\n.burger__cats li:active {\r\n    background-color: rgb(244, 244, 244);\r\n}\r\n\r\n.burger__cats a:hover {\r\n    text-decoration: none;\r\n}\r\n\r\n.arrow-right:before {\r\n    content: '\\e803';\r\n    font-family: 'fontello';\r\n}\r\n\r\n.burger__back {\r\n    display: inline-block;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__back::before {\r\n    content: '\\e802';\r\n    font-family: 'fontello';\r\n    margin-right: 7px;\r\n}\r\n\r\n.burger__back:hover {\r\n    color: #000000;    \r\n}\r\n\r\n.back--log-in {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n\r\n\r\n/* @media screen and (max-width: 768px) {\r\n\r\n} */", ""]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/Cart.css":
 /*!**********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/js/styles/Cart.css ***!
@@ -116,7 +140,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/user.png */ "./src/js/images/user.png"));
 // Module
-exports.push([module.i, "\r\n.ReactModal__Body--open {\r\n    overflow-y: hidden;\r\n    padding-right: 16px;\r\n}\r\n\r\n.header__personal-page__link {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.header__personal-page__link:hover {\r\n    text-decoration: none;\r\n    color: #000000;\r\n}\r\n\r\n.header__personal-page__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\t\r\n}\r\n\r\n.pop-up__overlay {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n\r\n}\r\n\r\n.pop-up__modal {\r\n    position: relative;\r\n    width: 400px;\r\n    height: 355px;\r\n    padding: 25px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    box-shadow: 0 1px 16px rgba(0,0,0,.25);\r\n    white-space: normal;\r\n}\r\n\r\n.pop-up__close {\r\n    position: absolute;\r\n    top: 23px;\r\n    right: 25px;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n}\r\n\r\n.pop-up__title {\r\n    margin-bottom: 25px;\r\n    padding-bottom: 15px; \r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.pop-up__section {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.pop-up__input {\r\n    height: 42px;\r\n\twidth: 100%;\t\r\n\tborder: 1px solid #c2c2c2;\r\n\tpadding: 0 10px;\r\n    outline: 0;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__input:focus {\r\n    border: 1px solid #333333;;\r\n}\r\n\r\n.pop-up__label {\r\n    display: block;\r\n    margin-bottom: 7px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__btn {\r\n    height: 50px;\r\n    width: 95px;\r\n}\r\n\r\n.btn--log-in {\r\n    margin-right: 15px;\r\n}\r\n\r\n.btn--sign-in {\r\n    border: 1px solid #949494;\r\n    background-color: transparent;\r\n    cursor: pointer;\r\n    color: #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.btn--sign-in:hover {\r\n    border: 1px solid #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__forgot-password {\r\n    color: #dc813e;\r\n    cursor: pointer;\r\n    font-size: 0.75rem;\r\n    transition: color 0.5s ease;\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n@media screen and (max-height: 355px) {\r\n    .pop-up__modal {\r\n        overflow-y: scroll;\r\n    }  \r\n}", ""]);
+exports.push([module.i, "\r\n.ReactModal__Body--open {\r\n    overflow-y: hidden;\r\n    padding-right: 17px;\r\n}\r\n\r\n.header__personal-page__link {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.header__personal-page__link:hover {\r\n    text-decoration: none;\r\n    color: #000000;\r\n}\r\n\r\n.header__personal-page__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\t\r\n}\r\n\r\n.pop-up__overlay {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n\r\n}\r\n\r\n.pop-up__modal {\r\n    position: relative;\r\n    width: 400px;\r\n    height: auto;\r\n    padding: 25px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    box-shadow: 0 1px 16px rgba(0,0,0,.25);\r\n}\r\n\r\n.pop-up__close {\r\n    position: absolute;\r\n    top: 23px;\r\n    right: 25px;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n}\r\n\r\n.pop-up__title {\r\n    margin-bottom: 25px;\r\n    padding-bottom: 15px; \r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.pop-up__section {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.pop-up__input {\r\n    height: 42px;\r\n\twidth: 100%;\t\r\n\tborder: 1px solid #c2c2c2;\r\n\tpadding: 0 10px;\r\n    outline: 0;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__input:focus {\r\n    border: 1px solid #333333;;\r\n}\r\n\r\n.pop-up__label {\r\n    display: block;\r\n    margin-bottom: 7px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__btn {\r\n    height: 50px;\r\n    width: 95px;\r\n}\r\n\r\n.btn--log-in {\r\n    margin-right: 15px;\r\n}\r\n\r\n.btn--sign-in {\r\n    border: 1px solid #949494;\r\n    background-color: transparent;\r\n    cursor: pointer;\r\n    color: #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.btn--sign-in:hover {\r\n    border: 1px solid #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__forgot-password {\r\n    color: #dc813e;\r\n    cursor: pointer;\r\n    font-size: 0.75rem;\r\n    transition: color 0.5s ease;\r\n\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    .pop-up__modal {\r\n        height: 100vh;\r\n        width: 100%;\r\n        padding: 20px;\r\n        overflow: auto;\r\n        box-shadow: none;\r\n    }\r\n\r\n}", ""]);
 
 
 /***/ }),
@@ -27893,6 +27917,294 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/js/components/BurgerMenu.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/BurgerMenu.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_cancel_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/cancel.png */ "./src/js/images/cancel.png");
+/* harmony import */ var _images_cancel_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_cancel_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_burger_menu_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/burger-menu.png */ "./src/js/images/burger-menu.png");
+/* harmony import */ var _images_burger_menu_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_burger_menu_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_BurgerMenu_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/BurgerMenu.css */ "./src/js/styles/BurgerMenu.css");
+/* harmony import */ var _styles_BurgerMenu_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_BurgerMenu_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_search_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/search.png */ "./src/js/images/search.png");
+/* harmony import */ var _images_search_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_search_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_search_dark_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/search-dark.png */ "./src/js/images/search-dark.png");
+/* harmony import */ var _images_search_dark_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_search_dark_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_LogIn_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/LogIn.css */ "./src/js/styles/LogIn.css");
+/* harmony import */ var _styles_LogIn_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_LogIn_css__WEBPACK_IMPORTED_MODULE_7__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+
+
+
+var BurgerMenu =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(BurgerMenu, _React$Component);
+
+  function BurgerMenu(props) {
+    var _this;
+
+    _classCallCheck(this, BurgerMenu);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BurgerMenu).call(this, props));
+    _this.state = {
+      showModalMenu: false,
+      parentID: null,
+      showModalLogIn: false
+    };
+    _this.handleOpenMenu = _this.handleOpenMenu.bind(_assertThisInitialized(_this));
+    _this.handleCloseMenu = _this.handleCloseMenu.bind(_assertThisInitialized(_this));
+    _this.handleOpenCat = _this.handleOpenCat.bind(_assertThisInitialized(_this));
+    _this.handleCloseCat = _this.handleCloseCat.bind(_assertThisInitialized(_this));
+    _this.handleOpenLogIn = _this.handleOpenLogIn.bind(_assertThisInitialized(_this));
+    _this.handleCloseLogIn = _this.handleCloseLogIn.bind(_assertThisInitialized(_this));
+    _this.categories = [];
+    _this.previousID = null;
+    return _this;
+  }
+
+  _createClass(BurgerMenu, [{
+    key: "handleOpenMenu",
+    value: function handleOpenMenu() {
+      this.createLis(this.props.cats);
+      this.setState({
+        showModalMenu: true
+      });
+    }
+  }, {
+    key: "handleCloseMenu",
+    value: function handleCloseMenu() {
+      this.setState({
+        showModalMenu: false,
+        parentID: null,
+        showModalLogIn: false
+      });
+      this.previousID = null;
+    }
+  }, {
+    key: "handleOpenCat",
+    value: function handleOpenCat(e) {
+      var target = e.target;
+
+      while (target.tagName != "LI") {
+        target = target.parentNode;
+      }
+
+      var id = target.getAttribute("data-id");
+      if (!id) return;
+      var cats = this.searchCats(this.props.cats, id);
+      this.createLis(cats);
+      this.setState({
+        parentID: id
+      });
+    }
+  }, {
+    key: "handleCloseCat",
+    value: function handleCloseCat() {
+      var previousCats = this.searchPreviousCats(this.props.cats, this.state.parentID, null);
+      this.createLis(previousCats);
+      this.setState({
+        parentID: this.previousID
+      });
+    }
+  }, {
+    key: "createLis",
+    value: function createLis(arr) {
+      var _this2 = this;
+
+      this.categories = [];
+      arr.forEach(function (item) {
+        if ("subsections" in item && item.subsections.length) {
+          _this2.categories.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+            key: item.id,
+            "data-id": item.id,
+            onClick: _this2.handleOpenCat
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, item.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: "arrow-right"
+          })));
+        } else {
+          _this2.categories.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+            key: item.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+            href: item.href
+          }, item.name)));
+        }
+      });
+    }
+  }, {
+    key: "searchCats",
+    value: function searchCats(arr, id) {
+      for (var i = 0; i < arr.length; i++) {
+        if ("subsections" in arr[i] && arr[i].subsections.length) {
+          if (arr[i].id !== id) {
+            var result = this.searchCats(arr[i].subsections, id);
+
+            if (result) {
+              return result;
+            }
+          } else {
+            return arr[i].subsections;
+          }
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "searchPreviousCats",
+    value: function searchPreviousCats(arr, id, previousID) {
+      for (var i = 0; i < arr.length; i++) {
+        if ("subsections" in arr[i] && arr[i].subsections.length) {
+          if (arr[i].id !== id) {
+            var result = this.searchPreviousCats(arr[i].subsections, id, arr[i].id);
+
+            if (result) {
+              return result;
+            }
+          } else {
+            this.previousID = previousID;
+            return arr;
+          }
+        }
+      }
+    }
+  }, {
+    key: "handleOpenLogIn",
+    value: function handleOpenLogIn() {
+      this.setState({
+        showModalLogIn: true
+      });
+    }
+  }, {
+    key: "handleCloseLogIn",
+    value: function handleCloseLogIn() {
+      this.setState({
+        showModalLogIn: false
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "header__burger__link",
+        src: _images_burger_menu_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+        onClick: this.handleOpenMenu
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        isOpen: this.state.showModalMenu,
+        contentLabel: "Burger menu",
+        onRequestClose: this.handleCloseMenu,
+        className: "burger__modal",
+        overlayClassName: "burger__overlay",
+        closeTimeoutMS: 700
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "burger__close",
+        src: _images_cancel_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+        onClick: this.handleCloseMenu
+      }), !this.state.parentID && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "burger__search"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        placeholder: "Search something...",
+        className: "burger__search__input"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "burger__search__button",
+        type: "button"
+      })), !!this.state.parentID && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "burger__back text-transform--uppercase",
+        onClick: this.handleCloseCat
+      }, "Back"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "burger__cats text-transform--uppercase"
+      }, this.categories), !this.state.parentID && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-transform--uppercase burger__log-in",
+        onClick: this.handleOpenLogIn
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Log In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "arrow-right"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        isOpen: this.state.showModalLogIn,
+        contentLabel: "Log in",
+        onRequestClose: this.handleCloseMenu,
+        className: "pop-up__modal",
+        overlayClassName: "pop-up__overlay"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "pop-up__close",
+        src: _images_cancel_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+        onClick: this.handleCloseMenu
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "burger__back text-transform--uppercase back--log-in",
+        onClick: this.handleCloseLogIn
+      }, "Back"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "pop-up__title text-transform--uppercase"
+      }, "Entry"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pop-up__section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "pop-up__login",
+        className: "pop-up__label text-transform--uppercase"
+      }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        autoFocus: true,
+        id: "pop-up__login",
+        type: "text",
+        className: "pop-up__input"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pop-up__section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "pop-up__password",
+        className: "pop-up__label text-transform--uppercase"
+      }, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "pop-up__password",
+        className: "pop-up__input"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pop-up__section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn--orange btn--log-in text-transform--uppercase pop-up__btn"
+      }, "log in"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn--sign-in text-transform--uppercase pop-up__btn"
+      }, "sigh in")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#",
+        className: "pop-up__forgot-password"
+      }, "Forgot your password?")));
+    }
+  }]);
+
+  return BurgerMenu;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (BurgerMenu);
+
+/***/ }),
+
 /***/ "./src/js/components/Cart.js":
 /*!***********************************!*\
   !*** ./src/js/components/Cart.js ***!
@@ -28243,7 +28555,7 @@ function (_React$Component) {
         onClick: this.handleOpenModal
       }, "Log In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_1___default.a, {
         isOpen: this.state.showModal,
-        contentLabel: "Minimal Modal Example",
+        contentLabel: "LogIn Modal",
         onRequestClose: this.handleCloseModal,
         className: "pop-up__modal",
         overlayClassName: "pop-up__overlay"
@@ -28462,6 +28774,72 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/js/fonts/fontello.eot?59721244":
+/*!********************************************!*\
+  !*** ./src/js/fonts/fontello.eot?59721244 ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f316cc17964e4b95c7e122e37b8ba9f2.eot";
+
+/***/ }),
+
+/***/ "./src/js/fonts/fontello.svg?59721244":
+/*!********************************************!*\
+  !*** ./src/js/fonts/fontello.svg?59721244 ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1fff842d37a7618db9db86cb52847db6.svg";
+
+/***/ }),
+
+/***/ "./src/js/fonts/fontello.ttf?59721244":
+/*!********************************************!*\
+  !*** ./src/js/fonts/fontello.ttf?59721244 ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "376bbd246c4005c10d53ee8414c6e9c2.ttf";
+
+/***/ }),
+
+/***/ "./src/js/fonts/fontello.woff2?59721244":
+/*!**********************************************!*\
+  !*** ./src/js/fonts/fontello.woff2?59721244 ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fd6cb6636437818908a88cd51cdb47f8.woff2";
+
+/***/ }),
+
+/***/ "./src/js/fonts/fontello.woff?59721244":
+/*!*********************************************!*\
+  !*** ./src/js/fonts/fontello.woff?59721244 ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a0cd6592a5b4282244fe47a22bec917a.woff";
+
+/***/ }),
+
+/***/ "./src/js/images/burger-menu.png":
+/*!***************************************!*\
+  !*** ./src/js/images/burger-menu.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "df9e1cd151b6e3b8bdaf3c32de9cc903.png";
+
+/***/ }),
+
 /***/ "./src/js/images/cancel.png":
 /*!**********************************!*\
   !*** ./src/js/images/cancel.png ***!
@@ -28555,6 +28933,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SearchBar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SearchBar.js */ "./src/js/components/SearchBar.js");
 /* harmony import */ var _components_Cart_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Cart.js */ "./src/js/components/Cart.js");
 /* harmony import */ var _components_LogIn_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/LogIn.js */ "./src/js/components/LogIn.js");
+/* harmony import */ var _components_BurgerMenu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/BurgerMenu.js */ "./src/js/components/BurgerMenu.js");
+
 
 
 
@@ -28580,8 +28960,255 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
   products: PRODUCTS,
   container: document.getElementById('header__cart__link--desktop')
 }), document.getElementById('header__cart__link--desktop'));
-var props = {};
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LogIn_js__WEBPACK_IMPORTED_MODULE_4__["default"], props), document.getElementById('header__personal-page'));
+var propsLogIn = {};
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LogIn_js__WEBPACK_IMPORTED_MODULE_4__["default"], propsLogIn), document.getElementById('header__personal-page'));
+var CATS = [{
+  name: 'Woman',
+  id: '1',
+  href: '#',
+  subsections: [{
+    name: 'Clothes',
+    id: '11',
+    href: '#',
+    subsections: [{
+      name: 'Blouses & shirts',
+      id: '111',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'T-shirts & longslives',
+      id: '112',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Hoody',
+      id: '113',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Pants & shorts',
+      id: '114',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Jeans',
+      id: '115',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Outerwear',
+      id: '116',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Dresses',
+      id: '117',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Skirts',
+      id: '118',
+      href: '#',
+      subsections: []
+    }]
+  }, {
+    name: 'Shoes',
+    id: '12',
+    href: '#',
+    subsections: [{
+      name: 'Shoes',
+      id: '121',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Sandals',
+      id: '122',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Sneakers',
+      id: '123',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Moccasins',
+      id: '124',
+      href: '#',
+      subsections: []
+    }]
+  }, {
+    name: 'Accessories',
+    id: '13',
+    href: '#',
+    subsections: [{
+      name: 'Scarves',
+      id: '131',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Gloves',
+      id: '132',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Bags',
+      id: '133',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Belts',
+      id: '134',
+      href: '#',
+      subsections: []
+    }]
+  }]
+}, {
+  name: 'Men',
+  id: '2',
+  href: '#',
+  subsections: [{
+    name: 'Clothes',
+    id: '21',
+    href: '#',
+    subsections: [{
+      name: 'Shirts',
+      id: '211',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'T-shirts & longslives',
+      id: '212',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Hoody',
+      id: '213',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Pants & shorts',
+      id: '214',
+      href: '#',
+      subsections: []
+    }]
+  }, {
+    name: 'Shoes',
+    id: '22',
+    href: '#',
+    subsections: [{
+      name: 'Shoes',
+      id: '221',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Sandals',
+      id: '222',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Sneakers',
+      id: '223',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Boots',
+      id: '224',
+      href: '#',
+      subsections: []
+    }]
+  }]
+}, {
+  name: 'Kids',
+  id: '3',
+  href: '#',
+  subsections: [{
+    name: 'Clothes',
+    id: '31',
+    href: '#',
+    subsections: [{
+      name: 'For girls',
+      id: '311',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'For boys',
+      id: '312',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'For newborn',
+      id: '313',
+      href: '#',
+      subsections: []
+    }]
+  }, {
+    name: 'Other',
+    id: '32',
+    href: '#',
+    subsections: [{
+      name: 'Products for baby',
+      id: '321',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Feeding accessories',
+      id: '322',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Bathing accessories',
+      id: '323',
+      href: '#',
+      subsections: []
+    }, {
+      name: 'Child safety',
+      id: '324',
+      href: '#',
+      subsections: []
+    }]
+  }]
+}, {
+  name: 'Comming Soon',
+  id: '4',
+  href: '#'
+}, {
+  name: 'About',
+  id: '5',
+  href: '#'
+}];
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BurgerMenu_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  cats: CATS
+}), document.getElementById('burger-menu__wrap'));
+
+/***/ }),
+
+/***/ "./src/js/styles/BurgerMenu.css":
+/*!**************************************!*\
+  !*** ./src/js/styles/BurgerMenu.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./BurgerMenu.css */ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/BurgerMenu.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

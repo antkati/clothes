@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?59721244');
+    src: url('../fonts/fontello.eot?59721244#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?59721244') format('woff2'),
+         url('../fonts/fontello.woff?59721244') format('woff'),
+         url('../fonts/fontello.ttf?59721244') format('truetype'),
+         url('../fonts/fontello.svg?59721244#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.header__burger__link {
+    cursor: pointer;
+}
+
+.burger__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34,34,34,.6);
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.burger__modal {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    outline: none;
+    overflow: auto;
+    transform: translateX(200%);
+    transition: transform 700ms ease-out;
+}
+
+.ReactModal__Content--after-open{
+    transform: translateX(0);
+}
+
+.ReactModal__Content--before-close{
+    transform: translateX(200%);
+}
+
+.burger__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.burger__search {
+    display: flex;
+    margin-top: 40px;
+}
+
+.burger__search__input {
+    width: calc(100% - 42px);
+    height: 42px;
+	border: 1px solid #959595;
+	border-right: none;
+	padding: 5px 15px;
+	font-size: 0.75rem;
+    color: #303030;
+    outline: none;
+}
+
+.burger__search__button {
+	width: 42px;
+	height: 42px;
+	border: none;
+    padding: 0px;
+    background: url('../images/search.png');
+    cursor: pointer;
+    outline: none;
+}
+
+.burger__search__button:active {
+	background: url('../images/search-dark.png');
+}
+
+.burger__cats {
+    margin-top: 20px;
+}
+
+.burger__cats li,
+.burger__log-in {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    font-size: 0.75rem;
+    color: #606060;
+    cursor: pointer;
+}
+
+.burger__cats li:hover,
+.burger__log-in:hover {
+    color: #000000;
+}
+
+.burger__cats li:active {
+    background-color: rgb(244, 244, 244);
+}
+
+.burger__cats a:hover {
+    text-decoration: none;
+}
+
+.arrow-right:before {
+    content: '\e803';
+    font-family: 'fontello';
+}
+
+.burger__back {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #606060;
+    cursor: pointer;
+}
+
+.burger__back::before {
+    content: '\e802';
+    font-family: 'fontello';
+    margin-right: 7px;
+}
+
+.burger__back:hover {
+    color: #000000;    
+}
+
+.back--log-in {
+    margin-bottom: 30px;
+}
+
+
+
+/* @media screen and (max-width: 768px) {
+
+} */

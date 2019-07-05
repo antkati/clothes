@@ -447,6 +447,7 @@ body {
 	z-index: 400;
 	border: 1px solid #e5e5e5;
 	border-bottom: none;
+	color: #000000;
 }
 
 .nav__block:hover .nav__link--about,
@@ -489,6 +490,7 @@ body {
 
 .nav__pop-up__cat__title {
 	margin: 20px 0px 10px 0px;
+	font-size: 0.75rem;
 }
 
 .nav__pop-up__cat__list > li {
@@ -518,7 +520,7 @@ body {
 }
 
 .header__cart__link--mobile, 
-.header__burger-menu {
+.burger-menu__wrap {
 	display: none;
 }
 
@@ -1533,12 +1535,12 @@ body {
 		display: none;
 	}
 
-	.header__burger-menu, 
+	.burger-menu__wrap, 
 	.header__cart__link--mobile {
 		display: block;
 	}
 
-	.header__menu {
+		.header__menu {
 		height: 6.25rem;
 	}
 	
