@@ -105,7 +105,7 @@ var ___CSS_LOADER_URL___5___ = getUrl(__webpack_require__(/*! ../fonts/fontello.
 var ___CSS_LOADER_URL___6___ = getUrl(__webpack_require__(/*! ../images/search.png */ "./src/js/images/search.png"));
 var ___CSS_LOADER_URL___7___ = getUrl(__webpack_require__(/*! ../images/search-dark.png */ "./src/js/images/search-dark.png"));
 // Module
-exports.push([module.i, "@font-face {\r\n    font-family: 'fontello';\r\n    src: url(" + ___CSS_LOADER_URL___0___ + ");\r\n    src: url(" + ___CSS_LOADER_URL___1___ + ") format('embedded-opentype'),\r\n         url(" + ___CSS_LOADER_URL___2___ + ") format('woff2'),\r\n         url(" + ___CSS_LOADER_URL___3___ + ") format('woff'),\r\n         url(" + ___CSS_LOADER_URL___4___ + ") format('truetype'),\r\n         url(" + ___CSS_LOADER_URL___5___ + ") format('svg');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n  }\r\n\r\n\r\n.header__burger__link {\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__overlay {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n    opacity: 0;\r\n    transition: opacity 500ms ease-in-out;\r\n}\r\n\r\n.ReactModal__Overlay--after-open{\r\n    opacity: 1;\r\n}\r\n\r\n.ReactModal__Overlay--before-close{\r\n    opacity: 0;\r\n}\r\n\r\n.burger__modal {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 100%;\r\n    padding: 20px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    overflow: auto;\r\n    transform: translateX(200%);\r\n    transition: transform 700ms ease-out;\r\n}\r\n\r\n.ReactModal__Content--after-open{\r\n    transform: translateX(0);\r\n}\r\n\r\n.ReactModal__Content--before-close{\r\n    transform: translateX(200%);\r\n}\r\n\r\n.burger__close {\r\n    position: absolute;\r\n    top: 20px;\r\n    right: 20px;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__search {\r\n    display: flex;\r\n    margin-top: 40px;\r\n}\r\n\r\n.burger__search__input {\r\n    width: calc(100% - 42px);\r\n    height: 42px;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\tfont-size: 0.75rem;\r\n    color: #303030;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\tborder: none;\r\n    padding: 0px;\r\n    background: url(" + ___CSS_LOADER_URL___6___ + ");\r\n    cursor: pointer;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button:active {\r\n\tbackground: url(" + ___CSS_LOADER_URL___7___ + ");\r\n}\r\n\r\n.burger__cats {\r\n    margin-top: 20px;\r\n}\r\n\r\n.burger__cats li,\r\n.burger__log-in {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 20px 5px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__cats li:hover,\r\n.burger__log-in:hover {\r\n    color: #000000;\r\n}\r\n\r\n.burger__cats li:active {\r\n    background-color: rgb(244, 244, 244);\r\n}\r\n\r\n.burger__cats a:hover {\r\n    text-decoration: none;\r\n}\r\n\r\n.arrow-right:before {\r\n    content: '\\e803';\r\n    font-family: 'fontello';\r\n}\r\n\r\n.burger__back {\r\n    display: inline-block;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__back::before {\r\n    content: '\\e802';\r\n    font-family: 'fontello';\r\n    margin-right: 7px;\r\n}\r\n\r\n.burger__back:hover {\r\n    color: #000000;    \r\n}\r\n\r\n.back--log-in {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n\r\n\r\n/* @media screen and (max-width: 768px) {\r\n\r\n} */", ""]);
+exports.push([module.i, "@font-face {\r\n    font-family: 'fontello';\r\n    src: url(" + ___CSS_LOADER_URL___0___ + ");\r\n    src: url(" + ___CSS_LOADER_URL___1___ + ") format('embedded-opentype'),\r\n         url(" + ___CSS_LOADER_URL___2___ + ") format('woff2'),\r\n         url(" + ___CSS_LOADER_URL___3___ + ") format('woff'),\r\n         url(" + ___CSS_LOADER_URL___4___ + ") format('truetype'),\r\n         url(" + ___CSS_LOADER_URL___5___ + ") format('svg');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n  }\r\n\r\n\r\n.header__burger__link {\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__overlay {\r\n    position: fixed;\r\n    z-index: 1000;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n    opacity: 0;\r\n    transition: opacity 500ms ease-in-out;\r\n}\r\n\r\n.ReactModal__Overlay--after-open{\r\n    opacity: 1;\r\n}\r\n\r\n.ReactModal__Overlay--before-close{\r\n    opacity: 0;\r\n}\r\n\r\n.burger__modal {\r\n    position: relative;\r\n    height: 100vh;\r\n    width: 100%;\r\n    padding: 20px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    overflow: auto;\r\n    transform: translateX(200%);\r\n    transition: transform 700ms ease-out;\r\n}\r\n\r\n.ReactModal__Content--after-open{\r\n    transform: translateX(0);\r\n}\r\n\r\n.ReactModal__Content--before-close{\r\n    transform: translateX(200%);\r\n}\r\n\r\n.burger__close {\r\n    position: absolute;\r\n    top: 20px;\r\n    right: 20px;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__search {\r\n    display: flex;\r\n    margin-top: 40px;\r\n}\r\n\r\n.burger__search__input {\r\n    width: calc(100% - 42px);\r\n    height: 42px;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\tfont-size: 0.75rem;\r\n    color: #303030;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\tborder: none;\r\n    padding: 0px;\r\n    background: url(" + ___CSS_LOADER_URL___6___ + ");\r\n    cursor: pointer;\r\n    outline: none;\r\n}\r\n\r\n.burger__search__button:active {\r\n\tbackground: url(" + ___CSS_LOADER_URL___7___ + ");\r\n}\r\n\r\n.burger__cats {\r\n    margin-top: 20px;\r\n}\r\n\r\n.burger__cats li,\r\n.burger__log-in {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 20px 5px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__cats li:hover,\r\n.burger__log-in:hover {\r\n    color: #000000;\r\n}\r\n\r\n.burger__cats li:active {\r\n    background-color: rgb(244, 244, 244);\r\n}\r\n\r\n.burger__cats a:hover {\r\n    text-decoration: none;\r\n}\r\n\r\n.arrow-right:before {\r\n    content: '\\e803';\r\n    font-family: 'fontello';\r\n}\r\n\r\n.burger__back {\r\n    display: inline-block;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    cursor: pointer;\r\n}\r\n\r\n.burger__back::before {\r\n    content: '\\e802';\r\n    font-family: 'fontello';\r\n    margin-right: 7px;\r\n}\r\n\r\n.burger__back:hover {\r\n    color: #000000;    \r\n}\r\n\r\n.back--log-in {\r\n    margin-bottom: 30px;\r\n}\r\n\r\n\r\n\r\n/* @media screen and (max-width: 768px) {\r\n\r\n} */", ""]);
 
 
 /***/ }),
@@ -123,7 +123,7 @@ var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runti
 var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/desktop-cart.png */ "./src/js/images/desktop-cart.png"));
 var ___CSS_LOADER_URL___1___ = getUrl(__webpack_require__(/*! ../images/product-item-3-1.jpg */ "./src/js/images/product-item-3-1.jpg"));
 // Module
-exports.push([module.i, "/* cart */\r\n\r\n.cart-wrap {\r\n\tposition: relative;\r\n}\r\n\r\n.header__cart__button {\r\n\tposition: relative;\r\n\tz-index: 200;\r\n\twidth: 123px;\r\n\tpadding: 15px;\r\n\tborder: 1px solid transparent;\r\n\tborder-bottom: none;\r\n\tbackground: #ffffff;\r\n}\r\n\r\n.cart-wrap.open:hover .header__cart__button {\r\n\tborder: 1px solid #e5e5e5;\r\n\tborder-bottom: none;\r\n}\r\n\r\n.header__cart__link {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.header__cart__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\r\n}\r\n\r\n.header__cart__link:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #000000;\r\n}\r\n\r\n.cart-wrap.open:hover .header__cart__link {\r\n\tcolor: #000000;\r\n}\r\n\r\n.cart__pop-up {\r\n\tposition: absolute;\r\n\tz-index: 100;\r\n\tright: 0px;\r\n\ttop: 49px;\r\n\twidth: 400px;\r\n\tpadding: 5px 15px;\r\n\tbackground-color: #ffffff;\r\n\tborder: 1px solid #e5e5e5;\r\n}\r\n\r\n.cart__pop-up__list {\r\n\ttext-align: left;\r\n\twidth: 100%;\r\n\tborder-collapse: collapse;\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__h4 {\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__list__body__row {\r\n\tborder-bottom: 1px solid #e5e5e5;\r\n\r\n}\r\n\r\n.cart__pop-up__item__body {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\r\n}\r\n\r\n.cart__pop-up__img {\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tbackground-image: url(" + ___CSS_LOADER_URL___1___ + ");\r\n\tbackground-size: contain;\r\n\tbackground-position: center top;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.cart__pop-up__img__link {\r\n\tdisplay: inline-block;\r\n\tline-height: 0;\r\n}\r\n\r\n.cart__pop-up__item__img {\r\n\twidth: 50px;\r\n}\r\n\r\n.cart__pop-up__item__description {\r\n\twidth: calc(78% - 80px);\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\n.cart__pop-up__item__amount {\r\n\twidth: 22%;\t\t\r\n}\r\n\r\n.cart__pop-up__item__delete {\r\n\ttext-align: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.delete__img {\r\n\tcursor: pointer;\r\n}\r\n\r\n.cart__pop-up__item__footer {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\t\r\n}\r\n\r\n.cart__pop-up__total {\r\n\tcolor: #f68236;\r\n}\r\n\r\n.cart__pop-up__btn {\r\n\twidth: 100%;\r\n\theight: 32px;\r\n\tfont-size: 0.75rem;\r\n}\r\n", ""]);
+exports.push([module.i, "/* cart */\r\n\r\n.cart-wrap {\r\n\tposition: relative;\r\n}\r\n\r\n.header__cart__button {\r\n\tposition: relative;\r\n\tz-index: 200;\r\n\twidth: 123px;\r\n\tpadding: 15px;\r\n\tborder: 1px solid transparent;\r\n\tborder-bottom: none;\r\n\tbackground: #ffffff;\r\n}\r\n\r\n.cart-wrap.open:hover .header__cart__button {\r\n\tborder: 1px solid #e5e5e5;\r\n\tborder-bottom: none;\r\n}\r\n\r\n.header__cart__link {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.header__cart__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\r\n}\r\n\r\n.header__cart__link:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #000000;\r\n}\r\n\r\n.cart-wrap.open:hover .header__cart__link {\r\n\tcolor: #000000;\r\n}\r\n\r\n.cart__pop-up {\r\n\tposition: absolute;\r\n\tz-index: 100;\r\n\tright: 0px;\r\n\ttop: 49px;\r\n\twidth: 400px;\r\n\tpadding: 5px 15px;\r\n\tbackground-color: #ffffff;\r\n\tborder: 1px solid #e5e5e5;\r\n}\r\n\r\n.cart__pop-up__list {\r\n\ttext-align: left;\r\n\twidth: 100%;\r\n\tborder-collapse: collapse;\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__h4 {\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n.cart__pop-up__list__body__row {\r\n\tborder-bottom: 1px solid #e5e5e5;\r\n\r\n}\r\n\r\n.cart__pop-up__item__body {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\r\n}\r\n\r\n.cart__pop-up__img {\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tbackground-image: url(" + ___CSS_LOADER_URL___1___ + ");\r\n\tbackground-size: contain;\r\n\tbackground-position: center top;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.cart__pop-up__img__link {\r\n\tdisplay: inline-block;\r\n\tline-height: 0;\r\n}\r\n\r\n.cart__pop-up__item__img {\r\n\twidth: 50px;\r\n}\r\n\r\n.cart__pop-up__item__description {\r\n\twidth: calc(78% - 80px);\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\n.cart__pop-up__item__amount {\r\n\twidth: 22%;\t\t\r\n}\r\n\r\n.cart__pop-up__item__delete {\r\n\ttext-align: center;\r\n\twidth: 30px;\r\n}\r\n\r\n.delete__img {\r\n\tcursor: pointer;\r\n}\r\n\r\n.cart__pop-up__item__footer {\r\n\tvertical-align: middle;\t\r\n\tpadding: 15px 0px;\t\t\r\n}\r\n\r\n.cart__pop-up__total {\r\n\tcolor: #f68236;\r\n}\r\n\r\n.cart__pop-up__btn {\r\n\twidth: 100%;\r\n\theight: 32px;\r\n\tfont-size: 0.75rem;\r\n}\r\n\r\n@media screen and (max-width: 1120px) {\r\n\t.cart__pop-up {\r\n\t\twidth: 320px;\r\n\t}\r\n\r\n\t.cart__pop-up__item__body {\r\n\t\tvertical-align: middle;\t\r\n\t\tpadding: 5px 0px;\t\r\n\t}\r\n}\r\n\r\n@media screen and (max-width: 860px) {\r\n\t.header__cart__button {\r\n\t\tpadding: 15px 10px;\r\n\t\twidth: 97px;\r\n\t}\t\r\n}", ""]);
 
 
 /***/ }),
@@ -140,7 +140,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/user.png */ "./src/js/images/user.png"));
 // Module
-exports.push([module.i, "\r\n.ReactModal__Body--open {\r\n    overflow-y: hidden;\r\n    padding-right: 17px;\r\n}\r\n\r\n.header__personal-page__link {\r\n\twhite-space: nowrap;\r\n}\r\n\r\n.header__personal-page__link:hover {\r\n    text-decoration: none;\r\n    color: #000000;\r\n}\r\n\r\n.header__personal-page__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\t\r\n}\r\n\r\n.pop-up__overlay {\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n\r\n}\r\n\r\n.pop-up__modal {\r\n    position: relative;\r\n    width: 400px;\r\n    height: auto;\r\n    padding: 25px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    box-shadow: 0 1px 16px rgba(0,0,0,.25);\r\n}\r\n\r\n.pop-up__close {\r\n    position: absolute;\r\n    top: 23px;\r\n    right: 25px;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n}\r\n\r\n.pop-up__title {\r\n    margin-bottom: 25px;\r\n    padding-bottom: 15px; \r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.pop-up__section {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.pop-up__input {\r\n    height: 42px;\r\n\twidth: 100%;\t\r\n\tborder: 1px solid #c2c2c2;\r\n\tpadding: 0 10px;\r\n    outline: 0;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__input:focus {\r\n    border: 1px solid #333333;;\r\n}\r\n\r\n.pop-up__label {\r\n    display: block;\r\n    margin-bottom: 7px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__btn {\r\n    height: 50px;\r\n    width: 95px;\r\n}\r\n\r\n.btn--log-in {\r\n    margin-right: 15px;\r\n}\r\n\r\n.btn--sign-in {\r\n    border: 1px solid #949494;\r\n    background-color: transparent;\r\n    cursor: pointer;\r\n    color: #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.btn--sign-in:hover {\r\n    border: 1px solid #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__forgot-password {\r\n    color: #dc813e;\r\n    cursor: pointer;\r\n    font-size: 0.75rem;\r\n    transition: color 0.5s ease;\r\n\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    .pop-up__modal {\r\n        height: 100vh;\r\n        width: 100%;\r\n        padding: 20px;\r\n        overflow: auto;\r\n        box-shadow: none;\r\n    }\r\n\r\n}", ""]);
+exports.push([module.i, "\r\n.ReactModal__Body--open,\r\n.ReactModal__Html--open {\r\n    overflow-y: hidden;\r\n    padding-right: 17px;\r\n}\r\n\r\n.ReactModal__Body--open .header__section--1,\r\n.ReactModal__Html--open .header__section--1 {\r\n    right: 17px;\r\n}\r\n\r\n.header__personal-page__link {\r\n    white-space: nowrap;\r\n    cursor: pointer;\r\n}\r\n\r\n.header__personal-page__link:hover {\r\n    text-decoration: none;\r\n    color: #000000;\r\n}\r\n\r\n.header__personal-page__link::before {\r\n\tcontent: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tmargin-right: 4px;\t\r\n}\r\n\r\n.pop-up__overlay {\r\n    position: fixed;\r\n    z-index: 1000;\r\n    top: 0px;\r\n    left: 0px;\r\n    right: 0px;\r\n    bottom: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: rgba(34,34,34,.6);\r\n\r\n}\r\n\r\n.pop-up__modal {\r\n    position: relative;\r\n    width: 400px;\r\n    height: auto;\r\n    padding: 25px;\r\n    background-color: #ffffff;\r\n    border-radius: 0px;\r\n    outline: none;\r\n    box-shadow: 0 1px 16px rgba(0,0,0,.25);\r\n}\r\n\r\n.pop-up__close {\r\n    position: absolute;\r\n    top: 23px;\r\n    right: 25px;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n}\r\n\r\n.pop-up__title {\r\n    margin-bottom: 25px;\r\n    padding-bottom: 15px; \r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.pop-up__section {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.pop-up__input {\r\n    height: 42px;\r\n\twidth: 100%;\t\r\n\tborder: 1px solid #c2c2c2;\r\n\tpadding: 0 10px;\r\n    outline: 0;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__input:focus {\r\n    border: 1px solid #333333;\r\n}\r\n\r\n.pop-up__label {\r\n    display: block;\r\n    margin-bottom: 7px;\r\n    font-size: 0.75rem;\r\n    color: #606060;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__btn {\r\n    height: 50px;\r\n    width: 95px;\r\n}\r\n\r\n.btn--log-in {\r\n    margin-right: 15px;\r\n}\r\n\r\n.btn--sign-in {\r\n    border: 1px solid #949494;\r\n    background-color: transparent;\r\n    cursor: pointer;\r\n    color: #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.btn--sign-in:hover {\r\n    border: 1px solid #333333;\r\n    transition: border 0.5s ease;\r\n}\r\n\r\n.pop-up__forgot-password {\r\n    color: #dc813e;\r\n    cursor: pointer;\r\n    font-size: 0.75rem;\r\n    transition: color 0.5s ease;\r\n\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    .pop-up__modal {\r\n        height: 100vh;\r\n        width: 100%;\r\n        padding: 20px;\r\n        overflow: auto;\r\n        box-shadow: none;\r\n    }\r\n\r\n}", ""]);
 
 
 /***/ }),
@@ -159,6 +159,20 @@ var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/search.p
 var ___CSS_LOADER_URL___1___ = getUrl(__webpack_require__(/*! ../images/search-dark.png */ "./src/js/images/search-dark.png"));
 // Module
 exports.push([module.i, ".header__search-bar {\r\n\tdisplay: flex;\r\n}\r\n\r\n.search-bar__input-button {\r\n\twidth: 42px;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tbackground: url(" + ___CSS_LOADER_URL___0___ + ");\r\n\tborder: none;\r\n\tpadding: 0px;\r\n\tcursor: pointer;\r\n\ttransition: background-image 0.4s ease;\t\r\n}\r\n\r\n.search-bar__input-button:hover {\r\n\tbackground: url(" + ___CSS_LOADER_URL___1___ + ");\r\n\ttransition: background-image 0.4s ease;\r\n}\r\n\r\n.search-bar__input-text {\r\n\tdisplay: none;\r\n\tborder: 1px solid #959595;\r\n\tborder-right: none;\r\n\tpadding: 5px 15px;\r\n\twidth: 165px;\r\n\ttransform: scaleX(0);\r\n\ttransform-origin: right center;\r\n\theight: 42px;\r\n\toutline: none;\r\n\tfont-size: 0.75rem;\r\n\tcolor: #303030;\r\n}\r\n\r\n@keyframes openSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(1);\r\n\t}\r\n}\r\n\r\n@keyframes closeSearchBar {\r\n\tfrom {\r\n\t\ttransform: scaleX(1);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: scaleX(0);\r\n\t}\r\n}\r\n\r\n@keyframes moveLeftProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-207px);\r\n\t}\r\n}\r\n\r\n@keyframes moveRightProfileWrap {\r\n\tfrom {\r\n\t\ttransform: translateX(-207px);\t\r\n\t}\r\n\tto {\r\n\t\ttransform: translateX(-42px);\r\n\t}\r\n}\r\n\r\n.header__search-bar.open .search-bar__input-text {\r\n\tanimation: openSearchBar 0.35s forwards;\r\n}\r\n\r\n.header__search-bar.close .search-bar__input-text {\r\n\tanimation: closeSearchBar 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"left\"] {\r\n\tanimation: moveLeftProfileWrap 0.35s forwards;\r\n}\r\n\r\n.profile__wrap[data-move=\"right\"] {\r\n\tanimation: moveRightProfileWrap 0.35s forwards;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n\t/* после анимации на десктопе .profile__wrap \r\n\tсодержит атрибут [data-move=\"right\"],\r\n\tчтобы не было отступа -42px на мобильном при ресайзе, \r\n\tотключаем анимацию */\r\n\t.profile__wrap[data-move=\"right\"] {\r\n\t\tanimation: none;\r\n\t}\t\r\n}\r\n\r\n\r\n\r\n", ""]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/window.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/js/styles/window.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\r\n.header__section--scrolled .header__menu {\r\n   height: 80px; \r\n}\r\n", ""]);
 
 
 /***/ }),
@@ -28551,7 +28565,6 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         "class": "header__personal-page__link",
-        href: "#",
         onClick: this.handleOpenModal
       }, "Log In"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_1___default.a, {
         isOpen: this.state.showModal,
@@ -28934,6 +28947,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Cart_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Cart.js */ "./src/js/components/Cart.js");
 /* harmony import */ var _components_LogIn_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/LogIn.js */ "./src/js/components/LogIn.js");
 /* harmony import */ var _components_BurgerMenu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/BurgerMenu.js */ "./src/js/components/BurgerMenu.js");
+/* harmony import */ var _styles_window_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/window.css */ "./src/js/styles/window.css");
+/* harmony import */ var _styles_window_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_window_css__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -29179,6 +29195,19 @@ var CATS = [{
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BurgerMenu_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   cats: CATS
 }), document.getElementById('burger-menu__wrap'));
+window.addEventListener('scroll', changeStickyHeaderHeight);
+document.addEventListener('DOMContentLoaded', changeStickyHeaderHeight);
+
+function changeStickyHeaderHeight() {
+  var header = document.getElementById('header__section--1');
+  var scrolled = pageYOffset;
+
+  if (scrolled >= 25) {
+    header.classList.add('header__section--scrolled');
+  } else {
+    header.classList.remove('header__section--scrolled');
+  }
+}
 
 /***/ }),
 
@@ -29281,6 +29310,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./SearchBar.css */ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/SearchBar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/js/styles/window.css":
+/*!**********************************!*\
+  !*** ./src/js/styles/window.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./window.css */ "./node_modules/css-loader/dist/cjs.js!./src/js/styles/window.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

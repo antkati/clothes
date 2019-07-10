@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar.js';
 import Cart from './components/Cart.js';
 import LogIn from './components/LogIn.js';
 import BurgerMenu from './components/BurgerMenu.js';
-
+import "./styles/window.css";
 
 ReactDOM.render(
     <SearchBar profileWrap={document.getElementById('profile__wrap')} />,
@@ -308,3 +308,18 @@ const CATS =
 
 ReactDOM.render(<BurgerMenu cats={CATS} />, document.getElementById('burger-menu__wrap'));
 
+
+
+window.addEventListener('scroll', changeStickyHeaderHeight);
+document.addEventListener('DOMContentLoaded', changeStickyHeaderHeight);
+
+function changeStickyHeaderHeight() {
+    let header = document.getElementById('header__section--1');
+    let scrolled = pageYOffset;
+    
+    if(scrolled >= 25) {
+        header.classList.add('header__section--scrolled');	
+    } else {
+        header.classList.remove('header__section--scrolled');        
+    }    
+}

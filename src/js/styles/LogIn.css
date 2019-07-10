@@ -1,11 +1,18 @@
 
-.ReactModal__Body--open {
+.ReactModal__Body--open,
+.ReactModal__Html--open {
     overflow-y: hidden;
     padding-right: 17px;
 }
 
+.ReactModal__Body--open .header__section--1,
+.ReactModal__Html--open .header__section--1 {
+    right: 17px;
+}
+
 .header__personal-page__link {
-	white-space: nowrap;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .header__personal-page__link:hover {
@@ -20,6 +27,7 @@
 
 .pop-up__overlay {
     position: fixed;
+    z-index: 1000;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -70,7 +78,7 @@
 }
 
 .pop-up__input:focus {
-    border: 1px solid #333333;;
+    border: 1px solid #333333;
 }
 
 .pop-up__label {

@@ -120,3 +120,21 @@
 	height: 32px;
 	font-size: 0.75rem;
 }
+
+@media screen and (max-width: 1120px) {
+	.cart__pop-up {
+		width: 320px;
+	}
+
+	.cart__pop-up__item__body {
+		vertical-align: middle;	
+		padding: 5px 0px;	
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.header__cart__button {
+		padding: 15px 10px;
+		width: 97px;
+	}	
+}
