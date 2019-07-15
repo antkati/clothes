@@ -1,5 +1,5 @@
 
-.ReactModal__Body--open,
+/* .ReactModal__Body--open,
 .ReactModal__Html--open {
     overflow-y: hidden;
     padding-right: 17px;
@@ -8,7 +8,7 @@
 .ReactModal__Body--open .header__section--1,
 .ReactModal__Html--open .header__section--1 {
     right: 17px;
-}
+} */
 
 .header__personal-page__link {
     white-space: nowrap;
@@ -36,7 +36,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(34,34,34,.6);
-
 }
 
 .pop-up__modal {

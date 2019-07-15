@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<title>Shopping Bag</title>
+		<title>Product</title>
 		<link rel='stylesheet' type='text/css' href='css/index.css'>
-		<link rel='stylesheet' type='text/css' href='css/grid.css'>
-		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1'>		
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>	
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1'>
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -149,104 +149,131 @@
 				</div>
 			</div>
 		</header>
+
 		<!-- MAIN -->
 		<main class='main'>
 			<div class='container--center'>
-
-				<!-- BASKET -->
-				<section class='shopping-bag grid'>	
-					<!-- HEADER -->
-					<div class='shopping-bag__header'>
-						<h2 class='text-transform--uppercase'>Your shopping bag</h2>
-						<p class='main__p font--georgia-i'>Items reserved for limited time only</p>	
+				<!-- BREADCRUPS -->
+				<div class='breadcrumps grid'>
+					<ul>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Home</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Men</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Outerwear</a></li>
+						<li><a class='breadcrumps__link text-transform--uppercase' href=''>Jacket DC Shoes</a></li>					
+					</ul>
+				</div>	
+				<!-- PRODUCT SECTION -->				
+				<section class='product grid'>
+					<div class='product__slider'></div>
+					<div class='product__wrapper'>
+						<h2 class='product__header text-transform--uppercase'>Jacket DC Shoes</h2>
+						<div class='product__article'>Article number: 14210160762</div>
+						<div class='product__price text-transform--uppercase font--georgia-i'>€ 99,95</div>
+						<div class='product__description'>
+							Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. 
+						</div>
+						<div class='product__size'>
+							<h4 class='text-transform--uppercase font--lato-bold'>Size</h4>
+							<ul class='product__size__list'>
+								<li class='product__size__item'>
+									<input type='radio' name='size' id='p-s-38'>
+									<label for='p-s-38'>38</label>									
+								</li>
+								<li class='product__size__item'>
+									<input type='radio' name='size' id='p-s-39'>
+									<label for='p-s-39'>39</label>									
+								</li>
+								<li class='product__size__item'>
+									<input type='radio' name='size' id='p-s-40'>
+									<label for='p-s-40'>40</label>									
+								</li>	
+								<li class='product__size__item'>
+									<input type='radio' name='size' id='p-s-41'>
+									<label for='p-s-41'>41</label>									
+								</li>
+								<li class='product__size__item'>
+									<input type='radio' name='size' id='p-s-42'>
+									<label for='p-s-42'>42</label>									
+								</li>																							
+							</ul>
+						</div>
+						<div class='product__buy'>
+							<button class='btn btn--orange btn--cart text-transform--uppercase' name='submit'>Add do cart</button>
+						</div>
 					</div>
-					<table class='shopping-bag__list'>
-						<thead class='shopping-bag__list__header text-transform--uppercase'>
-							<tr>
-								<th class='shopping-bag__item__header shopping-bag__item__img'>Product</th>
-								<th class='shopping-bag__item__header shopping-bag__item__description'>Description</th>
-								<th class='shopping-bag__item__header shopping-bag__item__color'>Color</th>
-								<th class='shopping-bag__item__header shopping-bag__item__size'>Size</th>
-								<th class='shopping-bag__item__header shopping-bag__item__qty'>QTY</th>
-								<th class='shopping-bag__item__header shopping-bag__item__amount'>Amount</th>
-								<th class='shopping-bag__item__header shopping-bag__item__delete'>Delete</th>
-							</tr>
-						</thead>						
-						<tbody class='shopping-bag__list__body'>
-							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
-								<td class='shopping-bag__item__body shopping-bag__item__img'>
-									<a class='shopping-bag__img__link' href="">
-										<img class='shopping-bag__img' src='./images/product/product-item-2-1-106w.png' alt=''>
+					<div class='product__recommendation'>
+						<div class='recommendation__header header__p font--georgia-i'>You may also like</div>
+						<div class='recommendation__slider'>
+							<div class='recommendation-item'>
+								<!-- RECOMENDATION IMG -->
+								<a class='recommendation__img__link' href='#'>
+									<img class='recommendation-item__img' src='images/product/product-item-1-1.jpg'>
+								</a>
+								<!-- RECOMENDARION HEADER -->
+								<div class='recommendation-item__header'>
+									<a href='#'>
+										<h4 class='font--lato-bold'>Double-Layered Top</h4>
 									</a>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__description'>
-									<a href="">
-										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									<p class='recommendation-item__price'>€ 89,95</p>				
+								</div>
+							</div>	
+							<div class='recommendation-item'>
+								<!-- PRODUCT IMG -->
+								<a class='recommendation__img__link' href='#'>
+									<img class='recommendation-item__img' src='images/product/product-item-3-1.jpg'>
+								</a>
+								<!-- PRODUCT HEADER -->
+								<div class='recommendation-item__header'>
+									<a href='#'>
+										<h4 class='font--lato-bold'>Double-Layered Top</h4>
 									</a>
-									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
-								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
-								<td class='shopping-bag__item__body shopping-bag__item__qty'>
-									<span class='qty__value'>1</span>
-									<div class='container__qty__counter'>
-										<div class='qty__counter'>+</div>
-										<div class='qty__counter'>-</div>
-									</div>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
-								<td class='shopping-bag__item__body shopping-bag__item__delete'>
-									<img class='delete__img' src='images/delete-basket.png'>
-								</td>								
-							</tr>
-							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
-								<td class='shopping-bag__item__body shopping-bag__item__img'>
-									<a class='shopping-bag__img__link' href="">
-										<img class='shopping-bag__img' src='./images/product/product-item-3-1-106w.png' alt=''>
+									<p class='recommendation-item__price'>€ 89,95</p>				
+								</div>
+							</div>
+							<div class='recommendation-item'>
+								<!-- PRODUCT IMG -->
+								<a class='recommendation__img__link' href='#'>
+									<img class='recommendation-item__img' src='images/product/product-item-1-1.jpg'>
+								</a>
+								<!-- PRODUCT HEADER -->
+								<div class='recommendation-item__header'>
+									<a href='#'>
+										<h4 class='font--lato-bold'>Double-Layered Top</h4>
 									</a>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__description'>
-									<a href="">
-										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
+									<p class='recommendation-item__price'>€ 89,95</p>				
+								</div>
+							</div>
+							<div class='recommendation-item'>
+								<!-- PRODUCT IMG -->
+								<a class='recommendation__img__link' href='#'>
+									<img class='recommendation-item__img' src='images/product/product-item-3-1.jpg'>
+								</a>
+								<!-- PRODUCT HEADER -->
+								<div class='recommendation-item__header'>
+									<a href='#'>
+										<h4 class='font--lato-bold'>Double-Layered Top</h4>
 									</a>
-									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__color'>One Color</td>
-								<td class='shopping-bag__item__body shopping-bag__item__size'>39</td>		
-								<td class='shopping-bag__item__body shopping-bag__item__qty'>
-									<span class='qty__value'>1</span>
-									<div class='container__qty__counter'>
-										<div class='qty__counter'>+</div>
-										<div class='qty__counter'>-</div>
-									</div>
-								</td>
-								<td class='shopping-bag__item__body shopping-bag__item__amount'>€99,95</td>
-								<td class='shopping-bag__item__body shopping-bag__item__delete'>
-									<img class='delete__img' src='images/delete-basket.png'>
-								</td>								
-							</tr>
+									<p class='recommendation-item__price'>€ 89,95</p>				
+								</div>
+							</div>
+							<div class='recommendation-item'>
+								<!-- PRODUCT IMG -->
+								<a class='recommendation__img__link' href='#'>
+									<img class='recommendation-item__img' src='images/product/product-item-1-1.jpg'>
+								</a>
+								<!-- PRODUCT HEADER -->
+								<div class='recommendation-item__header'>
+									<a href='#'>
+										<h4 class='font--lato-bold'>Double-Layered Top</h4>
+									</a>
+									<p class='recommendation-item__price'>€ 89,95</p>				
+								</div>
+							</div>																																		
 
-							<!-- footer -->
-							<tr class='shopping-bag__list__footer__row'>
-								<td class='footer__empty' colspan="7"></td>
-							</tr>
-							<tr class='shopping-bag__list__footer__row grid--shopping-bag'>
-								<td class='shopping-bag__item__footer shopping-bag__item__total-name font--lato-bold' colspan="5">Subtotal:</td> 
-							 	<td colspan="2" class='shopping-bag__item__footer shopping-bag__item__total font--lato-bold'>€567,95</td>
-							</tr>							
-						</tbody>
-					</table>
-
-					<div class='shopping-bag__act'>
-						<span class="shopping-bag__act__continue-shopping">
-							<a class='text-decoration--underline' href="">Continue Shopping</a>
-						</span>	
-						<button class='btn btn--orange shopping-bag__act__order text-transform--uppercase'>Order now</button>
-					</div>
-			
-
-				</section>
-												
+						</div>
+						<a class='recommendation__show-more__link' href="#"><div class='recommendation__show-more text-transform--uppercase'>Show me more related clothes</div></a>
+					</div>					
+				</section>	
 			</div>	
 		</main>
 
@@ -305,7 +332,6 @@
 				</div>
 			</div>
 		</footer>
-		<div class='bg'></div>
-	</body>
+	<script type="text/javascript" src="bundle.js"></script></body>
 </html>
 

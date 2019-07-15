@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<title>Shopping Bag</title>
+		<title>Order</title>
 		<link rel='stylesheet' type='text/css' href='css/index.css'>
-		<link rel='stylesheet' type='text/css' href='css/grid.css'>
-		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1'>		
+		<link rel='stylesheet' type='text/css' href='css/grid.css'>		
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1'>
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -149,10 +149,10 @@
 				</div>
 			</div>
 		</header>
+
 		<!-- MAIN -->
 		<main class='main'>
 			<div class='container--center'>
-
 				<!-- BASKET -->
 				<section class='shopping-bag grid'>	
 					<!-- HEADER -->
@@ -175,12 +175,12 @@
 						<tbody class='shopping-bag__list__body'>
 							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
 								<td class='shopping-bag__item__body shopping-bag__item__img'>
-									<a class='shopping-bag__img__link' href="">
-										<img class='shopping-bag__img' src='./images/product/product-item-2-1-106w.png' alt=''>
+									<a class='shopping-bag__img__link' href=''>
+										<img class='shopping-bag__img' src='./images/product/product-item-3-1-106w.png' alt=''>
 									</a>
 								</td>
 								<td class='shopping-bag__item__body shopping-bag__item__description'>
-									<a href="">
+									<a href=''>
 										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
 									</a>
 									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
@@ -201,12 +201,12 @@
 							</tr>
 							<tr class='shopping-bag__list__body__row grid--shopping-bag'>
 								<td class='shopping-bag__item__body shopping-bag__item__img'>
-									<a class='shopping-bag__img__link' href="">
-										<img class='shopping-bag__img' src='./images/product/product-item-3-1-106w.png' alt=''>
+									<a class='shopping-bag__img__link' href=''>
+										<img class='shopping-bag__img' src='./images/product/product-item-2-1-106w.png' alt=''>
 									</a>
 								</td>
 								<td class='shopping-bag__item__body shopping-bag__item__description'>
-									<a href="">
+									<a href=''>
 										<h4 class='text-transform--uppercase'>Jacket DC Shoes</h4>
 									</a>
 									<div class='shopping-bag__item__body__article'>Ref. 2514/302</div>
@@ -228,25 +228,122 @@
 
 							<!-- footer -->
 							<tr class='shopping-bag__list__footer__row'>
-								<td class='footer__empty' colspan="7"></td>
+								<td class='footer__empty' colspan='7'></td>
 							</tr>
 							<tr class='shopping-bag__list__footer__row grid--shopping-bag'>
-								<td class='shopping-bag__item__footer shopping-bag__item__total-name font--lato-bold' colspan="5">Subtotal:</td> 
-							 	<td colspan="2" class='shopping-bag__item__footer shopping-bag__item__total font--lato-bold'>€567,95</td>
+								<td class='shopping-bag__item__footer shopping-bag__item__total-name font--lato-bold' colspan='5'>Subtotal:</td> 
+							 	<td colspan='2' class='shopping-bag__item__footer shopping-bag__item__total font--lato-bold'>€567,95</td>
 							</tr>							
 						</tbody>
 					</table>
-
-					<div class='shopping-bag__act'>
-						<span class="shopping-bag__act__continue-shopping">
-							<a class='text-decoration--underline' href="">Continue Shopping</a>
-						</span>	
-						<button class='btn btn--orange shopping-bag__act__order text-transform--uppercase'>Order now</button>
-					</div>
-			
-
 				</section>
-												
+
+
+
+				<form class='order-form'>
+					<img class='order-separator' src='images/order-separator.png'>				
+					<!-- SHIPPING ADDRESS -->
+					<section class='delivery grid'>
+						<div class='delivery__header'>
+							<h2 class='text-transform--uppercase'>Shipping Address</h2>
+							<p class='main__p font--georgia-i'>All fields are required</p>	
+						</div>
+
+						<div class='delivery__form'>
+							<div class='delivery__block block--delivery__type'>
+								<label class='text-transform--uppercase delivery__form__label' for='delivery-type'>Select delivery method</label>
+								<select class='delivery__form__input' id='delivery-type'>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+									<option>DHL International - €15,00</option>
+								</select>
+							</div>
+
+							<div class='delivery__block block--first-name'>
+								<label class='text-transform--uppercase delivery__form__label' for='first-name'>First name</label>
+								<input type='text' name='' class='delivery__form__input' id='first-name'>
+							</div>				
+
+							<div class='delivery__block block--last-name'>
+								<label class='text-transform--uppercase delivery__form__label' for='last-name'>Last name</label>
+								<input type='text' name='' class='delivery__form__input' id='last-name'>					
+							</div>
+
+							<div class='delivery__block block--address-1'>
+								<label class='text-transform--uppercase delivery__form__label' for='address-1'>Address <span class='text-transform--lowercase'>(line 1)</span></label>
+								<input type='text' name='' class='delivery__form__input' id='address-1'>
+							</div>
+
+							<div class='delivery__block block--address-2'>						
+								<label class='text-transform--uppercase delivery__form__label' for='address-2'>Address <span class='text-transform--lowercase'>(line 2)</span></label>
+								<input type='text' name='' class='delivery__form__input' id='address-2'>
+							</div>											
+
+							<div class='delivery__block block--city'>
+								<label class='text-transform--uppercase delivery__form__label' for='city'>City</label>
+								<input type='text' name='' class='delivery__form__input' id='city'>		
+							</div>	
+
+							<div class='delivery__block block--postal-code'>					
+								<label class='text-transform--uppercase delivery__form__label' for='postal-code'>Postal code</label>
+								<input type='text' name='' class='delivery__form__input' id='postal-code'>				
+							</div>
+
+							<div class='delivery__block block--phone'>				
+								<label class='text-transform--uppercase delivery__form__label' for='phone-number'>Phone number</label>
+								<input type='text' name='' class='delivery__form__input' id='phone-number'>		
+							</div>
+
+							<div class='delivery__block block--mail'>
+								<label class='text-transform--uppercase delivery__form__label' for='e-mail'>E-mail</label>
+								<input type='text' name='' class='delivery__form__input' id='e-mail'>
+							</div>	
+							<div class='delivery__block block--use-adress'>
+								<input type='checkbox' name='' value='' id='use-adress'>
+								<label class='delivery__form__label--checkbox' for='use-adress'>Use this address for Billing</label>
+
+							</div>
+						</div>
+					</section>	
+
+					<img class='order-separator' src='images/order-separator.png'>
+
+					<!-- PAYMENT OPTIONS -->
+					<section class='payment grid'>
+						<div class='payment__header'>
+							<h2 class='text-transform--uppercase'>Payment Options</h2>
+							<p class='main__p font--georgia-i'>All fields are required</p>	
+						</div>	
+
+						<div class='payment__form'>
+							<table class='payment__table'>
+								<tr>
+									<td class='font--georgia payment__table__name'>Subtotal:</td>
+									<td class='font--georgia-i payment__table__value'>€567,95</td>
+								</tr>
+								<tr>
+									<td class='font--georgia payment__table__name'>Shipping:</td>
+									<td class='font--georgia-i payment__table__value'>€15,00</td>									
+								</tr>
+								<tr>
+									<td class='font--georgia payment__table__name payment__table__name--orange'>Total:</td>
+									<td class='font--georgia-i payment__table__value payment__table__value--orange'>€582,95</td>									
+								</tr>
+							</table>
+
+							<div class='payment__block block--payment__type'>
+								<label class='text-transform--uppercase payment__form__label' for='payment-type'>Select payment method</label>
+								<select class='payment__form__input' id='payment-type'>
+									<option>Credit Card</option>
+									<option>Cash</option>
+								</select>
+							</div>	
+
+							<button class='btn btn--orange text-transform--uppercase order-btn'>Order now</button>
+						</div>				
+					</section>	
+				</form>														
 			</div>	
 		</main>
 
@@ -306,6 +403,6 @@
 			</div>
 		</footer>
 		<div class='bg'></div>
-	</body>
+	<script type="text/javascript" src="bundle.js"></script></body>
 </html>
 

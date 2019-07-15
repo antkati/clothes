@@ -16,7 +16,7 @@ class ProductRow extends React.Component {
                 <td className="cart__pop-up__item__body cart__pop-up__item__img">
                     <a className="cart__pop-up__img__link" 
                         href="">
-                        <div className="cart__pop-up__img"></div>
+                        <img src={this.props.product.image} className="cart__pop-up__img" />
                     </a>
                 </td>
                 <td className="cart__pop-up__item__body cart__pop-up__item__description">

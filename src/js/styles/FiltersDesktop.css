@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?59721244');
+    src: url('../fonts/fontello.eot?59721244#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?59721244') format('woff2'),
+         url('../fonts/fontello.woff?59721244') format('woff'),
+         url('../fonts/fontello.ttf?59721244') format('truetype'),
+         url('../fonts/fontello.svg?59721244#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.arrow-bottom:before {
+    content: '\e801';
+    font-family: 'fontello';
+    font-style: normal;
+    color: black;
+}
+
+.deleteFilters {
+    cursor: pointer;
+}

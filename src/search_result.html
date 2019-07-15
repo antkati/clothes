@@ -5,42 +5,148 @@
 		<title>Result search</title>
 		<link rel='stylesheet' type='text/css' href='css/index.css'>
 		<link rel='stylesheet' type='text/css' href='css/grid.css'>		
+		<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1'>
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header class='header'>
-			<div class='container--center'>
-				<div class='header__menu grid'>
-					<!-- LEFT NAV -->
-					<div class='header__menu--left'>
-						<a class='header__logo__link' href='./index.html'>
-							<div class='header__logo'>sh</div>	
-						</a><!-- 
-					 --><nav class='header__nav header__nav--left'>
-							<a href='category_all.html'>Woman</a>
-							<a href='#'>Men</a>
-							<a href='#'>Kids</a>
-							<a href='#'>Comming soon</a>
-							<a href='#'>About</a>
-						</nav>
-					</div><!-- RIGHT NAV
-				 --><nav class='header__nav header__menu--right'>
-						<div class='header__personal-page'>
-							<img src='images/user.png'>
-							<a href='#'>Log In</a>
-						</div><!-- 
-					 --><div class='header__cart'>
-							<a class='header__cart__link--mobile' href=''>
-								<img class='header__cart__i--mobile' src='images/mobile-cart.png'>
+		<header id='header' class='header'>
+			<div class='header__helper'></div>
+			<div class='header__section--1' id='header__section--1'>
+				<div class='container--center'>
+					<div class='header__menu grid' id='header__menu'>
+						<!-- LEFT NAV -->
+						<div class='header__menu--left'>
+							<a class='header__logo__link' href='#'>
+								<div class='header__logo'>sh</div>
 							</a>
-							<img class='header__cart__i--desktop' src='images/desktop-cart.png'>	
-							<a class='header__cart__link' href='#'>Basket (0)</a>
-						</div><!-- 
-					 --><img class='header__search' src='images/search.png'><!-- 
-					 --><img class='header__burger-menu' src='images/burger-menu.png'>
-					</nav>
-				</div>
+							<nav class='header__nav header__nav--left'>
+								<div class='nav__block nav__block--woman'>
+									<a class='nav__link nav__link--woman' href='category_all.html'>Woman</a>
+									<div class='nav__pop-up nav__pop-up--woman'>
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'
+												class='text-transform--uppercase'>Clothes</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Blouses & shirts</a></li>
+												<li><a href=''>T-shirts & longslives</a></li>
+												<li><a href=''>Hoody</a></li>
+												<li><a href=''>Pants & shorts</a></li>
+												<li><a href=''>Jeans</a></li>
+												<li><a href=''>Outerwear</a></li>
+												<li><a href=''>Dresses</a></li>
+												<li><a href=''>Skirts</a></li>
+											</ul>
+										</div>
 
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'>Shoes</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Shoes</a></li>
+												<li><a href=''>Sandals</a></li>
+												<li><a href=''>Sneakers</a></li>
+												<li><a href=''>Boots</a></li>
+												<li><a href=''>Ankle boots</a></li>
+												<li><a href=''>Moccasins</a></li>
+												<li><a href=''>Slates</a></li>
+												<li><a href=''>Slippers</a></li>
+											</ul>
+										</div>
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'>Accessories</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Scarves </a></li>
+												<li><a href=''>Gloves</a></li>
+												<li><a href=''>Bags</a></li>
+												<li><a href=''>Belts</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class='nav__block nav__block--men'>
+									<a class='nav__link nav__link--men' href='#'>Men</a>
+									<div class='nav__pop-up nav__pop-up--men'>
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'
+												class='text-transform--uppercase'>Clothes</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Shirts</a></li>
+												<li><a href=''>T-shirts & longslives</a></li>
+												<li><a href=''>Hoody</a></li>
+												<li><a href=''>Pants & shorts</a></li>
+												<li><a href=''>Jeans</a></li>
+												<li><a href=''>Outerwear</a></li>
+											</ul>
+										</div>
+
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'>Shoes</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Shoes</a></li>
+												<li><a href=''>Sandals</a></li>
+												<li><a href=''>Sneakers</a></li>
+												<li><a href=''>Boots</a></li>
+												<li><a href=''>Moccasins</a></li>
+												<li><a href=''>Slates</a></li>
+												<li><a href=''>Slippers</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class='nav__block nav__block--kids'>
+									<a class='nav__link nav__link--kids' href='#'>Kids</a>
+									<div class='nav__pop-up nav__pop-up--kids'>
+
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'>Clothes</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>For girls</a></li>
+												<li><a href=''>For boys</a></li>
+												<li><a href=''>For newborn</a></li>
+											</ul>
+										</div>
+										<div class='nav__pop-up__cat'>
+											<h4 class='text-transform--uppercase nav__pop-up__cat__title'>Other</h4>
+											<ul class='nav__pop-up__cat__list'>
+												<li><a href=''>Products for baby</a></li>
+												<li><a href=''>Feeding accessories</a></li>
+												<li><a href=''>Bathing accessories</a></li>
+												<li><a href=''>Child safety</a></li>
+												<li><a href=''>Wet wipes</a></li>
+												<li><a href=''>Hygiene & care</a></li>
+												<li><a href=''>Baby food</a></li>
+												<li><a href=''>Furniture</a></li>
+												<li><a href=''>Diapers, bibs, scratches</a></li>
+												<li><a href=''>Bedding</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class='nav__block nav__block--comming'>
+									<a class='nav__link nav__link--comming' href='#'>Comming soon</a>
+								</div>
+								<div class='nav__block nav__block--about'>
+									<a class='nav__link nav__link--about' href='#'>About</a>
+								</div>
+							</nav>
+						</div>
+						<!-- RIGHT NAV -->
+						<nav id='header__menu--right' class='header__nav header__menu--right'>
+							<div id='profile__wrap' class='profile__wrap'>
+								<div id='header__personal-page' class='header__personal-page'></div>
+
+								<div class='header__cart'>
+									<a class='header__cart__link--mobile' href='#'>
+										<img class='header__cart__i--mobile' src='images/mobile-cart.png'>
+									</a>
+
+									<div id='header__cart__link--desktop' class='header__cart__link--desktop'></div>
+								</div>
+							</div>
+							<div class='search-bar__wrap' id='search-bar__wrap'></div>
+							<div class='burger-menu__wrap' id='burger-menu__wrap'></div>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -78,7 +184,7 @@
 						<div class='product-item'>
 							<!-- PRODUCT IMG -->
 							<a class='product-item__img__link' href='#'>
-								<img class='product-item__img' src='images/product/product-item-3-1.jpg'>
+								<img class='product-item__img' src='images/product/product-item-3-1-208w.png'>
 							</a>
 							<!-- PRODUCT HEADER -->
 							<div class='product-item__header'>
@@ -91,7 +197,7 @@
 						<div class='product-item'>
 							<!-- PRODUCT IMG -->
 							<a class='product-item__img__link' href='#'>
-								<img class='product-item__img' src='images/product/product-item-3-1.jpg'>
+								<img class='product-item__img' src='images/product/product-item-3-1-208w.png'>
 							</a>
 							<!-- PRODUCT HEADER -->
 							<div class='product-item__header'>
@@ -104,7 +210,7 @@
 						<div class='product-item'>
 							<!-- PRODUCT IMG -->
 							<a class='product-item__img__link' href='#'>
-								<img class='product-item__img' src='images/product/product-item-3-1.jpg'>
+								<img class='product-item__img' src='images/product/product-item-3-1-208w.png'>
 							</a>
 							<!-- PRODUCT HEADER -->
 							<div class='product-item__header'>
@@ -117,7 +223,7 @@
 						<div class='product-item'>
 							<!-- PRODUCT IMG -->
 							<a class='product-item__img__link' href='#'>
-								<img class='product-item__img' src='images/product/product-item-3-1.jpg'>
+								<img class='product-item__img' src='images/product/product-item-3-1-208w.png'>
 							</a>
 							<!-- PRODUCT HEADER -->
 							<div class='product-item__header'>
@@ -152,75 +258,53 @@
 					<div class='footer__cell footer__cell--1'>
 						<h4 class='text-transform--uppercase'>Collection</h4>
 						<ul>
-							<a href='#'>
-								<li>Woman (1725)</li>
-							</a>
-							<a href='#'>
-								<li>Men (635)</li>
-							</a>
-							<a href='#'>
-								<li>Kids (2514)</li>
-							</a>
-							<a href='#'>
-								<li>Comming soon (76)</li>
-							</a>
+							<li><a href='#'>Woman (1725)</a></li>
+							<li><a href='#'>Men (635)</a></li>
+							<li><a href='#'>Kids (2514)</a></li>
+							<li><a href='#'>Comming soon (76)</a></li>
 						</ul>
-		
-					</div><!--
-				 --><div class='footer__cell footer__cell--2'>
+
+					</div>
+					<div class='footer__cell footer__cell--2'>
 						<h4 class='text-transform--uppercase'>Site</h4>
 						<ul>
-							<a href='#'>
-								<li>Terms of Service</li>
-							</a>
-							<a href='#'>
-								<li>Privacy Policy</li>
-							</a>
-							<a href='#'>
-								<li>Copyright Policy</li>
-							</a>
-							<a href='#'>
-								<li>Press Kit</li>
-							</a>
-							<a href='#'>
-								<li>Support</li>
-							</a>
-						</ul>						
-					</div><!--
-				 --><div class='footer__cell footer__cell--3'>
+							<li><a href='#'>Terms of Service</a></li>
+							<li><a href='#'>Privacy Policy</a></li>
+							<li><a href='#'>Copyright Policy</a></li>
+							<li><a href='#'>Press Kit</a></li>
+							<li><a href='#'>Support</a></li>
+						</ul>
+					</div>
+					<div class='footer__cell footer__cell--3'>
 						<h4 class='text-transform--uppercase'>Shop</h4>
 						<ul>
-							<a href='#'>
-								<li>About us</li>
-							</a>
-							<a href='#'>
-								<li>Shiping Metods</li>
-							</a>
-							<a href='#'>
-								<li>Career</li>
-							</a>
-							<a href='#'>
-								<li>Contact</li>
-							</a>
-						</ul>			
-					</div><!--
-				 --><div class='footer__cell footer__cell--4 footer__cell--social'>
+							<li><a href='#'>About us</a></li>
+							<li><a href='#'>Shiping Metods</a></li>
+							<li><a href='#'>Career</a></li>
+							<li><a href='#'>Contact</a></li>
+						</ul>
+					</div>
+					<!--
+					-->
+					<div class='footer__cell footer__cell--4 footer__cell--social'>
 						<h4 class='text-transform--uppercase'>Social</h4>
 						<p class='footer__p'>
-							Shoper is made with love in Warsaw,<br>2014 &#169; All rights reseved. El passion	
+							Shoper is made with love in Warsaw,<br>2014 &#169; All rights reseved. El passion
 						</p>
 						<a class='footer__social-link' href='#'>
 							<img src='images/twitter.png'>
-						</a><!--
-					 --><a class='footer__social-link' href='#'>
-					 		<img src='images/fb.png'>
-					 	</a><!--
-					 --><a class='footer__social-link' href='#'>
-					 		<img src='images/instagram.png'>
-					 	</a>
+						</a>
+						<!--
+						--><a class='footer__social-link' href='#'>
+							<img src='images/fb.png'>
+						</a>
+						<!--
+						--><a class='footer__social-link' href='#'>
+							<img src='images/instagram.png'>
+						</a>
 					</div>
 				</div>
-			</div>							
+			</div>
 		</footer>
 	</body>
 </html>
