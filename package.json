@@ -1,0 +1,38 @@
+{
+  "name": "slothes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "babel.config.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/antonovaekaterina/slothes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/antonovaekaterina/slothes#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-modal": "^3.8.1",
+    "react-select": "^3.0.4"
+  }
+}
