@@ -5,13 +5,13 @@ import Cart from './components/Cart.js';
 import LogIn from './components/LogIn.js';
 import BurgerMenu from './components/BurgerMenu.js';
 import "./styles/window.css";
-import FiltersDesktop from './components/FiltersDesktop.js';
-import FiltersMobile from './components/FiltersMobile.js';
+
 
 ReactDOM.render(
     <SearchBar profileWrap={document.getElementById('profile__wrap')} />,
     document.getElementById('search-bar__wrap')
 );
+
 
 const PRODUCTS = [
     { image: './images/product/product-item-3-1-50w.png', price: '99.95', name: 'Jacket DC T-Shirt' },
@@ -24,9 +24,11 @@ ReactDOM.render(
     document.getElementById('header__cart__link--desktop')
 );
 
+
 const propsLogIn = {};
 
 ReactDOM.render(<LogIn {...propsLogIn} />, document.getElementById('header__personal-page'));
+
 
 const CATS =
     [
@@ -311,7 +313,6 @@ const CATS =
 ReactDOM.render(<BurgerMenu cats={CATS} />, document.getElementById('burger-menu__wrap'));
 
 
-
 window.addEventListener('scroll', changeStickyHeaderHeight);
 document.addEventListener('DOMContentLoaded', changeStickyHeaderHeight);
 
@@ -331,152 +332,5 @@ function changeStickyHeaderHeight() {
 }
 
 
-const FILTERS = [
-    {
-        name: 'Size',
-        type: 'select',
-        isMulti: true,
-        options: [
-            {
-                value: '26',
-                label: '26',
-                selected: false,
-                disable: true
-            },
-            {
-                value: '27',
-                label: '27',
-                selected: true,
-                disable: false
-            },
-            {
-                value: '28',
-                label: '28',
-                selected: true,
-                disable: false
-            },
-            {
-                value: '29',
-                label: '29',
-                selected: false,
-                disable: false
-            },
-            {
-                value: '30',
-                label: '30',
-                selected: false,
-                disable: true
-            }
-        ]
-    },
-    {
-        name: 'Color',
-        type: 'select',
-        isMulti: true,
-        options: [
-            {
-                value: 'white',
-                label: 'white',
-                selected: false,
-                disable: false
-            },
-            {
-                value: 'grey',
-                label: 'grey',
-                selected: false,
-                disable: false
-            },
-            {
-                value: 'pink',
-                label: 'pink',
-                selected: false,
-                disable: false
-            },
-            {
-                value: 'blue',
-                label: 'blue',
-                selected: false,
-                disable: false
-            },
-            {
-                value: 'black',
-                label: 'black',
-                selected: false,
-                disable: false
-            },
-            {
-                value: 'orange',
-                label: 'orange',
-                selected: true,
-                disable: false
-            }
-        ]
-    },
-    {
-        name: 'Price',
-        type: 'select',
-        isMulti: false,
-        options: [
-            {
-                value: '€20-30',
-                label: '€20-30',
-                selected: false,
-                disable: false
-            },
-            {
-                value: '€30-50',
-                label: '€30-50',
-                selected: false,
-                disable: false
-            },
-            {
-                value: '€50-100',
-                label: '€50-100',
-                selected: false,
-                disable: false
-            },
-            {
-                value: '€100 and more',
-                label: '€100 and more',
-                selected: true,
-                disable: false
-            }
-        ]
-    }
-];
 
-const SORT = {
-    name: 'Sort',
-    type: 'select',
-    isMulti: false,
-    options: [
-        {
-            value: 'Popularity',
-            label: 'Popularity',
-            selected: true,
-            disable: false
-        },
-        {
-            value: 'Price ascending',
-            label: 'Price ascending',
-            selected: false,
-            disable: false
-        },
-        {
-            value: 'Price descending',
-            label: 'Price descending',
-            selected: false,
-            disable: false
-        },
-        {
-            value: 'Newest Arrivals',
-            label: 'Newest Arrivals',
-            selected: false,
-            disable: false
-        }
-    ]
-}
 
-ReactDOM.render(<FiltersDesktop filters={FILTERS} sort={SORT}/>, document.getElementById('filters-wrap'));
-
-ReactDOM.render(<FiltersMobile filters={FILTERS} sort={SORT}/>, document.getElementById('filters__wrap--mobile'));

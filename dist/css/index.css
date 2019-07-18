@@ -954,12 +954,14 @@ body {
 	margin-top: 2rem;
 }
 
-.filters__wrap {
+.filters__wrap,
+.sort__wrap {
     display: flex;
     align-items: flex-start;
 }
 
-.filters__wrap--mobile {
+.filters__wrap--mobile,
+.sort__wrap--mobile{
 	width: 100%;
 }
 
@@ -1647,7 +1649,8 @@ body {
 	}	
 
 	/* PAGE: CATEGORY */
-	.filters__wrap {
+	.filters__wrap,
+	.sort__wrap {
 		display: none;
 	}
 	
@@ -1892,7 +1895,8 @@ body {
 	}
 
 	/* PAGE: CATEGORY */
-	.filters__wrap {
+	.filters__wrap,
+	.sort__wrap {
 		display: none;
 	}
 

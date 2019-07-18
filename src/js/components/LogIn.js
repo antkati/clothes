@@ -26,7 +26,7 @@ class LogIn extends React.Component {
     render() {
         return (
             <div>
-                <a class="header__personal-page__link" onClick={this.handleOpenModal}>Log In</a>
+                <a className="header__personal-page__link" onClick={this.handleOpenModal}>Log In</a>
 
                 <ReactModal
                     isOpen={this.state.showModal}
