@@ -194,12 +194,7 @@ input {
 .product__price,
 .product__description,
 .recommendation__show-more,
-.shopping-bag__item__body__article,
-.delivery__form__label,
-.delivery__form__input,
-.payment__form__label,
-.payment__form__input,
-.delivery__form__label--checkbox {
+.shopping-bag__item__body__article {
 	color: #606060;
 }
 
@@ -214,6 +209,7 @@ input {
 }
 
 .btn {
+	font-family: Lato, Arial, sans-serif;
 	font-size: 0.875rem;	
 }
 
@@ -227,8 +223,7 @@ input {
 	font-size: 0.75rem;
 }
 
-.product-item__price,
-.recommendation-item__price {
+.product-item__price {
 	font-size: 0.875rem;
 }
 
@@ -299,27 +294,6 @@ input {
 .shopping-bag__act__continue-shopping {
 	font-size: 0.875rem;
 }
-
-.delivery__form__label,
-.payment__form__label,
-.delivery__form__label--checkbox {
-	font-size: 0.75rem;	
-}
-
-.delivery__form__input,
-.payment__form__input {
-	font-size: 0.75rem; 
-}
-
-.payment__table {
-	font-size: 1.125rem;
-}
-
-.payment__table__value--orange,
-.payment__table__name--orange {
-	color: #f68236;
-}
-
 
 /* browsers without grid's support */
 /* from 1200px */
@@ -1081,63 +1055,10 @@ body {
 	margin-top: 4rem;
 }
 
-/* clearfix */
-.recommendation__slider::before,
-.recommendation__slider::after {
-  	content: '';
-  	display: table;
-}
-
-.recommendation__slider::after {
-  	clear: both;
-}
-
 .recommendation__slider {
 	margin-top: 1rem;
- 	clear: both;
-  	*zoom: 1;
 }
 
-.recommendation-item {
-	float: left;
-	width: 20%;
-	min-width: 158px;
-	height: 280px;	
-	padding: 9px;
-	border: 1px solid transparent;
-	text-align: center;
-}
-
-.recommendation-item:hover {
-	border: 1px solid #e1e1e1;
-}
-
-.recommendation__img__link,
-.recommendation-item__header {
-	display: inline-block;
-}
-
-.recommendation-item__img, 
-.recommendation-item__header {
-	width: 138px;
-}
-
-.recommendation-item__img {
-	height: 170px;
-	object-fit: cover;	
-}
-
-.recommendation__img__link {
-	margin-bottom: 1rem;
-	line-height: 0;	
-}
-
-.recommendation-item__header h4 {
-	height: 2rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	margin-bottom: 0.625rem;
-}
 
 .recommendation__show-more {
 	background: #f1f1f1;
@@ -1341,125 +1262,6 @@ body {
 	clear: both;
 	*zoom: 1;
 }
-
-/* separator */
-.order-separator {
-	display: block;
-	margin: 0 auto;
-}
-
-/* DELIVERY */
-.delivery, 
-.payment {
-	border: 1px solid #e5e5e5;
-	margin: 4.25rem 0;
-}
-
-.delivery__form,
-.payment__form {
-	width: 50%;
-	margin: 4rem auto 0 auto;
-}
-
-.delivery__form__label,
-.payment__form__label {
-	display: block;
-	margin-bottom: 7px;
-}
-
-.delivery__form__input,
-.payment__form__input {
-	height: 42px;
-	width: 100%;	
-	border: 1px solid #c2c2c2;
-	padding: 0 10px;
-	outline: 0;
-}
-
-.block--delivery__type,
-.block--address-1,
-.block--address-2,
-.block--use-adress {
-	width: 100%;
-}
-
-.block--first-name,
-.block--last-name,
-.block--city,
-.block--postal-code,
-.block--phone,
-.block--mail {
-	width: 48%;
-}
-
-.delivery__block:not(:last-child) {
-	margin-bottom: 2rem;
-}
-
-.block--first-name,
-.block--city,
-.block--phone {
-	float: left;
-}
-
-.block--last-name,
-.block--postal-code,
-.block--mail {
-	float: right;
-}
-
-.block--address-1,
-.block--use-adress {
-	clear: both;
-}
-
-.block--use-adress {
-	text-align: center;
-}
-
-/* clearfix */
-.delivery__form::before,
-.delivery__form::after {
-  content: "";
-  display: table;
-}
-
-.delivery__form::after {
-  clear: both;
-}
-
-.delivery__form {
-  clear: both;
-  *zoom: 1;
-}
-
-/* PAYMENT */
-.payment__block {
-	margin: 5rem 0 2.5rem 0;
-}
-
-.payment__table {
-	width: 100%;
-}
-
-.payment__table__name {
-	width: 50%;
-	text-align: right;
-	padding: 10px 10px 10px 0;
-}
-
-.payment__table__value {
-	width: 50%;
-	padding: 10px 0 10px 10px;	
-}
-
-.order-btn {
-	display: block;
-	width: 195px;
-	height: 50px;
-	margin: 0 auto;
-}
-
 
 /* to 768px */
 @media screen and (max-width: 768px) {
@@ -1839,30 +1641,6 @@ body {
 	.shopping-bag__act__continue-shopping {
 		line-height: 1;
 	}
-
-	/* PAGE: ORDER*/
-	.delivery__form,
-	.payment__form {
-		width: 90%;
-	}	
-
-	.block--first-name,
-	.block--last-name,
-	.block--city,
-	.block--postal-code,
-	.block--phone,
-	.block--mail {
-		width: 100%;
-	}	
-
-	.block--first-name,
-	.block--city,
-	.block--phone,
-	.block--last-name,
-	.block--postal-code,
-	.block--mail {
-		float: 	none;
-	}
 }
 
 
@@ -1898,12 +1676,6 @@ body {
 	.filters__wrap,
 	.sort__wrap {
 		display: none;
-	}
-
-	/* PAGE: ORDER */
-	.delivery__form,
-	.payment__form {
-		width: 70%;
 	}
 }
 

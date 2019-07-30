@@ -1,0 +1,165 @@
+.delivery__form__label,
+.payment__form__label,
+.delivery__form__label--checkbox,
+.delivery__form__input,
+.payment__form__input  {
+    color: #606060;
+	font-size: 0.75rem;	
+}
+
+.payment__table {
+	font-size: 1.125rem;
+}
+
+.payment__table__value--orange,
+.payment__table__name--orange {
+	color: #f68236;
+}
+
+/* separator */
+.order-separator {
+	display: block;
+	margin: 0 auto;
+}
+
+/* DELIVERY */
+.delivery, 
+.payment {
+	border: 1px solid #e5e5e5;
+	margin: 4.25rem 0;
+}
+
+.delivery__form,
+.payment__form {
+	width: 50%;
+	margin: 4rem auto 0 auto;
+}
+
+.delivery__form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.delivery__form__label,
+.payment__form__label {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.delivery__form__input,
+.payment__form__input {
+	height: 42px;
+	width: 100%;	
+	border: 1px solid #c2c2c2;
+	padding: 0 10px;
+	outline: 0;
+}
+
+.block--delivery__type,
+.block--address-1,
+.block--address-2,
+.block--use-adress {
+	width: 100%;
+}
+
+.block--first-name,
+.block--last-name,
+.block--city,
+.block--postal-code,
+.block--phone,
+.block--mail {
+	width: 48%;
+}
+
+.delivery__block:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.block--use-adress {
+	text-align: center;
+}
+
+.delivery__form__error {
+	margin-top: 7px;
+	color: red;
+	font-size: 0.75rem;
+}
+
+/* PAYMENT */
+.payment__block {
+	margin: 5rem 0 2.5rem 0;
+}
+
+.payment__table {
+	width: 100%;
+}
+
+.payment__table__name {
+	width: 50%;
+	text-align: right;
+	padding: 10px 10px 10px 0;
+}
+
+.payment__table__value {
+	width: 50%;
+	padding: 10px 0 10px 10px;	
+}
+
+.order-btn {
+	display: block;
+	width: 195px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+/* to 768px */
+@media screen and (max-width: 768px) {
+    /* PAGE: ORDER*/
+	.delivery__form,
+	.payment__form {
+		width: 90%;
+	}	
+
+	.block--first-name,
+	.block--last-name,
+	.block--city,
+	.block--postal-code,
+	.block--phone,
+	.block--mail {
+		width: 100%;
+	}	
+}
+
+
+/* from 769px to 992px */	
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* PAGE: ORDER */
+	.delivery__form,
+	.payment__form {
+		width: 70%;
+	}
+}
+
+/* GRID AND FLEX */
+@supports(grid-area: auto) {
+	.grid {
+		margin-right: 10px;
+		margin-left: 10px;		
+	}
+
+    /* PAGE: ORDER*/
+	.delivery__header,
+	.delivery__form,
+	.payment__header,
+	.payment__form {
+		grid-column: 1 / 5;	
+	}
+
+	@media screen and (max-width: 768px) {
+		.grid {
+			margin-right: 20px;
+			margin-left: 20px;			
+		}
+	}
+}

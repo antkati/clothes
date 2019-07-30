@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/SearchBar.js';
-import Cart from './components/Cart.js';
+import Cart from './components/CartPopUp.js';
 import LogIn from './components/LogIn.js';
 import BurgerMenu from './components/BurgerMenu.js';
 import "./styles/window.css";

@@ -1,10 +1,73 @@
 import React from "react";
-import { Filter, Sort } from "./SelectStyled.js";
+import SelectStyled from "./SelectStyled.js";
 import ReactModal from "react-modal";
 import iconCancel from "../images/cancel.png";
 import "../styles/FiltersBar.css";
 
-/* Фильтры десктопная версия */
+/* Компонент фильтров */
+class Filter extends React.Component {
+    constructor(props) {
+        super(props);
+    } 
+
+    render() {
+        const { filters, container, control, menu } = this.props;
+
+        const filtersList =  filters.map(filter => {
+            const label = () => ({
+                ':before': {
+                    content: `'${filter.name}'`,
+                    display: 'block',
+                    marginRight: 8,
+                    marginLeft: 8,
+                    color: '#606060',
+                    alignSelf: 'center'
+                }
+            });
+            
+            const filterProps = {
+                key: filter.name,
+                options: filter.options,
+                isMulti: filter.isMulti,
+                label: label,
+                container: container,
+                control: control,
+                menu: menu
+            }
+
+            return <SelectStyled {...filterProps}/>
+        })
+
+        return filtersList;
+    }
+}
+
+
+/* Компонент сортировки */
+class Sort extends React.Component {
+    constructor(props) {
+        super(props);
+    } 
+
+    render() {
+        const { sort, container, control, menu } = this.props;
+
+        const sortProps = {
+            options: sort.options,
+            isMulti: sort.isMulti,
+            container: container,
+            control: control,
+            menu: menu,
+            isClearable: false
+        }
+  
+        return <SelectStyled {...sortProps} />;
+    }
+}
+
+
+
+/* FilterBar десктопная версия */
 export class FiltersBarDesktop extends React.Component {
     constructor(props) {
         super(props);
@@ -12,15 +75,54 @@ export class FiltersBarDesktop extends React.Component {
 
     render() {
         const { filters=null, sort=null } = this.props;
-        console.log(this.props.bla);
-        
+
+        const containerFilter = () => ({
+            fontFamily: 'Georgia, serif',  
+            fontStyle: 'italic',
+            fontSize: '14px'       
+        })
+
+        const containerSort = () => ({
+            fontFamily: 'Georgia, serif',  
+            fontStyle: 'italic',
+            fontSize: '14px'       
+        })
+
+        const controlFilter = () => ({
+            height: 'auto',
+            width: '200px',
+            borderBottom: '1px solid black',
+            marginRight: '20px'
+        })
+
+        const controlSort = () => ({
+            height: 'auto',
+            width: '200px',
+            borderBottom: '1px solid black'
+        })
+
+        const menuFilter = () => ({
+            width: '200px',
+            border: 'none'
+        })
+
+        const menuSort = () => ({
+            width: '200px',
+            border: 'none'
+        })
+
         const filterProps = {
             filters: filters,
-            marginRight: '20px',
+            container: containerFilter,
+            control: controlFilter,
+            menu: menuFilter
         }
 
         const sortProps = {
-            sort: sort
+            sort: sort,
+            container: containerSort,
+            control: controlSort,
+            menu: menuSort
         }
 
         return (
@@ -32,7 +134,7 @@ export class FiltersBarDesktop extends React.Component {
     }
 }
 
-/* Фильтры мобильная версия */
+/* FilterBar мобильная версия */
 export class FiltersBarMobile extends React.Component {
     constructor(props) {
         super(props);
@@ -59,19 +161,59 @@ export class FiltersBarMobile extends React.Component {
     render() {
         const { filters=null, sort=null } = this.props;
 
+        const containerSort = () => ({
+            fontFamily: 'Georgia, serif',  
+            fontStyle: 'italic',
+            fontSize: '14px',
+            marginTop: '40px',
+            marginBottom: '50px'
+        })
+        
+        const containerFilter = () => ({
+            fontFamily: 'Georgia, serif',  
+            fontStyle: 'italic',
+            fontSize: '14px',
+            marginTop: '0px',
+            marginBottom: '50px'
+        })
+
+        const controlFilter = () => ({
+            height: 'auto',
+            width: '100%',
+            borderBottom: '1px solid black'
+        })
+
+        const controlSort = () => ({
+            height: 'auto',
+            width: '100%',
+            borderBottom: '1px solid black'
+        })
+
+        const menuFilter = () => ({
+            width: '100%',
+            border: 'none'
+        })
+
+        const menuSort = () => ({
+            width: '100%',
+            border: 'none'
+        })
+
         const filterProps = {
             filters: filters,
-            marginBottom: '50px',
-            width: '100%'
+            container: containerFilter,
+            control: controlFilter,
+            menu: menuFilter
         }
 
         const sortProps = {
             sort: sort,
-            marginBottom: '50px',
-            marginTop: '40px',
-            width: '100%'
+            container: containerSort,
+            control: controlSort,
+            menu: menuSort
         }
-        
+ 
+ 
         return (
             <React.Fragment>
                 <div className='filters__button--show font--georgia-i' onClick={this.handleOpenFiltersMenu}>Filters</div>

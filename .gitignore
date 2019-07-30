@@ -1,5 +1,8 @@
 node_modules/*
 !node_modules/react/
 !node_modules/react-dom/
-!node_modules/reactjs-modal/
-!node_modules/reactjs-select/
+!node_modules/react-modal/
+!node_modules/react-select/
+!node_modules/react-slick/
+!node_modules/react-input-mask/
+!node_modules/slick-carousel/

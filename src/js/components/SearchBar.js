@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/SearchBar.css";
 import "../images/search.png";
 import "../images/search-dark.png";
- 
+
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);

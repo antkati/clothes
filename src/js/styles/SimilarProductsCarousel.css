@@ -1,0 +1,43 @@
+.recommendation-item__price {
+	font-size: 0.875rem;
+}
+
+.recommendation-item {
+/* 	width: 20%; */
+	min-width: 158px;
+	height: 280px;	
+	padding: 9px;
+	border: 1px solid transparent;
+	text-align: center;
+}
+
+.recommendation-item:hover {
+	border: 1px solid #e1e1e1;
+}
+
+.recommendation__img__link,
+.recommendation-item__header {
+	display: inline-block;
+}
+
+.recommendation-item__img, 
+.recommendation-item__header {
+	width: 138px;
+}
+
+.recommendation-item__img {
+	height: 170px;
+	object-fit: cover;	
+}
+
+.recommendation__img__link {
+	margin-bottom: 1rem;
+	line-height: 0;	
+}
+
+.recommendation-item__header h4 {
+	height: 2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0.625rem;
+}
