@@ -16,6 +16,9 @@ module.exports = {
     filename: '[name].[contenthash].js'
   },
   optimization: {
+    runtimeChunk: {
+      name: entrypoint => `runtime-${entrypoint.name}`
+    },
     splitChunks: {
       maxInitialRequests: Infinity,
       minSize: 0,      
@@ -102,43 +105,43 @@ module.exports = {
       filename: "index.html", 
       template: "./src/index.html",
       inject: "body",
-      chunks: ['index', 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ['index', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-index']
     }),
     new HtmlWebpackPlugin({ 
       filename: "category_all.html", 
       template: "./src/category_all.html",
       inject: "body",
-      chunks: ['index', 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ['index', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-index']
     }),
     new HtmlWebpackPlugin({ 
       filename: "category.html", 
       template: "./src/category.html",
       inject: "body",
-      chunks: ["catalog", "index", 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ["catalog", "index", 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-catalog', 'runtime-index']
     }), 
     new HtmlWebpackPlugin({ 
       filename: "product.html", 
       template: "./src/product.html",
       inject: "body",
-      chunks: ["product", "index", 'vendor-react-slick', 'vendor-slick-carousel', 'vendor-jquery', 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ["product", "index", 'vendor-react-slick', 'vendor-slick-carousel', 'vendor-jquery', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-product', 'runtime-index']
     }),   
     new HtmlWebpackPlugin({ 
       filename: "search_result.html", 
       template: "./src/search_result.html",
       inject: "body",
-      chunks: ["searchResult", "index", 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ["searchResult", "index", 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-searchResult', 'runtime-index']
     }), 
     new HtmlWebpackPlugin({ 
       filename: "shopping_cart.html", 
       template: "./src/shopping_cart.html",
       inject: "body",
-      chunks: ["cart", "index", 'vendor-react-input-mask', 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all']      
+      chunks: ["cart", "index", 'vendor-react-input-mask', 'vendor-react-select', 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-cart', 'runtime-index']      
     }),  
     new HtmlWebpackPlugin({ 
       filename: "shopping_cart__cut.html", 
       template: "./src/shopping_cart__cut.html",
       inject: "body",
-      chunks: ["index", 'vendor-react-modal', 'vendor-react', 'vendor-all']
+      chunks: ["index", 'vendor-react-modal', 'vendor-react', 'vendor-all', 'runtime-index']
     }),              
     new CopyPlugin([
       { from: './src/css', to: './css' },
