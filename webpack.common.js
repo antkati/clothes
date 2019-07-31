@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+/* const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; */
 
 module.exports = {
   entry: {
@@ -10,10 +10,6 @@ module.exports = {
     searchResult: "./src/js/searchResult.js",
     cart: "./src/js/cart.js",
     product: "./src/js/product.js"
-  },
-  output: {
-    path: path.join(__dirname, "/dist"),
-    filename: '[name].[contenthash].js'
   },
   optimization: {
     runtimeChunk: {
@@ -82,25 +78,16 @@ module.exports = {
         use: ["babel-loader"]
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      },
-      {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
+        use: ['file-loader']
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
+        use: ['file-loader']
       }      
     ]
   },
-  plugins: [
-    new BundleAnalyzerPlugin(),
+  plugins: [   
     new HtmlWebpackPlugin({
       filename: "index.html", 
       template: "./src/index.html",
