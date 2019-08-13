@@ -49,6 +49,8 @@ class BurgerMenu extends React.Component {
 
     handleOpenCat(e) {
         let target = e.target;
+        if(target.tagName == "A") return;
+
         while(target.tagName != "LI") {
             target = target.parentNode;            
         }
@@ -79,14 +81,14 @@ class BurgerMenu extends React.Component {
         arr.forEach((item) => {
             if ("subsections" in item && item.subsections.length) {
                 this.categories.push(
-                    <li key={item.id} data-id={item.id} onClick={this.handleOpenCat}>
-                        <span>{item.name}</span>
+                    <li className="burger__cats__li burger__cats__li--with-sub" key={item.id} data-id={item.id} onClick={this.handleOpenCat}>
+                        <a href={item.href}>{item.name}</a>
                         <i className="arrow-right"></i>
                     </li>
                 );
             } else {
                 this.categories.push(
-                    <li key={item.id}>
+                    <li className="burger__cats__li burger__cats__li--without-sub" key={item.id}>
                         <a href={item.href}>{item.name}</a>
                     </li>
                 );                

@@ -6,7 +6,7 @@
 		margin: 0;
 		padding: 0;
 		display: grid;
-		grid-template-columns: 1fr minmax(480px, 1200px) 1fr;
+		grid-template-columns: 1fr minmax(320px, 1200px) 1fr;
 		grid-template-rows: auto;		
 	}
 
@@ -153,20 +153,6 @@
 		grid-column: 1 / 5;
 	}
 
-	/* clearfix */
-	.product-list::before,
-	.product-list::after {
-	 	display: none;
-	}
-
-	.product-list {
-		display: flex;
-		flex-wrap: wrap;	
-	}
-
-	.product-item {
-		float: none;	
-	}
 
 	/* PAGE: CATEGORY */	
 	.catalog__section__filters,

@@ -26,7 +26,7 @@
     right: 0px;
     bottom: 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     background-color: rgba(34,34,34,.6);
     opacity: 0;
@@ -42,8 +42,10 @@
 }
 
 .filters__modal {
-    position: relative;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     width: 50%;
     padding: 20px;
     background-color: #ffffff;
@@ -79,6 +81,7 @@
 
 @media screen and (max-width: 768px) {
     .filters__modal {
-        width: 100%;
+        width: auto;
+        left: 0;
     }
 }

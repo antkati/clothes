@@ -15,12 +15,12 @@ class ProductRow extends React.Component {
             <tr className="cart__pop-up__list__body__row">
                 <td className="cart__pop-up__item__body cart__pop-up__item__img">
                     <a className="cart__pop-up__img__link" 
-                        href="">
+                        href={this.props.product.href}>
                         <img src={this.props.product.image} className="cart__pop-up__img" />
                     </a>
                 </td>
                 <td className="cart__pop-up__item__body cart__pop-up__item__description">
-                    <a href="">
+                    <a href={this.props.product.href}>
                         <h4 className="cart__pop-up__h4 text-transform--uppercase">
                             {this.props.product.name}
                         </h4>
@@ -161,7 +161,7 @@ class Cart extends React.Component {
                 onMouseOut={this.hideCartPopUp}>
                 <div className="header__cart__button">
                     <a className="header__cart__link"
-                        href="/src/shopping_cart.html"
+                        href="./shopping_cart__cut.html"
                         onMouseOver={this.showCartPopUp}>
                             Basket ({this.state.productsQuantity})
                     </a>

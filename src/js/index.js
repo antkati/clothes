@@ -14,9 +14,9 @@ ReactDOM.render(
 
 
 const PRODUCTS = [
-    { image: './images/product/product-item-3-1-50w.png', price: '99.95', name: 'Jacket DC T-Shirt' },
-    { image: './images/product/product-item-1-1-50w.png', price: '79.99', name: 'Jacket QT T-Shirt' },
-    { image: './images/product/product-item-2-1-50w.png', price: '49.50', name: 'Jacket WT T-Shirt' }
+    { image: './images/product/product-item-3-1-50w.png', price: '99.95', name: 'Jacket DC T-Shirt', href: './product.html' },
+    { image: './images/product/product-item-1-1-50w.png', price: '79.99', name: 'Jacket QT T-Shirt', href: './product.html' },
+    { image: './images/product/product-item-2-1-50w.png', price: '49.50', name: 'Jacket WT T-Shirt', href: './product.html' }
 ];
 
 ReactDOM.render(
@@ -35,61 +35,61 @@ const CATS =
         {
             name: 'Woman',
             id: '1',
-            href: '#',
+            href: './category_all.html',
             subsections:
                 [
                     {
                         name: 'Clothes',
                         id: '11',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Blouses & shirts',
                                     id: '111',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'T-shirts & longslives',
                                     id: '112',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Hoody',
                                     id: '113',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Pants & shorts',
                                     id: '114',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Jeans',
                                     id: '115',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Outerwear',
                                     id: '116',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Dresses',
                                     id: '117',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Skirts',
                                     id: '118',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
@@ -97,31 +97,31 @@ const CATS =
                     {
                         name: 'Shoes',
                         id: '12',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Shoes',
                                     id: '121',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Sandals',
                                     id: '122',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Sneakers',
                                     id: '123',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Moccasins',
                                     id: '124',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }                                
                             ]
@@ -129,31 +129,31 @@ const CATS =
                     {
                         name: 'Accessories',
                         id: '13',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Scarves',
                                     id: '131',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Gloves',
                                     id: '132',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Bags',
                                     id: '133',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Belts',
                                     id: '134',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
@@ -163,37 +163,37 @@ const CATS =
         {
             name: 'Men',
             id: '2',
-            href: '#',
+            href: './category_all.html',
             subsections:
                 [
                     {
                         name: 'Clothes',
                         id: '21',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Shirts',
                                     id: '211',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'T-shirts & longslives',
                                     id: '212',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Hoody',
                                     id: '213',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Pants & shorts',
                                     id: '214',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
@@ -201,31 +201,31 @@ const CATS =
                     {
                         name: 'Shoes',
                         id: '22',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Shoes',
                                     id: '221',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Sandals',
                                     id: '222',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Sneakers',
                                     id: '223',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Boots',
                                     id: '224',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
@@ -235,31 +235,31 @@ const CATS =
         {
             name: 'Kids',
             id: '3',
-            href: '#',
+            href: './category_all.html',
             subsections:
                 [
                     {
                         name: 'Clothes',
                         id: '31',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'For girls',
                                     id: '311',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'For boys',
                                     id: '312',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'For newborn',
                                     id: '313',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
@@ -267,31 +267,31 @@ const CATS =
                     {
                         name: 'Other',
                         id: '32',
-                        href: '#',
+                        href: './category_all.html',
                         subsections:
                             [
                                 {
                                     name: 'Products for baby',
                                     id: '321',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Feeding accessories',
                                     id: '322',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Bathing accessories',
                                     id: '323',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 },
                                 {
                                     name: 'Child safety',
                                     id: '324',
-                                    href: '#',
+                                    href: './category.html',
                                     subsections: []
                                 }
                             ]
